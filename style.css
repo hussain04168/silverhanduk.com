@@ -9,6 +9,10 @@ Box-sizing
   box-sizing: border-box;
 }
 
+a{
+  color: black;
+}
+
 
 /********************************
    Defining all root variables
@@ -25,7 +29,7 @@ Box-sizing
 /*********************
      Body
  ********************/
- 
+
  body{
    background-color: var(--mainColour);
  }
