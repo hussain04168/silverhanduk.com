@@ -8,3 +8,138 @@ Box-sizing
   margin: 0;
   box-sizing: border-box;
 }
+
+/********************************
+   Defining all root variables
+ *******************************/
+
+:root{
+  --mainColour:;
+  --secondaryColour:;
+  --shadowColor:;
+  --padding:;
+  --margin:;
+}
+
+/***************************
+  Header including navigation
+  and logo Styling
+ **************************/
+
+ header{
+
+ }
+
+
+ /*Navigation Container*/
+ .nav{
+
+ }
+
+ /* Navigation items */
+
+ .navList{
+
+ }
+
+ .navList li{
+
+ }
+
+ .navList a{
+
+ }
+
+ /* logo inside Navigation */
+
+ .nav .logo{
+
+ }
+
+ /****************************
+    Home page Intro styling
+    with Slides
+  ***************************/
+
+.intro{
+
+}
+
+/* Slides Container */
+
+.slideContainer{
+
+}
+
+/* Slide Items  */
+
+.slide{
+
+}
+
+.slide1{
+
+}
+
+.slide2{
+
+}
+
+.slide3{
+
+}
+
+.slide4{
+
+}
+
+/* Button inside of intro styling */
+
+.intro .btnShop{
+
+}
+
+/* Logo inside of intro styling */
+
+.intro .logo{
+
+}
+
+/******************************
+    Main section styling both
+  for Men and Women selections
+ ******************************/
+
+ .main{
+
+ }
+
+ .section{
+
+ }
+
+ /* Men Collection */
+
+ .MenCollection{
+
+ }
+
+ /* Women Collection */
+
+ .WomenCollection{
+
+ }
+
+ /* Brands section styling */
+
+ .brandsContainer{
+
+ }
+
+ .brandsContainer h3{
+   
+ }
+
+ .brands{
+
+ }
