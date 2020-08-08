@@ -23,7 +23,7 @@ a{
   --secondaryColour: hsl(60, 100%, 95%);
   --shadowColor:;
   --padding:;
-  --margin:;
+  --margin: 1em;
 }
 
 /*********************
@@ -46,21 +46,23 @@ a{
 
  /*Navigation Container*/
  .nav{
-
+   display: flex;
+   justify-content: space-between;
  }
 
  /* Navigation items */
 
  .navList{
-
+   display: flex;
  }
 
  .navList li{
-
+  list-style: none;
+  margin-right: var(--margin);
  }
 
  .navList a{
-
+   text-decoration: none;
  }
 
  /* logo inside Navigation */
@@ -156,5 +158,3 @@ a{
  .brands{
 
  }
-
- 
