@@ -229,7 +229,21 @@ a{
 
 }
 
+/* Icons in footer styling */
+
 .icons{
   display: flex;
   justify-content: space-around;
+}
+
+.fa-twitter:hover{
+  color: #00acee;
+}
+
+.fa-facebook-square:hover{
+  color: #3b5998;
+}
+
+.fa-instagram:hover{
+  color: #dd2a7b;
 }
