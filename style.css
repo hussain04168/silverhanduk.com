@@ -118,13 +118,17 @@ a{
 /* Slides Container */
 
 .slideContainer{
-
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 /* Slide Items  */
 
 .slide{
-
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .slide1{
@@ -132,11 +136,11 @@ a{
 }
 
 .slide2{
-
+  display: none;
 }
 
 .slide3{
-
+  display: none;
 }
 
 .slide4{
