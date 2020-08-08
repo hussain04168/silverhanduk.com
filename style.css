@@ -113,6 +113,7 @@ a{
 .intro{
  grid-area: intro;
  height: 60vh;
+ margin-top: var(--margin);
 }
 
 /* Slides Container */
@@ -169,7 +170,7 @@ a{
  }
 
  .section{
-
+   margin-top: var(--margin);
  }
 
  /* Men Collection */
