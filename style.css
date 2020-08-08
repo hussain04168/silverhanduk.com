@@ -114,6 +114,7 @@ a{
  grid-area: intro;
  height: 60vh;
  margin-top: var(--margin);
+ position: relative;
 }
 
 /* Slides Container */
@@ -129,7 +130,7 @@ a{
 .slide{
   height: 100%;
   width: 100%;
-  position: relative;
+  position: absolute;
 }
 
 .slide1{
@@ -145,19 +146,23 @@ a{
 }
 
 .slide4{
-
+  display: none;
 }
 
 /* Button inside of intro styling */
 
 .intro .btnShop{
-
+  position: absolute;
+  bottom: 2%;
+  right: 45%;
 }
 
 /* Logo inside of intro styling */
 
 .intro .logo{
-
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
 }
 
 /******************************
