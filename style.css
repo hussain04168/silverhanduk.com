@@ -111,7 +111,8 @@ a{
   ***************************/
 
 .intro{
-
+ grid-area: intro;
+ height: 60vh;
 }
 
 /* Slides Container */
@@ -171,12 +172,14 @@ a{
 
  .MenCollection{
    grid-area: menSection;
+   height: 70vh;
  }
 
  /* Women Collection */
 
  .WomenCollection{
    grid-area: womenSection;
+   height: 70vh;
  }
 
  /* Brands section styling */
@@ -198,6 +201,7 @@ a{
   ********************/
   .Sell{
     grid-area: sell;
+    height: 50vh;
   }
 
  /******************
@@ -212,7 +216,7 @@ a{
     align-items: center;
     height: 30vh;
     background-color: var(--secondaryColour);
-    box-shadow: 1px 2px 4px var(--shadowColor); 
+    box-shadow: 1px 2px 4px var(--shadowColor);
   }
 
   .footer .logo{
