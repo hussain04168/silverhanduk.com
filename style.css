@@ -1,5 +1,11 @@
+/********************
+Google fonts import
+********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
 /*******************************
-Reset all  margins, padding and
+Reset all  margins, padding, anchor tags and
 Box-sizing
 ********************************/
 
@@ -32,6 +38,7 @@ a{
 
  body{
    background-color: var(--mainColour);
+   font-family: 'Baloo Tamma 2', cursive;
  }
 
 /***************************
