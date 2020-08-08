@@ -47,7 +47,11 @@ a{
  **************************/
 
  header{
-   
+   padding-top: var(--padding);
+   padding-bottom: var(--padding);
+   border-top: 2px solid var(--secondaryColour);
+   border-bottom: 2px solid var(--secondaryColour);
+   margin-top: .5%;
  }
 
 
@@ -63,6 +67,7 @@ a{
 
  .navList{
    display: flex;
+   align-items: center;
  }
 
  .navList li{
@@ -78,6 +83,8 @@ a{
 
  .nav .logo{
    height: 50px;
+   position: relative;
+   left: 45%;
  }
 
  /****************************
