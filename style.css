@@ -169,13 +169,13 @@ a{
  /* Men Collection */
 
  .MenCollection{
-
+   grid-area: menSection;
  }
 
  /* Women Collection */
 
  .WomenCollection{
-
+   grid-area: womenSection;
  }
 
  /* Brands section styling */
@@ -192,6 +192,12 @@ a{
 
  }
 
+ /********************
+     Sell section
+  ********************/
+  .Sell{
+    grid-area: sell;
+  }
 
  /******************
   Footer and icons
