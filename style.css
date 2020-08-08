@@ -190,4 +190,10 @@ a{
 
   .footer{
     display: flex;
+    height: 30vh;
+    background-color: var(--secondaryColour);
+  }
+
+  .footer .logo{
+    height: 50px;
   }
