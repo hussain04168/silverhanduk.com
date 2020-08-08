@@ -30,6 +30,8 @@ a{
   --shadowColor: hsl(0, 0%, 3%);
   --padding: 1em;
   --margin: 1em;
+  --btnFontSize: 1.1rem;
+  --btnPadding: .5em;
 }
 
 /*********************
@@ -155,6 +157,8 @@ a{
   position: absolute;
   bottom: 2%;
   right: 45%;
+  font-size: var(--btnFontSize);
+  padding: var(--btnPadding);
 }
 
 /* Logo inside of intro styling */
