@@ -28,7 +28,7 @@ a{
   --mainColour: hsl(200, 6%, 10%);
   --secondaryColour: hsl(60, 100%, 95%);
   --shadowColor:;
-  --padding:;
+  --padding: 1em;
   --margin: 1em;
 }
 
@@ -55,6 +55,8 @@ a{
  .nav{
    display: flex;
    justify-content: space-between;
+   background-color: var(--secondaryColour);
+   padding: var(--padding);
  }
 
  /* Navigation items */
