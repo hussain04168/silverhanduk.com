@@ -52,6 +52,7 @@ a{
    border-top: 2px solid var(--secondaryColour);
    border-bottom: 2px solid var(--secondaryColour);
    margin-top: .5%;
+   font-size: 1.3rem;
  }
 
 
@@ -75,9 +76,15 @@ a{
   margin-right: var(--margin);
  }
 
+
+  .navList li:hover{
+    border-bottom: 2px solid red;
+  }
+
  .navList a{
    text-decoration: none;
  }
+
 
  /* logo inside Navigation */
 
