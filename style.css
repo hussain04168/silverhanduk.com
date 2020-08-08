@@ -190,6 +190,8 @@ a{
 
   .footer{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 30vh;
     background-color: var(--secondaryColour);
   }
@@ -197,3 +199,9 @@ a{
   .footer .logo{
     height: 50px;
   }
+
+.footerHI{
+  border-right: 2px solid black;
+  padding: var(--padding);
+  margin-right: var(--margin);
+}
