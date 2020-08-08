@@ -204,4 +204,14 @@ a{
   border-right: 2px solid black;
   padding: var(--padding);
   margin-right: var(--margin);
+  position: relative;
+}
+
+.footerHI h3{
+  
+}
+
+.icons{
+  display: flex;
+  justify-content: space-around;
 }
