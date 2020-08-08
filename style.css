@@ -39,6 +39,15 @@ a{
  body{
    background-color: var(--mainColour);
    font-family: 'Baloo Tamma 2', cursive;
+   display: grid;
+   grid-template-rows: repeat(6, auto);
+   grid-template-areas:
+   "header"
+   "intro"
+   "menSection"
+   "womenSection"
+   "sell"
+   "footer";
  }
 
 /***************************
@@ -53,6 +62,7 @@ a{
    border-bottom: 2px solid var(--secondaryColour);
    margin-top: .5%;
    font-size: 1.3rem;
+   grid-area: header;
  }
 
 
@@ -189,6 +199,7 @@ a{
   ******************/
 
   .footer{
+    grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,7 +219,7 @@ a{
 }
 
 .footerHI h3{
-  
+
 }
 
 .icons{
