@@ -181,3 +181,13 @@ a{
  .brands{
 
  }
+
+
+ /******************
+  Footer and icons
+  within styling
+  ******************/
+
+  .footer{
+    display: flex;
+  }
