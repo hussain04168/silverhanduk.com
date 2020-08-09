@@ -33,6 +33,7 @@ a{
   --margin: 1em;
   --btnFontSize: 1.1rem;
   --btnPadding: .5em;
+  --transition: .3s;
 }
 
 /*********************
@@ -174,7 +175,7 @@ a{
 .intro .btnShop:hover{
   background-color: var(--secondaryColour);
   color: var(--mainColour);
-  transition: .3s ease-in-out;
+  transition: var(--transition) ease-in-out;
 }
 
 
