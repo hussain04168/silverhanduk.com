@@ -38,7 +38,7 @@ a{
 }
 
 /*********************
-     Body
+        Body
  ********************/
 
  body{
@@ -179,6 +179,18 @@ a{
   transition: var(--transition) ease-in-out;
 }
 
+/*** Direction buttons inside intro ***/
+
+.btn-direction{
+  padding: var(--btnPadding);
+  font-size: var(--btnFontSize);
+  position: absolute;
+  bottom: 45%;
+}
+
+.btn-next{
+  right: 0;
+}
 
 
 
