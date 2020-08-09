@@ -37,6 +37,7 @@ a{
   --fontWeight: 600;
   --directionBtnColor: rgba(245, 245, 240, 0.3);
   --directionBtnHoverColor: rgba(245, 245, 240, 0.75);
+  --sectionColour: hsl(216, 23%, 9%);
 }
 
 /*********************
@@ -242,6 +243,7 @@ a{
  .MenCollection{
    grid-area: menSection;
    height: 70vh;
+   background-color: var(--sectionColour);
  }
 
  /* Women Collection */
@@ -249,6 +251,7 @@ a{
  .WomenCollection{
    grid-area: womenSection;
    height: 70vh;
+   background-color: var(--sectionColour);
  }
 
  /* Brands section styling */
@@ -271,6 +274,7 @@ a{
   .Sell{
     grid-area: sell;
     height: 50vh;
+    background-color: var(--sectionColour);
   }
 
  /******************
