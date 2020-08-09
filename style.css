@@ -35,6 +35,8 @@ a{
   --btnPadding: .5em;
   --transition: .3s;
   --fontWeight: 600;
+  --directionBtnColor: rgba(245, 245, 240, 0.3);
+  --directionBtnHoverColor: rgba(245, 245, 240, 0.75);
 }
 
 /*********************
@@ -166,12 +168,11 @@ a{
   outline: none;
   border: 2px solid var(--secondaryColour);
   background-color: transparent;
-}
-
-.intro .btnShop {
   color: white;
   font-weight: var(--fontWeight);
+  cursor: pointer;
 }
+
 
 .intro .btnShop:hover{
   background-color: var(--secondaryColour);
@@ -184,12 +185,30 @@ a{
 .btn-direction{
   padding: var(--btnPadding);
   font-size: var(--btnFontSize);
+  font-weight: var(--fontWeight);
   position: absolute;
   bottom: 45%;
+  outline: none;
+  background-color: var(--directionBtnColor);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-direction:hover{
+  background-color: var(--directionBtnHoverColor);
+  transition: var(--transition);
 }
 
 .btn-next{
   right: 0;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+.btn-prev{
+  left: 0;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
 }
 
 
