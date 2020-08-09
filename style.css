@@ -31,9 +31,10 @@ a{
   --shadowColor: hsl(0, 0%, 3%);
   --padding: 1em;
   --margin: 1em;
-  --btnFontSize: 1.1rem;
+  --btnFontSize: 1.3rem;
   --btnPadding: .5em;
   --transition: .3s;
+  --fontWeight: 600;
 }
 
 /*********************
@@ -169,7 +170,7 @@ a{
 
 .intro .btnShop {
   color: white;
-  font-weight: 600;
+  font-weight: var(--fontWeight);
 }
 
 .intro .btnShop:hover{
