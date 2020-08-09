@@ -166,9 +166,20 @@ a{
   background-color: transparent;
 }
 
-.intro .btnShop a{
+.intro .btnShop {
   color: white;
+  font-weight: 600;
 }
+
+.intro .btnShop:hover{
+  background-color: var(--secondaryColour);
+  color: var(--mainColour);
+  transition: .3s ease-in-out;
+}
+
+
+
+
 
 
 /* Logo inside of intro styling */
