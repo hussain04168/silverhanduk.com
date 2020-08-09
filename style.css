@@ -17,6 +17,7 @@ Box-sizing
 
 a{
   color: black;
+  text-decoration: none;
 }
 
 
@@ -159,7 +160,16 @@ a{
   right: 45%;
   font-size: var(--btnFontSize);
   padding: var(--btnPadding);
+  border-radius: 5%;
+  outline: none;
+  border: 2px solid var(--secondaryColour);
+  background-color: transparent;
 }
+
+.intro .btnShop a{
+  color: white;
+}
+
 
 /* Logo inside of intro styling */
 
