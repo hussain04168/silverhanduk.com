@@ -38,6 +38,7 @@ a{
   --directionBtnColor: rgba(245, 245, 240, 0.3);
   --directionBtnHoverColor: rgba(245, 245, 240, 0.75);
   --sectionColour: hsl(216, 23%, 9%);
+  --headingSize: 2.5rem;
 }
 
 /*********************
@@ -146,11 +147,11 @@ a{
 }
 
 .slide2{
-  display: none;
+display: none;
 }
 
 .slide3{
-  display: none;
+display: none;
 }
 
 .slide4{
@@ -238,12 +239,19 @@ a{
    margin-top: var(--margin);
  }
 
+ .section h3{
+   font-size: var(--headingSize);
+   text-align: center;
+ }
+
  /* Men Collection */
 
  .MenCollection{
    grid-area: menSection;
    height: 70vh;
    background-color: var(--sectionColour);
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
  }
 
  /* Women Collection */
