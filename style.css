@@ -28,7 +28,7 @@ a{
 :root{
   --mainColour: hsl(200, 6%, 10%);
   --secondaryColour: hsl(60, 100%, 95%);
-  --shadowColor: hsl(0, 0%, 3%);
+  --shadowColor: rgba(0, 0, 0, 0.12);
   --padding: 1em;
   --margin: 1em;
   --btnFontSize: 1.3rem;
@@ -72,6 +72,9 @@ a{
    margin-top: .5%;
    font-size: 1.3rem;
    grid-area: header;
+   top: 0;
+   position: sticky;
+   z-index: 2;
  }
 
 
@@ -81,7 +84,9 @@ a{
    justify-content: space-between;
    background-color: var(--secondaryColour);
    padding: var(--padding);
-   box-shadow: 1px 2px 4px var(--shadowColor);
+   box-shadow: 0px 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
+               0px 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor),
+               0px 32px 32px var(--shadowColor);
  }
 
  /* Navigation items */
@@ -97,13 +102,9 @@ a{
  }
 
 
-  .navList li:hover{
+  .navList li a:hover{
     border-bottom: 2px solid red;
   }
-
- .navList a{
-   text-decoration: none;
- }
 
 
  /* logo inside Navigation */
@@ -112,6 +113,23 @@ a{
    height: 50px;
    position: relative;
    left: 45%;
+ }
+
+ /******* Cart styling *******/
+
+ .fa-cart-plus{
+   position: relative;
+ }
+
+ .cart-item{
+   position: absolute;
+   top: -47%;
+   right: -20%;
+   font-size: .95rem;
+   background-color: var(--mainColour);
+   color: white;
+   border-radius: 50000000000000000px;
+   padding: .1rem;
  }
 
  /****************************
@@ -242,24 +260,37 @@ display: none;
  .section h3{
    font-size: var(--headingSize);
    text-align: center;
+   color: white;
  }
 
  /* Men Collection */
 
  .MenCollection{
    grid-area: menSection;
-   height: 70vh;
-   background-color: var(--sectionColour);
+   height: 90vh;
+   max-width: 1170px;
+   margin: 0 auto;
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
  }
+
+ .product-img{
+   position: relative;
+ }
+
+ .product-img img{
+   width: 260px;
+ }
+
 
  /* Women Collection */
 
  .WomenCollection{
    grid-area: womenSection;
    height: 70vh;
-   background-color: var(--sectionColour);
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
  }
 
  /* Brands section styling */
