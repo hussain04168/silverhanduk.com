@@ -257,10 +257,13 @@ display: none;
    margin-top: var(--margin);
  }
 
- .section h3{
-   font-size: var(--headingSize);
-   text-align: center;
+ .section h3, .section h4{
    color: white;
+ }
+
+ .section-title{
+   text-align: center;
+   font-size: var(--headingSize);
  }
 
  /* Men Collection */
