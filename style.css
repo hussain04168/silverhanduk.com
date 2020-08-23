@@ -41,6 +41,7 @@ a{
   --headingSize: 2.5rem;
   --gridGap: 1.5em;
   --transitionTime: .3s;
+  --addToCartColor: hsl(17, 100%, 50%);
 }
 
 /*********************
@@ -305,6 +306,10 @@ display: none;
    transform: translateX(101%);
    transition: all var(--transitionTime);
    cursor: pointer;
+   background-color: var(--addToCartColor);
+   color: white;
+   border: none;
+   outline: none;
  }
 
 .bag-btn .fa-cart-plus{
