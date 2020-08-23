@@ -144,6 +144,11 @@ a{
  height: 60vh;
  margin-top: var(--margin);
  position: relative;
+ border-top: 3px solid white;
+ border-bottom: 3px solid white;
+ box-shadow: 0px 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
+             0px 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor),
+             0px 32px 32px var(--shadowColor);
 }
 
 /* Slides Container */
@@ -163,15 +168,15 @@ a{
 }
 
 .slide1{
-
+display: none;
 }
 
 .slide2{
-display: none;
+
 }
 
 .slide3{
-display: none;
+  display: none;
 }
 
 .slide4{
@@ -235,8 +240,6 @@ display: none;
 
 
 
-
-
 /* Logo inside of intro styling */
 
 .intro .logo{
@@ -261,6 +264,7 @@ display: none;
 
  .section h3, .section h4{
    color: white;
+   text-shadow: 1px 2px 1px black;
  }
 
  .section-title{
@@ -268,10 +272,27 @@ display: none;
    font-size: var(--headingSize);
  }
 
+
+/***** Product Styling ****/
+
+
+.product{
+  background-color: var(--secondaryColour);
+  padding-bottom: var(--padding);
+  border: 2px solid white;
+}
+
  .product-img{
    position: relative;
    overflow: hidden;
  }
+
+
+  .product-img:hover .bag-btn {
+    transform: translateX(0%);
+  }
+
+
 
   /**** Add to cart button styling  *****/
 
@@ -286,9 +307,10 @@ display: none;
    cursor: pointer;
  }
 
- .product-img:hover .bag-btn {
-   transform: translateX(0%);
- }
+.bag-btn .fa-cart-plus{
+  margin-right: var(--margin);
+}
+
 
  /* Men Collection */
 
@@ -321,7 +343,7 @@ display: none;
  /* Brands section styling */
 
  .brandsContainer{
-   margin-top: var(--margin);
+   margin-top: 5%;
  }
 
  .brandsContainer h3{
