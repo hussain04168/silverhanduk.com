@@ -42,6 +42,8 @@ a{
   --gridGap: 1.5em;
   --transitionTime: .3s;
   --addToCartColor: hsl(17, 100%, 50%);
+  --addToCartColorDiluted: hsl(17, 100%, 60%);
+  --sellSectionBackground: hsl(200, 100%, 50%);
 }
 
 /*********************
@@ -312,6 +314,10 @@ display: none;
    outline: none;
  }
 
+ .bag-btn:hover{
+   background-color: var(--addToCartColorDiluted);
+ }
+
 .bag-btn .fa-cart-plus{
   margin-right: var(--margin);
 }
@@ -369,7 +375,11 @@ display: none;
   .Sell{
     grid-area: sell;
     height: 50vh;
-    background-color: var(--sectionColour);
+    background-color: var(--sellSectionBackground);
+  }
+
+  .Sell h3{
+    text-align: center;
   }
 
  /******************
