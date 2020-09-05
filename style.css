@@ -186,62 +186,6 @@ display: none;
   display: none;
 }
 
-/* Button inside of intro styling */
-
-.intro .btnShop{
-  position: absolute;
-  bottom: 2%;
-  right: 45%;
-  font-size: var(--btnFontSize);
-  padding: var(--btnPadding);
-  border-radius: 5%;
-  outline: none;
-  border: 2px solid var(--secondaryColour);
-  background-color: transparent;
-  color: white;
-  font-weight: var(--fontWeight);
-  cursor: pointer;
-}
-
-
-.intro .btnShop:hover{
-  background-color: var(--secondaryColour);
-  color: var(--mainColour);
-  transition: var(--transition) ease-in-out;
-
-}
-
-/*** Direction buttons inside intro ***/
-
-.btn-direction{
-  padding: var(--btnPadding);
-  font-size: var(--btnFontSize);
-  font-weight: var(--fontWeight);
-  position: absolute;
-  bottom: 45%;
-  outline: none;
-  background-color: var(--directionBtnColor);
-  border: none;
-  cursor: pointer;
-}
-
-.btn-direction:hover{
-  background-color: var(--directionBtnHoverColor);
-  transition: var(--transition);
-}
-
-.btn-next{
-  right: 0;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%;
-}
-
-.btn-prev{
-  left: 0;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
-}
-
 
 /* Logo inside of intro styling */
 
