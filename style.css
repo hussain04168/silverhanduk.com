@@ -166,7 +166,7 @@ a{
   width: 100%;
   position: relative;
   flex-shrink: 0;
-  /* animation: slide 30s infinite; */
+  animation: slide 30s infinite;
 }
 
 @keyframes slide {
