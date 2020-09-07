@@ -27,7 +27,7 @@ a{
 
 :root{
   --mainColour: hsl(200, 6%, 10%);
-  --secondaryColour: hsl(60, 100%, 95%);
+  --secondaryColour: white;
   --shadowColor: rgba(0, 0, 0, 0.12);
   --padding: 1em;
   --margin: 1em;
@@ -103,7 +103,11 @@ a{
 
 
   .navList li a:hover{
-    border-bottom: 2px solid red;
+    border-bottom: 3px solid red;
+  }
+
+  .navList img{
+    height: 2rem;
   }
 
 
@@ -151,7 +155,8 @@ a{
 .slideContainer{
   height: 100%;
   width: 100%;
-  position: relative;
+  display: flex;
+  overflow-x: hidden;
 }
 
 /* Slide Items  */
@@ -159,24 +164,28 @@ a{
 .slide{
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: relative;
+  flex-shrink: 0;
+  animation: slide 30s infinite;
 }
 
-.slide1{
-display: none;
+@keyframes slide {
+
+  0%{
+    left: 0;
+  }
+  33%{
+    left: -100%;
+  }
+  66%{
+    left: -200%;
+  }
+  100%{
+    left:0;
+  }
 }
 
-.slide2{
 
-}
-
-.slide3{
-  display: none;
-}
-
-.slide4{
-  display: none;
-}
 
 
 /* Logo inside of intro styling */
