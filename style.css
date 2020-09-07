@@ -166,7 +166,7 @@ a{
   width: 100%;
   position: relative;
   flex-shrink: 0;
-  animation: slide 30s infinite;
+  /* animation: slide 30s infinite; */
 }
 
 @keyframes slide {
@@ -225,9 +225,8 @@ a{
 
 
 .product{
-  /* background-color: var(--secondaryColour); */
   padding-bottom: var(--padding);
-  /* border: 2px solid white; */
+  margin-right: var(--margin)
 }
 
  .product-img{
@@ -285,9 +284,8 @@ a{
    max-width: 1170px;
    width: 90vw;
    margin: 0 auto;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-   grid-gap: var(--gridGap);
+   display: flex;
+
  }
 
 
@@ -304,9 +302,7 @@ a{
    max-width: 1170px;
    width: 90vw;
    margin: 0 auto;
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-   grid-gap: var(--gridGap);
+   display: flex;
  }
 
  /* Brands section styling */
