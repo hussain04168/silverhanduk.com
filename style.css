@@ -166,7 +166,7 @@ a{
   width: 100%;
   position: relative;
   flex-shrink: 0;
-  animation: slide 30s infinite;
+  animation: slide 30s infinite ease-in-out;
 }
 
 @keyframes slide {
@@ -207,7 +207,11 @@ a{
  }
 
  .section{
-   margin-top: var(--margin);
+   margin: calc(var(--margin)*2) 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+    height: 90vh;
  }
 
  .section h3, .section h4{
@@ -248,6 +252,26 @@ a{
     transform: translateX(0%);
   }
 
+  /******************
+      Shop button
+  ******************/
+
+  .shop-btn{
+   padding: calc(var(--btnPadding)*1.8);
+   margin: 0 auto;
+   border-radius: 3%;
+   outline: none;
+   cursor: pointer;
+   border: 2px solid var(--secondaryColour);
+   background: none;
+  }
+
+  .shop-btn a{
+    color: white;
+    font-weight: var(--fontWeight);
+    font-size: var(--btnFontSize);
+  }
+
 
 
   /**** Add to cart button styling  *****/
@@ -280,12 +304,10 @@ a{
 
  .MenCollection{
    grid-area: menSection;
-   height: 90vh;
-   max-width: 1170px;
    width: 90vw;
    margin: 0 auto;
    display: flex;
-
+   /* align-items: center; */
  }
 
 
@@ -298,7 +320,6 @@ a{
 
  .WomenCollection{
    grid-area: womenSection;
-   height: 90vh;
    max-width: 1170px;
    width: 90vw;
    margin: 0 auto;
