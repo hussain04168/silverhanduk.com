@@ -43,7 +43,7 @@ a{
   --transitionTime: .3s;
   --addToCartColor: hsl(17, 100%, 50%);
   --addToCartColorDiluted: hsl(17, 100%, 60%);
-  --sellSectionBackground: hsl(200, 100%, 50%);
+  --sellSectionBackground: hsl(250, 100%, 90%);
 }
 
 /*********************
@@ -298,6 +298,7 @@ a{
    background-color: var(--addToCartColor);
    color: white;
    border: none;
+   border-radius: 4%;
    outline: none;
  }
 
@@ -356,13 +357,23 @@ a{
   ********************/
   .Sell{
     grid-area: sell;
-    height: 50vh;
-    background-color: var(--sellSectionBackground);
+    height: 65vh;
+    width: 95%;
+    margin: calc(var(--margin) * 2.5) auto;
+    border: 3px solid var(--secondaryColour);
+    position: relative;
+    box-shadow: 0 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
+    0 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor), 0 32px 32px
+    var(--shadowColor);
   }
 
   .Sell h3{
     text-align: center;
+    margin-top: .5em;
+    font-size: calc(var(--headingSize)/1.5);
+    letter-spacing: .17em;
   }
+
 
  /******************
   Footer and icons
