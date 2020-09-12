@@ -93,7 +93,7 @@ a{
 
  .navList{
    display: flex;
-   align-items: center;
+   align-items: flex-end;
  }
 
  .navList li{
@@ -118,10 +118,44 @@ a{
    position: relative;
  }
 
+ /*******Icons styling*********/
+
+
+ .shopIcon, .aboutIcon, .sellIcon, .contactIcon{
+   position: relative;
+ }
+ .shopIcon::before{
+   content:"shop";
+   width: 25px;
+   font-size: calc(var(--btnFontSize) / 2);
+   font-weight: var(--fontWeight);
+   color: var(--secondaryColour);
+   background-color: var(--mainColour);
+   position: absolute;
+   bottom: 120%;
+   right: .02px;
+   border-radius: 14%;
+   padding: calc(var(--btnPadding) - .15rem) var(--btnPadding);
+ }
+
+ .aboutIcon::before{
+
+ }
+
+ .sellIcon::before{
+
+ }
+
+ .contactIcon::before{
+
+
+ }
+
  /******* Cart styling *******/
 
  .fa-cart-plus{
    position: relative;
+   bottom: 5px;
  }
 
  .cart-item{
@@ -142,7 +176,7 @@ a{
 
 .intro{
  grid-area: intro;
- height: 60vh;
+ height: 45vh;
  margin-top: var(--margin);
  position: relative;
  box-shadow: 0px 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
@@ -359,7 +393,7 @@ a{
     grid-area: sell;
     height: 65vh;
     width: 95%;
-    margin: calc(var(--margin) * 2.5) auto;
+    margin: 0 auto calc(var(--margin) * 2.5) auto;
     border: 3px solid var(--secondaryColour);
     position: relative;
     box-shadow: 0 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
