@@ -200,7 +200,7 @@ a{
   width: 100%;
   position: relative;
   flex-shrink: 0;
-  animation: slide 30s infinite ease-in-out;
+  animation: slide 60s infinite ease-in-out;
 }
 
 @keyframes slide {
@@ -208,11 +208,19 @@ a{
   0%{
     left: 0;
   }
-  33%{
+  20%{
     left: -100%;
   }
-  66%{
+  40%{
     left: -200%;
+  }
+
+  60%{
+    left: -300%;
+  }
+
+  80%{
+    left: -400%;
   }
   100%{
     left:0;
