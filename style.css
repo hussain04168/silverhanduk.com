@@ -44,6 +44,7 @@ a{
   --addToCartColor: hsl(17, 100%, 50%);
   --addToCartColorDiluted: hsl(17, 100%, 60%);
   --sellSectionBackground: hsl(250, 100%, 90%);
+  --letterSpacing: .1em;
 }
 
 /*********************
@@ -124,7 +125,7 @@ a{
  .shopIcon, .aboutIcon, .sellIcon, .contactIcon{
    position: relative;
  }
- .shopIcon::before{
+ /* .shopIcon::before{
    content:"shop";
    width: 25px;
    font-size: calc(var(--btnFontSize) / 2);
@@ -136,7 +137,7 @@ a{
    right: .02px;
    border-radius: 14%;
    padding: calc(var(--btnPadding) - .15rem) var(--btnPadding);
- }
+ } */
 
  .aboutIcon::before{
 
@@ -309,7 +310,7 @@ a{
   }
 
   .shop-btn a{
-    color: white;
+    color: var(--secondaryColour);
     font-weight: var(--fontWeight);
     font-size: var(--btnFontSize);
   }
@@ -401,6 +402,7 @@ a{
     grid-area: sell;
     height: 65vh;
     width: 95%;
+    padding-bottom: var(--padding);
     margin: 0 auto calc(var(--margin) * 2.5) auto;
     border: 3px solid var(--secondaryColour);
     position: relative;
@@ -412,8 +414,41 @@ a{
   .Sell h3{
     text-align: center;
     margin-top: .5em;
-    font-size: calc(var(--headingSize)/1.5);
+    font-size: calc(var(--headingSize)*1.5);
     letter-spacing: .17em;
+  }
+
+  .sell-para{
+    color: var(--secondaryColour);
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  .sell-btn{
+    padding: calc(var(--btnPadding) * 1.1) calc(var(--btnPadding) * 2);
+    margin: 0 auto;
+    border-radius: 3%;
+    outline: none;
+    cursor: pointer;
+    border: 3px solid var(--secondaryColour);
+    background: none;
+    color: var(--secondaryColour);
+    font-size: var(--btnFontSize);
+    font-weight: var(--fontWeight);
+  }
+
+  .sell-btn a{
+    color: inherit;
+    letter-spacing: var(--letterSpacing);
+  }
+
+  .sell-btn:hover{
+    transition: var(--transition);
+    background: var(--secondaryColour);
+  }
+
+  .sell-btn:hover a{
+    color: var(--mainColour);
   }
 
 
