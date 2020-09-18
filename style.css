@@ -55,11 +55,12 @@ a{
    background-color: var(--mainColour);
    font-family: 'Baloo Tamma 2', cursive;
    display: grid;
-   grid-template-rows: repeat(6, auto);
+   grid-template-rows: repeat(7, auto);
    grid-template-areas:
    "header"
    "intro"
    "menSection"
+   "middleSlides"
    "womenSection"
    "sell"
    "footer";
@@ -171,12 +172,14 @@ a{
  }
 
  /****************************
-    Home page Intro styling
-    with Slides
+    Intro and middle Slides
+    styling
   ***************************/
-
 .intro{
- grid-area: intro;
+  grid-area: intro;
+}
+
+.intro, .middle-slides{
  height: 45vh;
  margin-top: var(--margin);
  position: relative;
@@ -185,55 +188,51 @@ a{
              0px 32px 32px var(--shadowColor);
 }
 
+.middle-slides{
+  grid-area: middleSlides;
+}
+
+
+
 /* Slides Container */
 
-.slideContainer{
+.slideContainer, .middle-slide-container{
   height: 100%;
   width: 100%;
   display: flex;
   overflow-x: hidden;
 }
 
+
 /* Slide Items  */
 
-.slide{
+.slide, .middle-slide{
   height: 100%;
   width: 100%;
-  position: relative;
   flex-shrink: 0;
-  animation: slide 60s infinite ease-in-out;
+  animation: fade 1.5s  ease-in-out;
+  transition: ease-in-out;
 }
 
-@keyframes slide {
 
-  0%{
-    left: 0;
-  }
-  20%{
-    left: -100%;
-  }
-  40%{
-    left: -200%;
-  }
 
-  60%{
-    left: -300%;
-  }
+ @keyframes fade {
+   from{
+     opacity: .4;
+   }
+   90%{
+     opacity: 1;
+   }
+ }
 
-  80%{
-    left: -400%;
-  }
-  100%{
-    left:0;
-  }
-}
+
 
 
 
 
 /* Logo inside of intro styling */
 
-.intro .logo{
+.intro .logo, .middle-slides .logo{
   position: absolute;
   bottom: 2%;
   right: 2%;
