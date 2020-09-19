@@ -105,7 +105,7 @@ a{
 
 
   .navList li a:hover{
-    border-bottom: 3px solid red;
+    /* border-bottom: 3px solid red; */
   }
 
   .navList img{
@@ -125,33 +125,62 @@ a{
 
  .shopIcon, .aboutIcon, .sellIcon, .contactIcon{
    position: relative;
+   /* transition: hover calc(var(--transition) * 2) ease-in-out; */
  }
- /* .shopIcon::before{
-   content:"shop";
-   width: 25px;
+
+
+ .shopIcon::before, .aboutIcon::before, .sellIcon::before,
+ .contactIcon::before{
+   width: max-content;
    font-size: calc(var(--btnFontSize) / 2);
    font-weight: var(--fontWeight);
    color: var(--secondaryColour);
    background-color: var(--mainColour);
    position: absolute;
    bottom: 120%;
-   right: .02px;
-   border-radius: 14%;
+   border-radius: 10%;
    padding: calc(var(--btnPadding) - .15rem) var(--btnPadding);
- } */
+   left: 50%;
+   transform: translateX(-50%) scale(0);
+   transform-origin: right;
+   transition: transform .3s ease-in-out;
+ }
 
- .aboutIcon::before{
+ .shopIcon:hover::before{
+   content:"shop";
+   transform: translateX(-50%) scale(1);
 
  }
 
- .sellIcon::before{
-
+ .shopIcon:hover::after, .aboutIcon:hover::after, .sellIcon:hover::after, .contactIcon:hover::after {
+   content: '';
+   width: 0;
+   height: 0;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 7px solid var(--mainColour);
+   position: absolute;
+   bottom: 99.5%;
+   transform: translateX(-50%);
+   left: 50%;
  }
 
- .contactIcon::before{
-
-
+ .aboutIcon:hover::before{
+   content:"About";
+   transform: translateX(-50%) scale(1);
  }
+
+ .sellIcon:hover::before{
+   content:"Sell";
+   transform: translateX(-50%) scale(1);
+ }
+
+ .contactIcon:hover::before{
+   content:"Contact";
+   transform: translateX(-50%) scale(1);
+ }
+
+
 
  /******* Cart styling *******/
 
