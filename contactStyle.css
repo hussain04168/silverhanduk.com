@@ -136,3 +136,67 @@ a{
    border-radius: 50000000000000000px;
    padding: .1rem;
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /******************
+  Footer and icons
+  within styling
+  ******************/
+
+  .footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: var(--secondaryColour);
+    box-shadow: 1px 2px 4px var(--shadowColor);
+  }
+
+  .footer .logo{
+    height: 50px;
+  }
+
+.footerHI{
+  border-right: 2px solid black;
+  padding: var(--padding);
+  margin-right: var(--margin);
+  position: relative;
+}
+
+.footerHI h3{
+
+}
+
+/* Icons in footer styling */
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+}
+
+.fa-twitter:hover{
+  color: #00acee;
+}
+
+.fa-facebook-square:hover{
+  color: #3b5998;
+}
+
+.fa-instagram:hover{
+  color: #dd2a7b;
+}
