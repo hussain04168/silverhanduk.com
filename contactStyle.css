@@ -53,16 +53,6 @@ a{
  body{
    background-color: var(--mainColour);
    font-family: 'Baloo Tamma 2', cursive;
-   display: grid;
-   grid-template-rows: repeat(7, auto);
-   grid-template-areas:
-   "header"
-   "intro"
-   "menSection"
-   "middleSlides"
-   "womenSection"
-   "sell"
-   "footer";
  }
 
 /***************************
@@ -75,7 +65,6 @@ a{
    margin-top: .5%;
    font-size: 1.3rem;
    grid-area: header;
-   top: 0;
  }
 
 
@@ -138,15 +127,35 @@ a{
  }
 
 
+/*************************
+  main section styling
+  including icons
+ *************************/
 
+ .main{
+   color: var(--secondaryColour);
+   text-align: center;
+   padding: calc( var(--padding) *1.5) 0;
+ }
 
+.page-title{
+  margin-bottom: 3%;
+  font-size: calc( var(--headingSize) * 1.1);
+}
 
+.icon{
+  border: 5px solid var(--secondaryColour);
+  border-radius: 50%;
+  padding: var(--padding);
+  width: 6%;
+  margin: 2% auto;
+}
 
+.icon a {
+  margin: 0 auto;
+  color: inherit;
 
-
-
-
-
+}
 
 
 
@@ -189,14 +198,14 @@ a{
   justify-content: space-around;
 }
 
-.fa-twitter:hover{
+.footerHI .fa-twitter:hover{
   color: #00acee;
 }
 
-.fa-facebook-square:hover{
+.footerHI .fa-facebook-square:hover{
   color: #3b5998;
 }
 
-.fa-instagram:hover{
+.footerHI .fa-instagram:hover{
   color: #dd2a7b;
 }
