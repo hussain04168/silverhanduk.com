@@ -126,6 +126,68 @@ a{
    padding: .1rem;
  }
 
+ /*******************
+   nav Icons styling
+ ********************/
+
+
+ .shopIcon, .aboutIcon, .sellIcon, .homeIcon{
+   position: relative;
+   /* transition: hover calc(var(--transition) * 2) ease-in-out; */
+ }
+
+
+ .shopIcon::before, .aboutIcon::before, .sellIcon::before,
+ .homeIcon::before{
+   width: max-content;
+   font-size: calc(var(--btnFontSize) / 2);
+   font-weight: var(--fontWeight);
+   color: var(--secondaryColour);
+   background-color: var(--mainColour);
+   position: absolute;
+   bottom: 120%;
+   border-radius: 10%;
+   padding: calc(var(--btnPadding) - .15rem) var(--btnPadding);
+   left: 50%;
+   transform: translateX(-50%) scale(0);
+   transform-origin: right;
+   transition: transform .3s ease-in-out;
+ }
+
+ .shopIcon:hover::before{
+   content:"shop";
+   transform: translateX(-50%) scale(1);
+
+ }
+
+ .shopIcon:hover::after, .aboutIcon:hover::after, .sellIcon:hover::after, .homeIcon:hover::after {
+   content: '';
+   width: 0;
+   height: 0;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 7px solid var(--mainColour);
+   position: absolute;
+   bottom: 99.5%;
+   transform: translateX(-50%);
+   left: 50%;
+ }
+
+ .aboutIcon:hover::before{
+   content:"About";
+   transform: translateX(-50%) scale(1);
+ }
+
+ .sellIcon:hover::before{
+   content:"Sell";
+   transform: translateX(-50%) scale(1);
+ }
+
+ .homeIcon:hover::before{
+   content:"Home";
+   transform: translateX(-50%) scale(1);
+ }
+
 
 /*************************
   main section styling
