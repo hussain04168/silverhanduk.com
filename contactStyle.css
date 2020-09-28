@@ -236,12 +236,9 @@ a{
     font-size: 2rem;
     font-weight: var(--fontWeight);
     padding: 0 var(--btnPadding);
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-    /* border-top-left-radius: 6%;
-    border-bottom-left-radius: 6%; */
+    border-radius: 5px;
     position: absolute;
-    transform: translateX(12%);
+    transform: translateX(10%);
     z-index: -3;
     transition: all var(--transition);
   }
@@ -256,10 +253,7 @@ a{
     font-size: 2rem;
     font-weight: var(--fontWeight);
     padding: 0 var(--btnPadding);
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-    /* border-top-left-radius: 6%;
-    border-bottom-left-radius: 6%; */
+    border-radius: 5px;
     position: absolute;
     transform: translateX(7%);
     z-index: -3;
@@ -276,10 +270,9 @@ a{
     font-size: 2rem;
     font-weight: var(--fontWeight);
     padding: 0 var(--btnPadding);
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
+    border-radius: 5px;
     position: absolute;
-    transform: translateX(10%);
+    transform: translateX(8%);
     z-index: -3;
     transition: all var(--transition);
   }
@@ -288,17 +281,16 @@ a{
 /*****envelope icon styling*****/
 
   .envelope-icon:hover::after{
-    content:'Email' ;
+    content:'Email: silverhanduk@hotmail.com' ;
     width: max-content;
     color: var(--mainColour);
     background-color: var(--secondaryColour);
     font-size: 2rem;
     font-weight: var(--fontWeight);
     padding: 0 var(--btnPadding);
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
+    border-radius: 5px;
     position: absolute;
-    transform: translateX(10%);
+    transform: translateX(1%);
     z-index: -3;
     transition: all var(--transition);
   }
@@ -306,17 +298,16 @@ a{
   /*****phone icon styling****/
 
     .phone-icon:hover::after{
-      content:'Phone' ;
+      content:'Phone: 078 7891 0567' ;
       width: max-content;
       color: var(--mainColour);
       background-color: var(--secondaryColour);
       font-size: 2rem;
       font-weight: var(--fontWeight);
       padding: 0 var(--btnPadding);
-      border-top-right-radius: 3%;
-      border-bottom-right-radius: 3%;
+      border-radius: 5px;
       position: absolute;
-      transform: translateX(10%);
+      transform: translateX(3%);
       z-index: -3;
       transition: all var(--transition);
     }
