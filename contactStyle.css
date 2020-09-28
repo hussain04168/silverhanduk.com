@@ -190,8 +190,8 @@ a{
 
 
 /*************************
-  main section styling
-  including icons
+   main section styling
+    including icons
  *************************/
 
  .main{
@@ -203,6 +203,7 @@ a{
 .page-title{
   margin-bottom: 3%;
   font-size: calc( var(--headingSize) * 1.1);
+  letter-spacing: var(--letterSpacing);
 }
 
 .icon{
@@ -211,6 +212,7 @@ a{
   padding: var(--padding);
   width: 6%;
   margin: 2% auto;
+  position: relative;
 }
 
 .icon a {
@@ -218,6 +220,107 @@ a{
   color: inherit;
 
 }
+
+.icon:hover{
+  background-color: var(--secondaryColour);
+  transition: all var(--transition);
+  color: var(--mainColour);
+}
+
+/****facebook icon styling*****/
+  .facebook-icon:hover::after{
+    content: 'Facebook';
+    width: max-content;
+    color: var(--mainColour);
+    background-color: var(--secondaryColour);
+    font-size: 2rem;
+    font-weight: var(--fontWeight);
+    padding: 0 var(--btnPadding);
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    /* border-top-left-radius: 6%;
+    border-bottom-left-radius: 6%; */
+    position: absolute;
+    transform: translateX(12%);
+    z-index: -3;
+    transition: all var(--transition);
+  }
+
+
+/*****instagram icon styling*****/
+  .instagram-icon:hover::after{
+    content: 'Instagram';
+    max-width: max-content;
+    color: var(--mainColour);
+    background-color: var(--secondaryColour);
+    font-size: 2rem;
+    font-weight: var(--fontWeight);
+    padding: 0 var(--btnPadding);
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    /* border-top-left-radius: 6%;
+    border-bottom-left-radius: 6%; */
+    position: absolute;
+    transform: translateX(7%);
+    z-index: -3;
+    transition: all var(--transition);
+  }
+
+
+/*****twitter styling*****/
+  .twitter-icon:hover::after{
+    content:'Twitter' ;
+    width: max-content;
+    color: var(--mainColour);
+    background-color: var(--secondaryColour);
+    font-size: 2rem;
+    font-weight: var(--fontWeight);
+    padding: 0 var(--btnPadding);
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    position: absolute;
+    transform: translateX(10%);
+    z-index: -3;
+    transition: all var(--transition);
+  }
+
+
+/*****envelope icon styling*****/
+
+  .envelope-icon:hover::after{
+    content:'Email' ;
+    width: max-content;
+    color: var(--mainColour);
+    background-color: var(--secondaryColour);
+    font-size: 2rem;
+    font-weight: var(--fontWeight);
+    padding: 0 var(--btnPadding);
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    position: absolute;
+    transform: translateX(10%);
+    z-index: -3;
+    transition: all var(--transition);
+  }
+
+  /*****phone icon styling****/
+
+    .phone-icon:hover::after{
+      content:'Phone' ;
+      width: max-content;
+      color: var(--mainColour);
+      background-color: var(--secondaryColour);
+      font-size: 2rem;
+      font-weight: var(--fontWeight);
+      padding: 0 var(--btnPadding);
+      border-top-right-radius: 3%;
+      border-bottom-right-radius: 3%;
+      position: absolute;
+      transform: translateX(10%);
+      z-index: -3;
+      transition: all var(--transition);
+    }
+
 
 
 
