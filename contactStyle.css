@@ -64,7 +64,6 @@ a{
    padding-bottom: var(--padding);
    margin-top: .5%;
    font-size: 1.3rem;
-   grid-area: header;
  }
 
 
@@ -91,10 +90,6 @@ a{
   margin-right: var(--margin);
  }
 
-
-  .navList li a:hover{
-    /* border-bottom: 3px solid red; */
-  }
 
   .navList img{
     height: 2rem;
@@ -313,9 +308,66 @@ a{
     }
 
 
+    /***********************
+       comment form styling
+     ***********************/
+
+     .comment-form{
+       width: 30%;
+       margin: 0 auto;
+
+     }
+
+     .form-title{
+       font-size: var(--headingSize);
+       letter-spacing: var(--letterSpacing);
+     }
+
+    .form-section{
+      display: flex;
+      flex-direction: column;
 
 
+    }
 
+    .comment{
+      resize: vertical;
+      outline: none;
+      border: none;
+    }
+
+    input[type="text"], input[type='email']{
+      padding: calc(var(--padding) / 2) 0;
+      font-size: 1.5rem;
+      border-radius: 3px;
+      outline: none;
+      border: none;
+      padding-left: 10px;
+      text-transform: capitalize;
+    }
+
+    label{
+      font-size: calc(var(--headingSize) * .75);
+      align-self: flex-start;
+    }
+
+    .submit-btn{
+      padding:  var(--btnPadding);
+      margin-top: 10px;
+      font-size: var(--btnFontSize);
+      cursor: pointer;
+      background: none;
+      border: 3px solid var(--secondaryColour);
+      color: var(--secondaryColour);
+      outline: none;
+      font-weight: var(--fontWeight);
+      border-radius: 3px;
+    }
+
+    .submit-btn:hover{
+      color: var(--mainColour);
+      background-color: var(--secondaryColour);
+    }
 
  /******************
   Footer and icons
