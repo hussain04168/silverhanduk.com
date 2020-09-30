@@ -21,6 +21,7 @@
 
       <nav class="nav">
 
+
         <ul class="navList">
           <li><a class="homeIcon" href="index.html"><i class="material-icons ">home</i></a></li>
           <li><a class="shopIcon" href="#"><i class="material-icons ">local_mall</i></a></li>
@@ -47,6 +48,40 @@
 
       <main class="main">
 
+        <!----------------------
+              comment form
+           -------------------->
+
+        <form action="" class="comment-form">
+          <h1 class="form-title">Comments</h1>
+
+          <div class="first-name-section form-section">
+            <label for="first-name" class="first-name-lable">First Name</label>
+            <input id="firt-name" type="text" required placeholder="First Name" class="first-name">
+          </div>
+
+          <div class="second-name-section form-section">
+            <label for="second-name" class="second-name">Second Name</label>
+            <input id="second-name" placeholder="Second Name" required type="text" class="second-name">
+          </div>
+
+          <div class="email-section form-section">
+            <label for="email" class="email">Email</label>
+             <input type="email" id="email" required placeholder="john.doe@email.com" class="email">
+          </div>
+
+          <div class="comment-section form-section">
+            <label for="comment" class="comment-label">Comment</label>
+             <textarea name="comment" placeholder="Please leave a comment..." id="comment" cols="30" rows="10" class="comment"></textarea>
+          </div>
+
+          <input type="submit" class="submit-btn">
+        </form>
+
+        <!------------------------
+                   icons 
+          ------------------------>
+
       <h1 class="page-title">Contact</h1>
 
       <div class="icon facebook-icon">
@@ -68,37 +103,6 @@
       <div class="icon phone-icon">
         <a href=""><i class="fa fa-phone fa-3x"></i></a>
       </div>
-
-      <!----------------------
-            comment form
-         -------------------->
-
-      <form action="" class="comment-form">
-        <h1 class="form-title">Comments</h1>
-
-        <div class="first-name-section form-section">
-          <label for="first-name" class="first-name-lable">First Name</label>
-          <input id="firt-name" type="text" required placeholder="First Name" class="first-name">
-        </div>
-
-        <div class="second-name-section form-section">
-          <label for="second-name" class="second-name">Second Name</label>
-          <input id="second-name" placeholder="Second Name" required type="text" class="second-name">
-        </div>
-
-        <div class="email-section form-section">
-          <label for="email" class="email">Email</label>
-           <input type="email" id="email" required placeholder="john.doe@email.com" class="email">
-        </div>
-
-        <div class="comment-section form-section">
-          <label for="comment" class="comment-label">Comment</label>
-           <textarea name="comment" placeholder="Please leave a comment..." id="comment" cols="30" rows="10" class="comment"></textarea>
-        </div>
-
-        <input type="submit" class="submit-btn">
-      </form>
-
 
       </main>
 
