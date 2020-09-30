@@ -201,110 +201,65 @@ a{
   letter-spacing: var(--letterSpacing);
 }
 
-.icon{
-  border: 5px solid var(--secondaryColour);
-  border-radius: 50%;
-  padding: var(--padding);
-  width: 6%;
-  margin: 2% auto;
+/***************
+  Icons within
+  body styling
+ **************/
+
+ .icon-container{
+
+ }
+
+.icon-container a {
   position: relative;
-}
-
-.icon a {
-  margin: 0 auto;
-  color: inherit;
+  color: var(--secondaryColour);
 
 }
 
-.icon:hover{
-  background-color: var(--secondaryColour);
-  transition: all var(--transition);
-  color: var(--mainColour);
+.icon-container i{
+  border: 3px solid var(--secondaryColour);
+  padding: var(--btnPadding);
+  margin-right: 1%;
 }
+
+.icon-container i:hover{
+   background-color: var(--secondaryColour);
+}
+
+.icon-container a:hover{
+   color: var(--mainColour);
+}
+
+
 
 /****facebook icon styling*****/
   .facebook-icon:hover::after{
-    content: 'Facebook';
-    width: max-content;
-    color: var(--mainColour);
-    background-color: var(--secondaryColour);
-    font-size: 2rem;
-    font-weight: var(--fontWeight);
-    padding: 0 var(--btnPadding);
-    border-radius: 5px;
-    position: absolute;
-    transform: translateX(10%);
-    z-index: -3;
-    transition: all var(--transition);
+
   }
 
 
 /*****instagram icon styling*****/
   .instagram-icon:hover::after{
-    content: 'Instagram';
-    max-width: max-content;
-    color: var(--mainColour);
-    background-color: var(--secondaryColour);
-    font-size: 2rem;
-    font-weight: var(--fontWeight);
-    padding: 0 var(--btnPadding);
-    border-radius: 5px;
-    position: absolute;
-    transform: translateX(7%);
-    z-index: -3;
-    transition: all var(--transition);
+
   }
 
 
 /*****twitter styling*****/
   .twitter-icon:hover::after{
-    content:'Twitter' ;
-    width: max-content;
-    color: var(--mainColour);
-    background-color: var(--secondaryColour);
-    font-size: 2rem;
-    font-weight: var(--fontWeight);
-    padding: 0 var(--btnPadding);
-    border-radius: 5px;
-    position: absolute;
-    transform: translateX(8%);
-    z-index: -3;
-    transition: all var(--transition);
+
   }
 
 
 /*****envelope icon styling*****/
 
   .envelope-icon:hover::after{
-    content:'Email: silverhanduk@hotmail.com' ;
-    width: max-content;
-    color: var(--mainColour);
-    background-color: var(--secondaryColour);
-    font-size: 2rem;
-    font-weight: var(--fontWeight);
-    padding: 0 var(--btnPadding);
-    border-radius: 5px;
-    position: absolute;
-    transform: translateX(1%);
-    z-index: -3;
-    transition: all var(--transition);
+
   }
 
   /*****phone icon styling****/
 
     .phone-icon:hover::after{
-      content:'Phone: 078 7891 0567' ;
-      width: max-content;
-      color: var(--mainColour);
-      background-color: var(--secondaryColour);
-      font-size: 2rem;
-      font-weight: var(--fontWeight);
-      padding: 0 var(--btnPadding);
-      border-radius: 5px;
-      position: absolute;
-      transform: translateX(3%);
-      z-index: -3;
-      transition: all var(--transition);
+
     }
 
 
