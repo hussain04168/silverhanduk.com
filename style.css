@@ -431,7 +431,7 @@ a{
     width: 95%;
     padding-bottom: var(--padding);
     margin: 0 auto calc(var(--margin) * 2.5) auto;
-    border: 3px solid var(--secondaryColour);
+    border: 5px solid var(--secondaryColour);
     position: relative;
     box-shadow: 0 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
     0 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor), 0 32px 32px
@@ -477,6 +477,27 @@ a{
   .sell-btn:hover a{
     color: var(--mainColour);
   }
+
+
+/*****sell section slides****/
+
+.sell-section-slides{
+   display: flex;
+   align-items: flex-end;
+   height: 40%;
+   width: 20%;
+   position: absolute;
+   left: 2%;
+   bottom: 2%;
+   overflow-x: hidden;
+}
+
+.sell-slide{
+  height: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
 
 
  /******************
