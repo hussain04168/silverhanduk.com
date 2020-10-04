@@ -434,7 +434,6 @@ a{
     background-color: rgba(0, 0, 0, 0.6);
     padding-bottom: var(--padding);
     margin: 0 auto calc(var(--margin) * 2.5) auto;
-    border: 5px solid var(--secondaryColour);
     position: relative;
     box-shadow: 0 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
     0 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor), 0 32px 32px
