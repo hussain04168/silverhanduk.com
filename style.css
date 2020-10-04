@@ -45,6 +45,8 @@ a{
   --addToCartColorDiluted: hsl(17, 100%, 60%);
   --sellSectionBackground: hsl(250, 100%, 90%);
   --letterSpacing: .1em;
+  --btnBorderThickness: 4px;
+  --btnBorderRadius: 4px;
 }
 
 /*********************
@@ -329,10 +331,10 @@ a{
   .shop-btn{
    padding: calc(var(--btnPadding)*1.8);
    margin: 0 auto;
-   border-radius: 3%;
+   border-radius: var(--btnBorderRadius);
    outline: none;
    cursor: pointer;
-   border: 3px solid var(--secondaryColour);
+   border: var(--btnBorderThickness) solid var(--secondaryColour);
    background: none;
   }
 
@@ -429,7 +431,7 @@ a{
     grid-area: sell;
     height: 65vh;
     width: 95%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     padding-bottom: var(--padding);
     margin: 0 auto calc(var(--margin) * 2.5) auto;
     border: 5px solid var(--secondaryColour);
@@ -455,10 +457,10 @@ a{
   .sell-btn{
     padding: calc(var(--btnPadding) * 1.1) calc(var(--btnPadding) * 2);
     margin: 0 auto;
-    border-radius: 3%;
+    border-radius: var(--btnBorderRadius);
     outline: none;
     cursor: pointer;
-    border: 5px solid var(--secondaryColour);
+    border: var(--btnBorderThickness) solid var(--secondaryColour);
     background: none;
     color: var(--secondaryColour);
     font-size: var(--btnFontSize);
@@ -498,6 +500,8 @@ a{
   height: 100%;
   width: 100%;
   flex-shrink: 0;
+  animation: fade 1.5s  ease-in-out;
+  transition: ease-in-out;
 }
 
 
