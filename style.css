@@ -429,6 +429,7 @@ a{
     grid-area: sell;
     height: 65vh;
     width: 95%;
+    background-color: rgba(0, 0, 0, 0.5);
     padding-bottom: var(--padding);
     margin: 0 auto calc(var(--margin) * 2.5) auto;
     border: 5px solid var(--secondaryColour);
@@ -457,7 +458,7 @@ a{
     border-radius: 3%;
     outline: none;
     cursor: pointer;
-    border: 3px solid var(--secondaryColour);
+    border: 5px solid var(--secondaryColour);
     background: none;
     color: var(--secondaryColour);
     font-size: var(--btnFontSize);
@@ -484,19 +485,19 @@ a{
 .sell-section-slides{
    display: flex;
    align-items: flex-end;
-   height: 40%;
-   width: 20%;
+   height: 100%;
+   width: 100%;
    position: absolute;
-   left: 2%;
-   bottom: 2%;
+   left: 0%;
+   bottom: 0%;
    overflow-x: hidden;
+   z-index: -2;
 }
 
 .sell-slide{
   height: 100%;
   width: 100%;
   flex-shrink: 0;
-  border-radius: 5px;
 }
 
 
