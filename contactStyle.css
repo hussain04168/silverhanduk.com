@@ -285,13 +285,13 @@ a{
 /*****envelope icon styling*****/
 
   .envelope-icon:hover::before{
-    content: 'silverhanduk@gmail.com';
+    content: 'email: silverhanduk@gmail.com';
   }
 
   /*****phone icon styling****/
 
     .phone-icon:hover::before{
-      content: '075 7587 8035';
+      content: 'phone: 075 7587 8035';
     }
 
 
