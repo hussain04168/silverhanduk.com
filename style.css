@@ -431,7 +431,7 @@ a{
     grid-area: sell;
     height: 75vh;
     width: 95%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.25);
     padding-bottom: var(--padding);
     margin: 0 auto calc(var(--margin) * 2.5) auto;
     position: relative;
@@ -439,6 +439,7 @@ a{
     box-shadow: 0 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
     0 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor), 0 32px 32px
     var(--shadowColor);
+
   }
 
   .Sell h3{
@@ -496,7 +497,8 @@ a{
 .sell-slide{
   height: 70%;
   width: 30%;
-
+  border: 5px solid var(--secondaryColour);
+  border-radius: 3px;
 }
 
 
