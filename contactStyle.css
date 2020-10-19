@@ -183,6 +183,35 @@ a{
    transform: translateX(-50%) scale(1);
  }
 
+ .hero{
+   position: relative;
+   height: 50vh;
+   width: 98vw;
+   background: url('Images/MaleTrainers/maleTrainer20.jpg'), rgba(0, 0, 0, .5);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin: 0 auto;
+   border: 1px solid black;
+ }
+
+ .page-title{
+   text-align: center;
+   color: var(--secondaryColour);
+   font-size: 5rem;
+   margin: 0 auto;
+   position: relative;
+ }
+
+ .dark-filter{
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   display: flex;
+   align-items: center;
+ }
+
 
 /*************************
    main section styling
