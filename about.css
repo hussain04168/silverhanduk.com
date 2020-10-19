@@ -205,25 +205,26 @@ a{
 
  .hero{
    position: relative;
-   height: 60vh;
+   height: 50vh;
    width: 98vw;
    background: url('Images/MaleTrainers/maleTrainer18.jpg'), rgba(0, 0, 0, .5);
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
    margin: 0 auto;
+   border: 1px solid black;
  }
 
  .page-title{
    text-align: center;
    color: var(--secondaryColour);
-   font-size: 5rem;
+   font-size: 4.5rem;
    margin: 0 auto;
    position: relative;
  }
 
  .dark-filter{
-   background-color: rgba(0, 0, 0, 0.6);
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
    height: 100%;
    width: 100%;
    position: absolute;
@@ -240,6 +241,26 @@ Main section styling
 
  .main{
    height: 100vh;
+ }
+
+ .paragaphs{
+   max-width: 60%;
+   margin: 0 auto;
+   color: var(--secondaryColour);
+   font-size: 22px;
+   line-height: 150%;
+ }
+
+ .para{
+   margin-top: 20px;
+ }
+
+ .social-link{
+   color: hsl(5, 70%, 40%);
+ }
+
+ .social-link:active,.social-link:hover{
+   color: hsl(5, 70%, 70%);
  }
 
 
