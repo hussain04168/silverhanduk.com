@@ -1,0 +1,277 @@
+/********************
+Google fonts import
+********************/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+/*******************************
+Reset all  margins, padding, anchor tags and
+Box-sizing
+********************************/
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+
+/********************************
+   Defining all root variables
+ *******************************/
+
+:root{
+  --mainColour: hsl(200, 6%, 10%);
+  --secondaryColour: white;
+  --shadowColor: rgba(0, 0, 0, 0.12);
+  --padding: 1em;
+  --margin: 1em;
+  --btnFontSize: 1.3rem;
+  --btnPadding: .5em;
+  --transition: .3s;
+  --fontWeight: 600;
+  --directionBtnColor: rgba(245, 245, 240, 0.3);
+  --directionBtnHoverColor: rgba(245, 245, 240, 0.75);
+  --sectionColour: hsl(216, 23%, 9%);
+  --headingSize: 2.5rem;
+  --gridGap: 1.5em;
+  --transitionTime: .3s;
+  --addToCartColor: hsl(17, 100%, 50%);
+  --addToCartColorDiluted: hsl(17, 100%, 60%);
+  --sellSectionBackground: hsl(250, 100%, 90%);
+  --letterSpacing: .1em;
+}
+
+/*********************
+        Body
+ ********************/
+
+ body{
+   background-color: var(--mainColour);
+   font-family: 'Baloo Tamma 2', cursive;
+ }
+
+/***************************
+  Header including navigation
+  and logo Styling
+ **************************/
+
+ header{
+   padding-bottom: var(--padding);
+   margin-top: .5%;
+   font-size: 1.3rem;
+ }
+
+
+ /*Navigation Container*/
+ .nav{
+   display: flex;
+   justify-content: space-between;
+   background-color: var(--secondaryColour);
+   padding: var(--padding);
+   box-shadow: 0px 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
+               0px 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor),
+               0px 32px 32px var(--shadowColor);
+ }
+
+ /* Navigation items */
+
+ .navList{
+   display: flex;
+   align-items: flex-end;
+ }
+
+ .navList li{
+  list-style: none;
+  margin-right: var(--margin);
+ }
+
+
+  .navList img{
+    height: 2rem;
+  }
+
+
+ /* logo inside Navigation */
+
+ .nav .logo{
+   height: 50px;
+   position: relative;
+ }
+
+ /*******Icons styling*********/
+
+ .shopIcon, .homeIcon, .aboutIcon, .contactIcon{
+   position: relative;
+   /* transition: hover calc(var(--transition) * 2) ease-in-out; */
+ }
+
+
+ .shopIcon::before, .homeIcon::before, .aboutIcon::before,
+ .contactIcon::before{
+   width: max-content;
+   font-size: calc(var(--btnFontSize) / 2);
+   font-weight: var(--fontWeight);
+   color: var(--secondaryColour);
+   background-color: var(--mainColour);
+   position: absolute;
+   bottom: 120%;
+   border-radius: 10%;
+   padding: calc(var(--btnPadding) - .15rem) var(--btnPadding);
+   left: 50%;
+   transform: translateX(-50%) scale(0);
+   transform-origin: right;
+   transition: transform .3s ease-in-out;
+ }
+
+ .shopIcon:hover::before{
+   content:"shop";
+   transform: translateX(-50%) scale(1);
+
+ }
+
+ .shopIcon:hover::after, .homeIcon:hover::after, .aboutIcon:hover::after, .contactIcon:hover::after {
+   content: '';
+   width: 0;
+   height: 0;
+   border-left: 5px solid transparent;
+   border-right: 5px solid transparent;
+   border-top: 7px solid var(--mainColour);
+   position: absolute;
+   bottom: 99.5%;
+   transform: translateX(-50%);
+   left: 50%;
+ }
+
+ .homeIcon:hover::before{
+   content:"Home";
+   transform: translateX(-50%) scale(1);
+ }
+
+ .aboutIcon:hover::before{
+   content:"About";
+   transform: translateX(-50%) scale(1);
+ }
+
+ .contactIcon:hover::before{
+   content:"Contact";
+   transform: translateX(-50%) scale(1);
+ }
+
+
+
+ /******* Cart styling *******/
+
+ .fa-cart-plus{
+   position: relative;
+   bottom: 5px;
+ }
+
+ .cart-item{
+   position: absolute;
+   top: -47%;
+   right: -20%;
+   font-size: .95rem;
+   background-color: var(--mainColour);
+   color: white;
+   border-radius: 50000000000000000px;
+   padding: .1rem;
+ }
+
+ /*******************
+     hero styling
+  ******************/
+
+ .hero{
+   position: relative;
+   height: 50vh;
+   width: 98vw;
+   background: url('Images/MaleTrainers/maleTrainer7.jpg'), rgba(0, 0, 0, .5);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin: 0 auto;
+   border: 1px solid black;
+ }
+
+ .page-title{
+   text-align: center;
+   color: var(--secondaryColour);
+   font-size: 4.5rem;
+   margin: 0 auto;
+   position: relative;
+ }
+
+ .dark-filter{
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   display: flex;
+   align-items: center;
+ }
+
+
+
+/************************
+  Main section styling
+ ************************/
+
+.main{
+  height: 100vh;
+}
+
+
+
+ /******************
+  Footer and icons
+  within styling
+  ******************/
+
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: var(--secondaryColour);
+    box-shadow: 1px 2px 4px var(--shadowColor);
+  }
+
+  .footer .logo{
+    height: 50px;
+  }
+
+ .footerHI{
+  border-right: 2px solid black;
+  padding: var(--padding);
+  margin-right: var(--margin);
+  position: relative;
+ }
+
+ .footerHI h3{
+
+ }
+
+ /* Icons in footer styling */
+
+ .icons{
+  display: flex;
+  justify-content: space-around;
+ }
+
+ .fa-twitter:hover{
+  color: #00acee;
+ }
+
+ .fa-facebook-square:hover{
+  color: #3b5998;
+ }
+
+ .fa-instagram:hover{
+  color: #dd2a7b;
+ }
