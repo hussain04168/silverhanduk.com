@@ -195,7 +195,7 @@ a{
    border: 1px solid black;
  }
 
- .page-title{
+ .hero-title{
    text-align: center;
    color: var(--secondaryColour);
    font-size: 5rem;
