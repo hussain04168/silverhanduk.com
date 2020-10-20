@@ -226,6 +226,56 @@ a{
   height: 100vh;
 }
 
+.sell-img-container{
+  height: 90vh;
+  width: 98vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sell-img-pair{
+  display: flex;
+  height: 33%;
+  margin-top: 10px;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid var(--secondaryColour);
+  border-right: 5px solid var(--secondaryColour);
+}
+
+.sell-img-pair p{
+  font-size: 32px;
+  color: var(--secondaryColour);
+  max-width: 300px;
+  margin-left: 10px;
+  line-height: 150%;
+  align-self: center;
+}
+
+.sell-img{
+  height: 100%;
+  width: 55%;
+}
+
+.sImg1{
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+.sImg2{
+  align-self: flex-end;
+  /* margin-right: 10px; */
+}
+
+.sImg3{
+  align-self: flex-start;
+  margin-left: 10px;
+}
+
+
+
+
 
 
  /******************
