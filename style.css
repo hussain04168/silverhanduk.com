@@ -83,6 +83,7 @@ a{
    font-size: 1.3rem;
    grid-area: header;
    height: 15vh;
+   width: 100vw;
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
@@ -272,7 +273,6 @@ margin-top: 15%;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   height: 90vh;
  }
 
  .section h3, .section h4{
@@ -292,7 +292,10 @@ margin-top: 15%;
      Men section
   *********************/
 
-
+.men-section{
+  height: 70vh;
+  margin-bottom: 10%;
+}
 
 
  .MenCollection{
@@ -302,26 +305,91 @@ margin-top: 15%;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    grid-template-rows: repeat(2, 1fr);
-   place-items: center;
+   grid-template-areas:
+   'product1 product2'
+   'product3 product4';
+   place-self: center;
+   grid-column-gap: 1%;
+   grid-row-gap: 2%;
  }
 
- .product{
-
+ .product-container{
+   height: 100%;
+   position: relative;
  }
 
+ .product-1-men{
+   grid-area: product1;
+ }
+
+.product-2-men{
+  grid-area: product2;
+}
+
+.product-3-men{
+  grid-area: product3;
+}
+
+.product-4-men{
+  grid-area: product4;
+}
+
+.product-img-men{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
 
 
 
 
- /* Women Collection */
+ /*******************
+   Women Collection
+ *******************/
+
+ .women-section{
+   height: 70vh;
+ }
 
  .WomenCollection{
    grid-area: womenSection;
-   /* max-width: 1170px; */
+   height: inherit;
    width: 90vw;
-   margin: 0 auto;
-   display: flex;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-areas:
+   'product1 product2'
+   'product3 product4';
+   place-self: center;
+   grid-column-gap: 1%;
+   grid-row-gap: 2%;
  }
+
+ .product-women-1{
+   grid-area: product1;
+ }
+
+ .product-women-2{
+   grid-area: product2;
+ }
+
+ .product-women-3{
+   grid-area: product3;
+ }
+
+ .product-women-4{
+   grid-area: product4;
+ }
+
+.product-img-women{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
 
  /* Brands section styling */
 
