@@ -223,7 +223,7 @@ a{
  ************************/
 
 .main{
-  height: 100vh;
+  height: 100%;
 }
 
 .sell-img-container{
@@ -273,6 +273,20 @@ a{
   margin-left: 10px;
 }
 
+/*******************
+   sell form styling
+ *******************/
+.form-title{
+  text-align: center;
+  color: var(--secondaryColour);
+}
+
+ .sell-form{
+   width: 30%;
+   margin: 0 auto;
+   height: 40vh;
+   margin-top: 20px;
+ }
 
 
 
