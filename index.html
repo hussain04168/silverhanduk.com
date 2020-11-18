@@ -20,26 +20,28 @@
 
 
 
-      <nav class="nav">
+      <nav class="nav-container">
 
-        <ul class="navList">
-          <li><a class="shopIcon" href="#"><i class="material-icons ">local_mall</i></a></li>
-          <li><a class="aboutIcon" href="about.html"><i class="material-icons ">view_headline</i></a></li>
+     <a  class="nav-btn" href="#"><i class="material-icons ">view_headline</i></a>
+
+        <ul id="navMenu" class="navList noDisplay">
+          <li class="aboutIcon nav-icon"> <i class="material-icons ">description</i> <a  href="about.html">About </a></li>
+
+          <li class="contactIcon nav-icon"> <i class="material-icons">mail</i> <a  href="contact.html">Contact</a></li>
+
+          <li class="sellIcon nav-icon"> <i class="material-icons">local_atm</i><a  href="sell.html"> Sell</a></li>
+
+          <li class="shopIcon nav-icon" ><i class="material-icons">local_mall</i><a  href="#"> Shop</a></li>
+
+
         </ul>
-
-        <img src="/Images/silverHandsLogo.PNG" class="logo" alt="Silver Hand UK Logo">
-
-        <ul class="navList">
-          <li><a class="sellIcon" href="sell.html"><i class="material-icons">local_atm</i></a></li>
-          <li><a class="contactIcon" href="contact.html"><i class="material-icons ">mail</i></a></li>
-          <li><i class="fa fa-cart-plus">
-              <span class="cart-item">0</span>
-            </i></li>
-        </ul>
-
-
-
       </nav>
+
+      <img src="/Images/silverHandsLogo.PNG" class="logo" alt="Silver Hand UK Logo">
+
+    <i class="fa fa-cart-plus">
+        <span class="cart-item">0</span>
+      </i>
 
 
 
@@ -75,62 +77,44 @@
     <main class="main">
 
       <!-- Men Collection -->
-      <section class=" section">
-        <h3 class="section-title">Men's Sole</h3>
+      <section class="section menSection">
 
+        <h3 class="section-title">Men's Sole</h3>
 
 
         <div class="MenCollection">
 
-          <article class="product">
-            <div class="product-img">
-              <img src="/Images/MaleTrainers/maleTrainer1.jpg" alt="product image nike airmax 720">
-              <button type="button" class="bag-btn" name="button"><i class="fa fa-cart-plus"></i> Add to cart</button>
+            <div  class="product-container product-1-men">
+              <img class="product-img" src="/Images/MaleTrainers/maleTrainer1.jpg" alt="product image nike airmax 720">
+              <h3>Nike Airmax 720</h3>
+              <h4>£70</h4>
             </div>
-            <h3>Nike Airmax 720</h3>
-            <h4>£70</h4>
-          </article>
 
-          <article class="product">
-            <div class="product-img">
-              <img src="/Images/MaleTrainers/maleTrainer2.jpg" alt="product image nike airforce 1 low">
-              <button type="button" class="bag-btn" name="button"><i class="fa fa-cart-plus"></i> Add to cart</button>
+            <div class="product-container product-2-men">
+              <img  class="product-img" src="/Images/MaleTrainers/maleTrainer2.jpg" alt="product image nike airforce 1 low">
+              <h3>Nike Airforce 1 Low</h3>
+              <h4>£50</h4>
             </div>
-            <h3>Nike Airforce 1 Low</h3>
-            <h4>£50</h4>
-          </article>
 
-          <article class="product">
-            <div class="product-img">
-              <img src="/Images/MaleTrainers/maleTrainer3.jpg" alt="product image nike airforce 1 mid">
-              <button type="button" class="bag-btn" name="button"><i class="fa fa-cart-plus"></i> Add to cart</button>
-            </div>
-            <h3>Nike Airforce 1 Mid</h3>
-            <h4>£65</h4>
-          </article>
 
-          <article class="product">
-            <div class="product-img">
-              <img src="/Images/MaleTrainers/maleTrainer4.jpg" alt="product image nike airforce 1 low">
-              <button type="button" class="bag-btn" name="button"><i class="fa fa-cart-plus"></i> Add to cart</button>
+            <div class="product-container product-3-men">
+              <img  class="product-img" src="/Images/MaleTrainers/maleTrainer3.jpg" alt="product image nike airforce 1 mid">
+              <h3>Nike Airforce 1 Mid</h3>
+              <h4>£65</h4>
             </div>
-            <h3>Nike Airforce 1 low</h3>
-            <h4>£60</h4>
-          </article>
 
-          <article class="product">
-            <div class="product-img">
-              <img src="/Images/MaleTrainers/maleTrainer5.jpg" alt="product image adidas tubular">
-              <button type="button" class="bag-btn" name="button"><i class="fa fa-cart-plus"></i> Add to cart</button>
+
+
+            <div class="product-container product-4-men" >
+              <img class="product-img" src="/Images/MaleTrainers/maleTrainer4.jpg" alt="product image nike airforce 1 low">
+              <h3>Nike Airforce 1 low</h3>
+              <h4>£60</h4>
             </div>
-            <h3>Adidas Tubular</h3>
-            <h4>£90</h4>
-          </article>
 
         </div>
 
 
-        <button type="button" class="shop-btn" name="button"><a href="#">Find your Sole</a></button>
+        <a class="shop-btn" href="#">Find your Sole</a>
 
       </section>
 
@@ -234,7 +218,7 @@
 
 
 
-      <button type="button" class="sell-btn" name="button"><a href='sell.html'>Sell your Sole</a></button>
+      <a href='sell.html'>Sell your Sole</a>
     </div>
 
     <!-----------------------------

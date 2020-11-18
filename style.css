@@ -47,6 +47,10 @@ a{
   --letterSpacing: .1em;
   --btnBorderThickness: 4px;
   --btnBorderRadius: 4px;
+  --fontColour: black;
+  --navMenuColour: snow;
+  --fontSize: 22px;
+  --navMenuPadding: 1.5em 1em;
 }
 
 /*********************
@@ -78,108 +82,92 @@ a{
    margin-top: .5%;
    font-size: 1.3rem;
    grid-area: header;
+   height: 15vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   border-bottom: 3px solid black;
  }
 
 
  /*Navigation Container*/
- .nav{
+ .nav-container{
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    background-color: var(--secondaryColour);
-   padding: var(--padding);
-   box-shadow: 0px 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
-               0px 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor),
-               0px 32px 32px var(--shadowColor);
+   position: relative;
+   margin-left: 2%;
  }
 
  /* Navigation items */
 
  .navList{
-   display: flex;
-   align-items: flex-end;
+display: flex;
+flex-direction: column;
+position: absolute;
+justify-content: space-around;
+background: var(--navMenuColour);
+width: max-content;
+height: max-content;
+top: 60%;
+left: 0%;
+z-index: 5;
+padding: var(--navMenuPadding);
+border: 1px solid black;
+margin-top: 15%;
  }
 
  .navList li{
   list-style: none;
-  margin-right: var(--margin);
+
+ }
+
+ .noDisplay{
+   display: none;
  }
 
 
-  .navList li a:hover{
-    /* border-bottom: 3px solid red; */
-  }
 
-  .navList img{
-    height: 2rem;
-  }
+
 
 
  /* logo inside Navigation */
 
- .nav .logo{
+ .nav-container + .logo{
    height: 50px;
    position: relative;
  }
 
  /*******Icons styling*********/
 
-/*
- .shopIcon, .aboutIcon, .sellIcon, .contactIcon{
-   position: relative;
-   transition: hover calc(var(--transition) * 2) ease-in-out;
- }
+.nav-icon{
+  display: flex;
+  font-size: var(--fontSize);
+  padding: 0;
+  position: relative;
+}
 
 
- .shopIcon::before, .aboutIcon::before, .sellIcon::before,
- .contactIcon::before{
-   width: max-content;
-   font-size: calc(var(--btnFontSize) / 2);
-   font-weight: var(--fontWeight);
-   color: var(--secondaryColour);
-   background-color: var(--mainColour);
-   position: absolute;
-   bottom: 120%;
-   border-radius: 10%;
-   padding: calc(var(--btnPadding) - .15rem) var(--btnPadding);
-   left: 50%;
-   transform: translateX(-50%) scale(0);
-   transform-origin: right;
-   transition: transform .3s ease-in-out;
- }
+.nav-icon a{
+  padding: 0;
+  transform: translateY(-15%);
+  font-weight: var(--fontWeight);
+  transition: color .3s ease-in-out;
+}
 
- .shopIcon:hover::before{
-   content:"shop";
-   transform: translateX(-50%) scale(1);
+.nav-icon a:hover, .nav-icon a:focus{
+  color: red;
+}
 
- }
+/****Nav button****/
 
- .shopIcon:hover::after, .aboutIcon:hover::after, .sellIcon:hover::after, .contactIcon:hover::after {
-   content: '';
-   width: 0;
-   height: 0;
-   border-left: 5px solid transparent;
-   border-right: 5px solid transparent;
-   border-top: 7px solid var(--mainColour);
-   position: absolute;
-   bottom: 99.5%;
-   transform: translateX(-50%);
-   left: 50%;
- }
+.nav-btn .material-icons{
+  font-size: calc(var(--fontSize)*1.5);
+}
 
- .aboutIcon:hover::before{
-   content:"About";
-   transform: translateX(-50%) scale(1);
- }
-
- .sellIcon:hover::before{
-   content:"Sell";
-   transform: translateX(-50%) scale(1);
- }
-
- .contactIcon:hover::before{
-   content:"Contact";
-   transform: translateX(-50%) scale(1);
- } */
+.nav-btn:hover{
+  color: rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -188,6 +176,7 @@ a{
  .fa-cart-plus{
    position: relative;
    bottom: 5px;
+   margin-right: 2%;
  }
 
  .cart-item{
@@ -196,9 +185,10 @@ a{
    right: -20%;
    font-size: .95rem;
    background-color: var(--mainColour);
-   color: white;
+   color: var(--fontColour);
    border-radius: 50000000000000000px;
    padding: .1rem;
+   border: 1px solid black;
  }
 
  /****************************
@@ -279,7 +269,6 @@ a{
  }
 
  .section{
-   margin: calc(var(--margin)*2) 0;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
@@ -287,7 +276,7 @@ a{
  }
 
  .section h3, .section h4{
-   color: white;
+   color: var(--fontColour);
    text-shadow: 1px 2px 1px black;
  }
 
@@ -297,108 +286,31 @@ a{
  }
 
 
-/***** Product Styling ****/
 
 
-.product{
-  padding-bottom: var(--padding);
-  margin-right: var(--margin)
-}
-
- .product-img{
-   position: relative;
-   overflow: hidden;
- }
-
- .product-img img{
-   position: relative;
-   height: 40%;
-   width: 40%;
-   border: 3px solid white;
-   box-shadow: 0px 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
-               0px 8px 8px var(--shadowColor);
- }
+ /********************
+     Men section
+  *********************/
 
 
 
-
-  .product-img:hover .bag-btn {
-    transform: translateX(0%);
-  }
-
-  /******************
-      Shop button
-  ******************/
-
-  .shop-btn{
-   padding: calc(var(--btnPadding)*1.8);
-   margin: 0 auto;
-   border-radius: var(--btnBorderRadius);
-   outline: none;
-   cursor: pointer;
-   border: var(--btnBorderThickness) solid var(--secondaryColour);
-   background: none;
-  }
-
-  .shop-btn a{
-    color: var(--secondaryColour);
-    font-weight: var(--fontWeight);
-    font-size: var(--btnFontSize);
-  }
-
-  .shop-btn:hover{
-    background-color: var(--secondaryColour);
-    transition: var(--transition);
-  }
-
-  .shop-btn:hover a{
-    color: black;
-    transition: var(--transition);
-  }
-
-
-
-  /**** Add to cart button styling  *****/
-
- .bag-btn{
-   padding: var(--btnPadding);
-   font-weight: var(--fontWeight);
-   position: absolute;
-   right: 0;
-   bottom: 20%;
-   transform: translateX(101%);
-   transition: all var(--transitionTime);
-   cursor: pointer;
-   background-color: var(--addToCartColor);
-   color: white;
-   border: none;
-   border-radius: 4%;
-   outline: none;
- }
-
- .bag-btn:hover{
-   background-color: var(--addToCartColorDiluted);
- }
-
-.bag-btn .fa-cart-plus{
-  margin-right: var(--margin);
-}
-
-
- /* Men Collection */
 
  .MenCollection{
    grid-area: menSection;
    width: 90vw;
-   margin: 0 auto;
-   display: flex;
-   /* align-items: center; */
+   height: inherit;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   place-items: center;
+ }
+
+ .product{
+
  }
 
 
- .product-img img{
-   width: 100%;
- }
+
 
 
  /* Women Collection */

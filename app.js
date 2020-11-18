@@ -2,6 +2,8 @@
 
 let slideIndex = 0;
 let slideIndexTwo = 0;
+let navButton = document.querySelector('.nav-btn');
+let navMenu = document.querySelector('#navMenu');
 
 
 showSlides();
@@ -31,3 +33,14 @@ function showSlidesTwo(){
   slides[slideIndexTwo - 1].style.display = 'block';
   setTimeout(showSlidesTwo, 5000);
 }
+
+function test(){
+  navMenu.classList.toggle('noDisplay');
+}
+
+
+
+
+
+
+navButton.addEventListener('click',test);
