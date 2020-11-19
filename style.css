@@ -27,11 +27,11 @@ a{
   --padding: 1em;
   --margin: 1.5rem;
   --btnFontSize: 1.3rem;
-  --btnPadding: .5em;
+  --btnPadding: .2em .5em;
   --transition: .3s;
   --fontWeight: 600;
   --headingSizeMobile: 2rem;
-  --headingSize: 2.5rem;
+  --headingSize: 3rem;
   --gridRowGap: .75rem;
   --gridColumnGap: .75rem;
   --transitionTime: .3s;
@@ -285,14 +285,49 @@ margin-top: 15%;
   font-size: var(--fontSize);
   position: absolute;
   letter-spacing: var(--letterSpacing);
+  left: 1%;
 }
 
 .men-product-description{
-  top: 40%;
+  top: 20%;
+
 }
 
 .men-product-price{
-  top: 50%;
+  top: 30%;
+}
+
+.shop-men-product-now-btn{
+  font-size: var(--fontSize);
+  color: var(--mainColour);
+  position: absolute;
+  top: 65%;
+  left: 1%;
+  font-weight: bold;
+  letter-spacing: var(--letterSpacing);
+}
+
+.shop-men-product-now-btn::after{
+  content: '\00bb';
+  font-size: var(--fontSize);
+  transition: all var(--transition);
+}
+
+.shop-men-product-now-btn:hover, .shop-men-product-now-btn:focus{
+  color: var(--secondaryColour);
+}
+
+.shop-btn-men{
+  font-size: calc(var(--fontSize)*1.2);
+  background: var(--secondaryColour);
+  color: var(--mainColour);
+  padding: var(--btnPadding);
+  transition: all var(--transition);
+}
+
+.shop-btn-men:hover{
+  background: rgba(247, 0, 13, .7);
+  transform: scale(.95);
 }
 
 
@@ -370,17 +405,21 @@ margin-top: 15%;
    height: 60vh;
 }
 
+.men-section-title{
+  font-size: var(--headingSizeMobile);
+}
+
 .men-section-product-container{
   width: 100%;
 }
 
 .men-product-description{
-  top: 40%;
+  top: 20%;
   font-size: var(--mobileFontSize);
 }
 
 .men-product-price{
-  top: 60%;
+  top: 35%;
   font-size: var(--mobileFontSize);
 }
 
