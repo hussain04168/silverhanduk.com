@@ -7,7 +7,7 @@ let navMenu = document.querySelector('#navMenu');
 
 
 showSlides();
-showSlidesTwo();
+// showSlidesTwo();
 
 
 function showSlides(){
@@ -22,17 +22,17 @@ function showSlides(){
   setTimeout(showSlides, 5000);
 }
 
-function showSlidesTwo(){
-  var i;
-  var slides = document.getElementsByClassName('middle-slide');
-   for(i = 0; i < slides.length; i++){
-     slides[i].style.display = 'none';
-   }
-   slideIndexTwo++;
-   if(slideIndexTwo > slides.length){slideIndexTwo = 1}
-  slides[slideIndexTwo - 1].style.display = 'block';
-  setTimeout(showSlidesTwo, 5000);
-}
+// function showSlidesTwo(){
+//   var i;
+//   var slides = document.getElementsByClassName('middle-slide');
+//    for(i = 0; i < slides.length; i++){
+//      slides[i].style.display = 'none';
+//    }
+//    slideIndexTwo++;
+//    if(slideIndexTwo > slides.length){slideIndexTwo = 1}
+//   slides[slideIndexTwo - 1].style.display = 'block';
+//   setTimeout(showSlidesTwo, 5000);
+// }
 
 function test(){
   navMenu.classList.toggle('noDisplay');

@@ -61,15 +61,12 @@ a{
    background-color: var(--mainColour);
    font-family: 'Baloo Tamma 2', cursive;
    display: grid;
-   grid-template-rows: repeat(7, auto);
+   grid-template-rows: repeat(3, auto);
    grid-template-areas:
    "header"
-   "intro"
-   "menSection"
-   "middleSlides"
-   "womenSection"
-   "sell"
+   "main"
    "footer";
+   grid-row-gap: 1%;
  }
 
 /***************************
@@ -79,15 +76,13 @@ a{
 
  header{
    padding-bottom: var(--padding);
-   margin-top: .5%;
    font-size: 1.3rem;
    grid-area: header;
    height: 15vh;
-   width: 100vw;
    display: flex;
    justify-content: space-between;
    align-items: flex-end;
-   border-bottom: 3px solid black;
+
  }
 
 
@@ -95,7 +90,6 @@ a{
  .nav-container{
    display: flex;
    justify-content: space-around;
-   background-color: var(--secondaryColour);
    position: relative;
    margin-left: 2%;
  }
@@ -136,7 +130,7 @@ margin-top: 15%;
 
  .nav-container + .logo{
    height: 50px;
-   position: relative;
+   align-self: center;
  }
 
  /*******Icons styling*********/
@@ -162,8 +156,10 @@ margin-top: 15%;
 
 /****Nav button****/
 
+
 .nav-btn .material-icons{
   font-size: calc(var(--fontSize)*1.5);
+
 }
 
 .nav-btn:hover{
@@ -176,8 +172,8 @@ margin-top: 15%;
 
  .fa-cart-plus{
    position: relative;
-   bottom: 5px;
    margin-right: 2%;
+   align-self: center;
  }
 
  .cart-item{
@@ -192,32 +188,37 @@ margin-top: 15%;
    border: 1px solid black;
  }
 
+
+/******************************
+    Main section styling both
+  for Men and Women selections
+ ******************************/
+
+ .main{
+ margin: 0 auto;
+ width: 90vw;
+ }
+
+
  /****************************
     Intro and middle Slides
     styling
   ***************************/
 .intro{
-  grid-area: intro;
+
+   height: 45vh;
 }
 
-.intro, .middle-slides{
- height: 45vh;
- margin-top: var(--margin);
+.intro{
  position: relative;
- box-shadow: 0px 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
-             0px 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor),
-             0px 32px 32px var(--shadowColor);
 }
 
-.middle-slides{
-  grid-area: middleSlides;
-}
 
 
 
 /* Slides Container */
 
-.slideContainer, .middle-slide-container{
+.slideContainer{
   height: 100%;
   width: 100%;
   display: flex;
@@ -227,7 +228,7 @@ margin-top: 15%;
 
 /* Slide Items  */
 
-.slide, .middle-slide{
+.slide{
   height: 100%;
   width: 100%;
   flex-shrink: 0;
@@ -247,43 +248,14 @@ margin-top: 15%;
  }
 
 
-
-
-
-
 /* Logo inside of intro styling */
 
-.intro .logo, .middle-slides .logo{
+.intro .logo{
   position: absolute;
   bottom: 2%;
   right: 2%;
   height: 50px;
 }
-
-/******************************
-    Main section styling both
-  for Men and Women selections
- ******************************/
-
- .main{
-
- }
-
- .section{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
- }
-
- .section h3, .section h4{
-   color: var(--fontColour);
-   text-shadow: 1px 2px 1px black;
- }
-
- .section-title{
-   text-align: center;
-   font-size: var(--headingSize);
- }
 
 
 
@@ -292,196 +264,9 @@ margin-top: 15%;
      Men section
   *********************/
 
-.men-section{
-  height: 70vh;
-  margin-bottom: 10%;
-}
-
-
- .MenCollection{
-   grid-area: menSection;
-   width: 90vw;
-   height: inherit;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(2, 1fr);
-   grid-template-areas:
-   'product1 product2'
-   'product3 product4';
-   place-self: center;
-   grid-column-gap: 1%;
-   grid-row-gap: 2%;
- }
-
- .product-container{
-   height: 100%;
-   position: relative;
- }
-
- .product-1-men{
-   grid-area: product1;
- }
-
-.product-2-men{
-  grid-area: product2;
-}
-
-.product-3-men{
-  grid-area: product3;
-}
-
-.product-4-men{
-  grid-area: product4;
-}
-
-.product-img-men{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-}
 
 
 
-
- /*******************
-   Women Collection
- *******************/
-
- .women-section{
-   height: 70vh;
- }
-
- .WomenCollection{
-   grid-area: womenSection;
-   height: inherit;
-   width: 90vw;
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   grid-template-rows: repeat(2, 1fr);
-   grid-template-areas:
-   'product1 product2'
-   'product3 product4';
-   place-self: center;
-   grid-column-gap: 1%;
-   grid-row-gap: 2%;
- }
-
- .product-women-1{
-   grid-area: product1;
- }
-
- .product-women-2{
-   grid-area: product2;
- }
-
- .product-women-3{
-   grid-area: product3;
- }
-
- .product-women-4{
-   grid-area: product4;
- }
-
-.product-img-women{
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-}
-
-
- /* Brands section styling */
-
- .brandsContainer{
-   margin-top: 5%;
-   height: 30vh;
- }
-
- .brandsContainer h3{
-
- }
-
- .brands{
-
- }
-
- /********************
-     Sell section
-  ********************/
-  .Sell{
-    grid-area: sell;
-    height: 75vh;
-    width: 95%;
-    background-color: rgba(0, 0, 0, 0.25);
-    padding-bottom: var(--padding);
-    margin: 0 auto calc(var(--margin) * 2.5) auto;
-    position: relative;
-    /* border: 5px solid var(--secondaryColour); */
-    box-shadow: 0 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
-    0 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor), 0 32px 32px
-    var(--shadowColor);
-
-  }
-
-  .Sell h3{
-    text-align: center;
-    margin-top: .5em;
-    font-size: calc(var(--headingSize)*1.5);
-    letter-spacing: .17em;
-  }
-
-  .sell-para{
-    color: var(--secondaryColour);
-    font-size: 2rem;
-    margin: 0 auto;
-  }
-
-  .sell-btn{
-    padding: calc(var(--btnPadding) * 1.1) calc(var(--btnPadding) * 2);
-    margin: 0 auto;
-    border-radius: var(--btnBorderRadius);
-    outline: none;
-    cursor: pointer;
-    border: var(--btnBorderThickness) solid var(--secondaryColour);
-    background: none;
-    color: var(--secondaryColour);
-    font-size: var(--btnFontSize);
-    font-weight: var(--fontWeight);
-  }
-
-  .sell-btn a{
-    color: inherit;
-    letter-spacing: var(--letterSpacing);
-  }
-
-  .sell-btn:hover{
-    transition: var(--transition);
-    background: var(--secondaryColour);
-  }
-
-  .sell-btn:hover a{
-    color: var(--mainColour);
-  }
-
-
-/*****sell section slides****/
-
-.sell-section-slides{
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   height: 30%;
-   width: 90%;
-   margin: 0 auto;
-}
-
-.sell-slide{
-  height: 70%;
-  width: 30%;
-  border: 5px solid var(--secondaryColour);
-  border-radius: 3px;
-}
 
 
  /******************
@@ -531,4 +316,21 @@ margin-top: 15%;
 
 .fa-instagram:hover{
   color: #dd2a7b;
+}
+
+
+/******************
+   Media query
+ ******************/
+
+ @media  only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+.logo{
+ transform: scale(.5);
+}
+
+
+
 }
