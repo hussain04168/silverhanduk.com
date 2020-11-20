@@ -188,10 +188,7 @@ margin-top: 15%;
 .intro{
   height: 45vh;
   margin-bottom: var(--margin);
-}
-
-.intro{
- position: relative;
+  position: relative;
 }
 
 /* Slides Container */
@@ -248,7 +245,7 @@ margin-top: 15%;
   justify-content: space-around;
   height: 80vh;
   align-items: center;
-
+  margin-bottom: var(--margin);
 }
 
 .men-section-title{
@@ -330,6 +327,29 @@ margin-top: 15%;
   transform: scale(.95);
 }
 
+/***********************
+    Middle Slides
+  *********************/
+
+.middle{
+  height: 45vh;
+  position: relative;
+  margin-bottom: var(--margin);
+}
+
+.middle .logo{
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  height: 50px;
+}
+
+.middle-slides-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+}
 
 
 
