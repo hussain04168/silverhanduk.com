@@ -363,8 +363,92 @@ margin-top: 15%;
   Women's Section
  ******************/
 
+  .women-section-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    align-items: center;
+    margin-bottom: var(--margin);
+  }
 
+  .women-section-title{
+    font-size: var(--headingSize);
+  }
 
+  .women-section-product-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 90%;
+    grid-row-gap: var(--gridRowGap);
+    grid-column-gap: var(--gridColumnGap);
+    margin-bottom: var(--margin);
+  }
+
+  .women-section-product{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .women-product-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1 ;
+  }
+
+  .women-product-description, .women-product-price{
+    color: var(--mainColour);
+    font-size: var(--fontSize);
+    position: absolute;
+    letter-spacing: var(--letterSpacing);
+    left: 1%;
+  }
+
+  .women-product-description{
+    top: 20%;
+  }
+
+  .women-product-price{
+    top: 30%;
+  }
+
+  .shop-women-product-now-btn{
+    font-size: var(--fontSize);
+    color: var(--mainColour);
+    position: absolute;
+    top: 65%;
+    left: 1%;
+    font-weight: bold;
+    letter-spacing: var(--letterSpacing);
+  }
+
+  .shop-women-product-now-btn::after{
+    content: '\00bb';
+    font-size: var(--fontSize);
+    transition: all var(--transition);
+  }
+
+  .shop-women-product-now-btn:hover, .shop-women-product-now-btn:focus{
+    color: var(--secondaryColour);
+  }
+
+  .shop-btn-women{
+    font-size: calc(var(--fontSize)*1.2);
+    background: var(--secondaryColour);
+    color: var(--mainColour);
+    padding: var(--btnPadding);
+    transition: all var(--transition);
+  }
+
+  .shop-btn-women:hover{
+    background: rgba(247, 0, 13, .7);
+    transform: scale(.95);
+  }
 
  /******************
   Footer and icons
@@ -433,24 +517,24 @@ margin-top: 15%;
 
 
 /* men section */
-.men-section-container{
+.men-section-container, .women-section-container{
    height: 60vh;
 }
 
-.men-section-title{
+.men-section-title, .women-section-title{
   font-size: var(--headingSizeMobile);
 }
 
-.men-section-product-container{
+.men-section-product-container, .women-section-product-container{
   width: 100%;
 }
 
-.men-product-description{
+.men-product-description, .women-product-description{
   top: 20%;
   font-size: var(--mobileFontSize);
 }
 
-.men-product-price{
+.men-product-price, .women-product-price{
   top: 35%;
   font-size: var(--mobileFontSize);
 }
