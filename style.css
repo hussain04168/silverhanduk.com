@@ -16,6 +16,8 @@ a{
 }
 
 
+
+
 /********************************
    Defining all root variables
  *******************************/
@@ -249,10 +251,6 @@ margin-top: 15%;
   margin-bottom: var(--margin);
 }
 
-.men-section-title{
-  font-size: var(--headingSize);
-}
-
 .men-section-product-container{
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -278,28 +276,14 @@ margin-top: 15%;
   z-index: -1 ;
 }
 
-.men-product-description,.men-product-price{
-  color: var(--mainColour);
-  font-size: var(--fontSize);
-  position: absolute;
-  letter-spacing: var(--letterSpacing);
-  left: 1%;
-}
 
-.men-product-description{
-  top: 20%;
 
-}
-
-.men-product-price{
-  top: 30%;
-}
 
 .shop-men-product-now-btn{
   font-size: var(--fontSize);
   color: var(--mainColour);
   position: absolute;
-  top: 65%;
+  bottom: 2%;
   left: 1%;
   font-weight: bold;
   letter-spacing: var(--letterSpacing);
@@ -374,9 +358,7 @@ margin-top: 15%;
     margin-bottom: var(--margin);
   }
 
-  .women-section-title{
-    font-size: var(--headingSize);
-  }
+
 
   .women-section-product-container{
     display: grid;
@@ -403,27 +385,12 @@ margin-top: 15%;
     z-index: -1 ;
   }
 
-  .women-product-description, .women-product-price{
-    color: var(--mainColour);
-    font-size: var(--fontSize);
-    position: absolute;
-    letter-spacing: var(--letterSpacing);
-    left: 1%;
-  }
-
-  .women-product-description{
-    top: 20%;
-  }
-
-  .women-product-price{
-    top: 30%;
-  }
 
   .shop-women-product-now-btn{
     font-size: var(--fontSize);
     color: var(--mainColour);
     position: absolute;
-    top: 65%;
+    bottom: 2%;
     left: 1%;
     font-weight: bold;
     letter-spacing: var(--letterSpacing);

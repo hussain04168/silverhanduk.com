@@ -34,7 +34,7 @@ function showSlidesTwo(){
   setTimeout(showSlidesTwo, 5000);
 }
 
-function test(){
+function showNav(){
   navMenu.classList.toggle('noDisplay');
 }
 
@@ -43,4 +43,4 @@ function test(){
 
 
 
-navButton.addEventListener('click',test);
+navButton.addEventListener('click',showNav);
