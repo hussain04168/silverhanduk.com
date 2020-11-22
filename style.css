@@ -64,14 +64,14 @@ a{
  **************************/
 
  header{
-   padding-bottom: var(--padding);
+   /* padding-bottom: var(--padding); */
    font-size: 1.3rem;
-   grid-area: header;
    height: 15vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
-
+   margin: 0 auto;
+   width: 90vw;
  }
 
 
@@ -80,7 +80,6 @@ a{
    display: flex;
    justify-content: space-around;
    position: relative;
-   margin-left: 2%;
  }
 
  /* Navigation items */
@@ -157,7 +156,6 @@ margin-top: 15%;
 
  .fa-cart-plus{
    position: relative;
-   margin-right: 2%;
    align-self: center;
  }
 
@@ -191,7 +189,8 @@ margin-top: 15%;
   ***************************/
 .intro{
   height: 45vh;
-  padding-bottom: var(--margin);
+  /* padding-bottom: var(--padding); */
+  margin-bottom: var(--margin);
   position: relative;
 }
 
@@ -321,7 +320,7 @@ margin-top: 15%;
 .middle{
   height: 45vh;
   position: relative;
-  padding-bottom: var(--padding);
+  margin-bottom: var(--margin);
 }
 
 .middle .logo{
@@ -482,22 +481,25 @@ margin-top: 15%;
     justify-content: center;
     align-items: center;
     height: 30vh;
-    background-color: var(--mainColour);
+    margin-top: var(--margin);
   }
 
   .footer .logo{
     height: 50px;
+
   }
 
 .footerHI{
   border-right: 2px solid black;
-  padding: var(--padding);
   margin-right: var(--margin);
+  width: 30%;
   position: relative;
+  padding: var(--padding);
 }
 
 .footerHI h3{
-
+ font-size: 1.5rem;
+ text-align: center;
 }
 
 /* Icons in footer styling */
@@ -505,6 +507,8 @@ margin-top: 15%;
 .icons{
   display: flex;
   justify-content: space-around;
+  padding: 0 var(--padding);
+
 }
 
 .fa-twitter:hover{
