@@ -29,6 +29,7 @@ a{
   --padding: 1em;
   --btnColorDilute: rgba(247, 0, 13, .7);
   --margin: 5%;
+  --padding: 5%;
   --btnFontSize: 1.3rem;
   --btnPadding: .5em;
   --transition: .3s;
@@ -190,7 +191,7 @@ margin-top: 15%;
   ***************************/
 .intro{
   height: 45vh;
-  margin-bottom: var(--margin);
+  padding-bottom: var(--margin);
   position: relative;
 }
 
@@ -248,8 +249,7 @@ margin-top: 15%;
   justify-content: space-around;
   height: 80vh;
   align-items: center;
-  margin-bottom: var(--margin);
-  padding-bottom: 2rem;
+  padding-bottom: var(--padding);
 }
 
 .men-section-product-container{
@@ -321,7 +321,7 @@ margin-top: 15%;
 .middle{
   height: 45vh;
   position: relative;
-  margin-bottom: var(--margin);
+  padding-bottom: var(--padding);
 }
 
 .middle .logo{
@@ -356,7 +356,7 @@ margin-top: 15%;
     justify-content: space-around;
     height: 80vh;
     align-items: center;
-    margin-bottom: var(--margin);
+    padding-bottom: var(--padding);
   }
 
 
