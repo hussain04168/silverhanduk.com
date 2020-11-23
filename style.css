@@ -249,6 +249,7 @@ margin-top: 15%;
   height: 80vh;
   align-items: center;
   padding-bottom: var(--padding);
+  margin-bottom: var(--margin);
 }
 
 .men-section-product-container{
@@ -356,6 +357,7 @@ margin-top: 15%;
     height: 80vh;
     align-items: center;
     padding-bottom: var(--padding);
+    margin-bottom: var(--margin);
   }
 
 
