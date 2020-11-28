@@ -181,7 +181,7 @@ margin-top: 15%;
  margin: 0 auto;
  width: 90vw;
  display: grid;
- grid-row-gap: var(--gridRowGap);
+ row-gap: var(--gridRowGap);
  }
 
 
