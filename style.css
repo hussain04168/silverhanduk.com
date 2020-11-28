@@ -180,7 +180,8 @@ margin-top: 15%;
  .main{
  margin: 0 auto;
  width: 90vw;
- display: grid; 
+ display: grid;
+ grid-row-gap: var(--gridRowGap);
  }
 
 
