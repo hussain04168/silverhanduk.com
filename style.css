@@ -528,14 +528,16 @@ margin-top: 15%;
    Media query for
    small phones
  ******************/
+ /* only screen and (-webkit-min-device-pixel-ratio: 2)  and (min-width: 320px) and (max-width: 667px),
+ only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+ only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+ only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+ only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) */
 
- @media  only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
-only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
-only screen and (                min-resolution: 192dpi) and (min-width: 320px),
-only screen and (                min-resolution: 2dppx)  and (min-width: 320px)  {
 
+ @media (-webkit-min-device-pixel-ratio: 1.25),
+ (min-resolution: 120dpi)  {
 
 .logo{
  transform: scale(.6);
@@ -552,7 +554,7 @@ only screen and (                min-resolution: 2dppx)  and (min-width: 320px) 
  ***********************/
 .men-section-container, .women-section-container{
    min-height: 60vh;
-   margin-top: var(--margin);
+   margin-top: cal(var(--margin)*2);
 }
 
 .men-section-title, .women-section-title{
