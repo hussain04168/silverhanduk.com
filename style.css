@@ -549,7 +549,7 @@ margin-top: 15%;
   men and women section
  ***********************/
 .men-section-container, .women-section-container{
-   height: 60vh;
+   min-height: 60vh;
 }
 
 .men-section-title, .women-section-title{
