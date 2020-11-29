@@ -528,16 +528,13 @@ margin-top: 15%;
    Media query for
    small phones
  ******************/
- /* only screen and (-webkit-min-device-pixel-ratio: 2)  and (min-width: 320px) and (max-width: 667px),
- only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
- only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
- only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
- only screen and (                min-resolution: 192dpi) and (min-width: 320px),
- only screen and (                min-resolution: 2dppx)  and (min-width: 320px) */
 
 
- @media (-webkit-min-device-pixel-ratio: 1.25),
- (min-resolution: 120dpi)  {
+
+ @media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)   {
 
 .logo{
  transform: scale(.6);
@@ -548,13 +545,16 @@ margin-top: 15%;
   margin-bottom: -3%;
 }
 
+.middle{
+  margin-top: var(--margin);
+}
 
 /**********************
   men and women section
  ***********************/
 .men-section-container, .women-section-container{
    min-height: 60vh;
-   margin-top: cal(var(--margin)*2);
+   margin-top: cal(var(--margin)*2.5);
 }
 
 .men-section-title, .women-section-title{
@@ -579,6 +579,10 @@ margin-top: 15%;
   Sell Section
  **************/
 
+.sell-section-container{
+  margin-top: calc(var(--margin)*2.5);
+}
+
 .sell-section-paragraph{
   font-size: var(--mobileFontSize);
   width: 80%;
@@ -588,8 +592,8 @@ margin-top: 15%;
 }
 
 /************************
-  Media Query for medium
-    phones
+  Media Query for
+    phones 5, 6
  ************************/
 
  @media only screen
@@ -599,8 +603,16 @@ margin-top: 15%;
 
     .men-section-container, .women-section-container{
        min-height: 65vh;
-       margin-top: var(--margin);
+       margin-top: calc(var(--margin)*2.5);
     }
 
+    .middle{
+      margin-top: calc(var(--margin)*2);
+    }
+
+
+    .sell-section-container{
+      margin-top: calc(var(--margin)*2.5);
+    }
 
   }
