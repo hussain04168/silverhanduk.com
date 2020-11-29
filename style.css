@@ -198,7 +198,7 @@ margin-top: 15%;
 /* Slides Container */
 
 .slideContainer{
-  height: 45vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   overflow-x: hidden;
@@ -332,7 +332,7 @@ margin-top: 15%;
 }
 
 .middle-slides-container{
-  height: 45vh;
+  height: 65vh;
   width: 100%;
   display: flex;
   overflow-x: hidden;
@@ -537,6 +537,13 @@ margin-top: 15%;
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)   {
 
+    /*****************
+      slides styling
+     ****************/
+
+     .slideContainer, .middle-slides-container{
+       height: 45vh;
+     }
 .logo{
  transform: scale(.6);
 }
@@ -547,16 +554,14 @@ margin-top: 15%;
 }
 
 .middle{
-  margin-top: var(--margin);
+
 }
 
 /**********************
   men and women section
  ***********************/
 .men-section-container, .women-section-container{
-   min-height: 60vh;
-   margin-top: cal(var(--margin)*2.5);
-   padding-top: 1.5rem;
+
 }
 
 .men-section-title, .women-section-title{
@@ -582,7 +587,7 @@ margin-top: 15%;
  **************/
 
 .sell-section-container{
-  margin-top: calc(var(--margin)*2.5);
+
 }
 
 .sell-section-paragraph{
@@ -603,19 +608,30 @@ margin-top: 15%;
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    /*****************
+      slides styling
+     ****************/
+
+     .slideContainer, .middle-slides-container{
+       height: 45vh;
+     }
+
+
+  /******************
+     Men and Women
+   *******************/
     .men-section-container, .women-section-container{
-       min-height: 65vh;
-       margin-top: calc(var(--margin)*2.5);
-       padding-top: 1.5rem;
+
+
     }
 
     .middle{
-      margin-top: calc(var(--margin)*2);
+
     }
 
 
     .sell-section-container{
-      margin-top: calc(var(--margin)*2.5);
+
     }
 
   }
