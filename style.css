@@ -592,4 +592,9 @@ margin-top: 15%;
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+    .men-section-container, .women-section-container{
+       min-height: 65vh;
+    }
+
+
   }
