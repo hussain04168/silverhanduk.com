@@ -555,6 +555,9 @@ margin-top: 15%;
 .men-section-container, .women-section-container{
    min-height: 60vh;
    margin-top: cal(var(--margin)*2.5);
+   display: grid;
+   row-gap: var(--gridRowGap);
+   place-items: center;
 }
 
 .men-section-title, .women-section-title{
@@ -602,6 +605,9 @@ margin-top: 15%;
   and (-webkit-min-device-pixel-ratio: 2) {
 
     .men-section-container, .women-section-container{
+       display: grid;
+       row-gap: var(--gridRowGap);
+       place-items: center;
        min-height: 65vh;
        margin-top: calc(var(--margin)*2.5);
     }
