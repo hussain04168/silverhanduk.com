@@ -248,7 +248,6 @@ margin-top: 15%;
   justify-content: space-around;
   height: 80vh;
   align-items: center;
-  padding-bottom: var(--padding);
   margin-bottom: var(--margin);
 }
 
@@ -356,7 +355,6 @@ margin-top: 15%;
     justify-content: space-around;
     height: 80vh;
     align-items: center;
-    padding-bottom: var(--padding);
     margin-bottom: var(--margin);
   }
 
@@ -527,13 +525,19 @@ margin-top: 15%;
 
 
 /******************
-   Media query
+   Media query for
+   small phones
  ******************/
 
  @media  only screen
   and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+
+.main{
+ display: grid;
+ row-gap: 1.5rem;
+}
 .logo{
  transform: scale(.6);
 }
@@ -580,3 +584,15 @@ margin-top: 15%;
 
 
 }
+
+/************************
+  Media Query for medium
+    phones
+ ************************/
+
+ @media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }
