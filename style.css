@@ -4,7 +4,7 @@ Reset all  margins, padding, anchor tags and
 Box-sizing
 ********************************/
 
-*{
+*, *::before, *::after{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -114,7 +114,9 @@ margin-top: 15%;
 
  .nav-container + .logo{
    height: 50px;
-
+   /* border-bottom: 2px solid black;
+   border-top: 2px solid green; */
+   margin-bottom: 2%;
  }
 
  /*******Icons styling*********/
@@ -143,7 +145,6 @@ margin-top: 15%;
 
 .nav-btn .material-icons{
   font-size: calc(var(--fontSize)*1.5);
-
 }
 
 .nav-btn:hover{
@@ -537,6 +538,14 @@ margin-top: 15%;
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)   {
 
+
+    /****************
+     Header and nav
+     ***************/
+     .nav-container + .logo{
+       margin-bottom: 1.5%;
+     }
+
     /*****************
       slides styling
      ****************/
@@ -570,7 +579,7 @@ margin-top: 15%;
 }
 
 .men-section-product-container, .women-section-product-container{
-   height: 40vh;
+   height: 30vh;
 }
 
 .men-product-description, .women-product-description{
@@ -609,6 +618,14 @@ margin-top: 15%;
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
+
+ /****************
+  Header and nav
+  ***************/
+  .nav-container + .logo{
+    margin-bottom: 2%;
+  }
+
     /*****************
       slides styling
      ****************/
@@ -622,15 +639,16 @@ margin-top: 15%;
      Men and Women
    *******************/
     .men-section-product-container, .women-section-product-container{
-       height: 40vh;
-
-    }
-
-    .middle{
+       height: 30vh;
 
     }
 
 
+
+
+/**************
+ sell section
+**************/
     .sell-section-container{
 
     }
