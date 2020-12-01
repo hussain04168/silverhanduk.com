@@ -90,14 +90,18 @@ display: flex;
 flex-direction: column;
 position: fixed;
 justify-content: space-around;
-background: rgba(0, 0, 0, .89);
+align-items: center;
+background: rgba(0, 0, 0, .95);
 width: 100%;
-height: 100%;
+height: 100vh;
 top: 0%;
 left: 0%;
 z-index: 1;
 padding: var(--navMenuPadding);
 border: 1px solid black;
+transition: all .7s ease-in-out;
+overflow-x: hidden;
+transform: translateX(-100%);
  }
 
  .navList li{
@@ -105,10 +109,17 @@ border: 1px solid black;
 
  }
 
- .noDisplay{
-   display: none;
+ .nav-close-btn{
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  color: var(--mainColour);
+  transition: color .3s ease-in-out;
  }
 
+.nav-close-btn:hover{
+  color: rgba(255, 255, 255, 0.5);
+}
 
  /* logo inside Navigation */
 
@@ -122,17 +133,23 @@ border: 1px solid black;
  /*******Icons styling*********/
 
 .nav-icon{
-  display: flex;
-  font-size: var(--fontSize);
-  padding: 0;
-  position: relative;
+  /* display: flex; */
+position: relative;
   color: white;
 }
 
+.nav-icon::after{
+  position: absolute;
+  bottom: 0%;
+  font-size: calc(var(--fontSize)*1.5);
+  transition: color .3s ease-in-out;
+}
+
+.nav-icon:hover::after{
+  color: var(--secondaryColour);
+}
 
 .nav-icon a{
-  padding: 0;
-  transform: translateY(-15%);
   font-weight: var(--fontWeight);
   transition: color .3s ease-in-out;
   color: white;
@@ -140,6 +157,26 @@ border: 1px solid black;
 
 .nav-icon a:hover, .nav-icon a:focus{
   color: red;
+}
+
+.nav-icon .material-icons{
+  font-size: calc(var(--fontSize)*1.5);
+}
+
+.aboutIcon::after{
+ content: "About";
+}
+
+.contactIcon::after{
+  content: 'Contact';
+}
+
+.sellIcon::after{
+  content: 'Sell';
+}
+
+.shopIcon::after{
+  content: 'Shop';
 }
 
 /****Nav button****/

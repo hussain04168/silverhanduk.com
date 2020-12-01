@@ -4,6 +4,8 @@ let slideIndex = 0;
 let slideIndexTwo = 0;
 let navButton = document.querySelector('.nav-btn');
 let navMenu = document.querySelector('#navMenu');
+let navCloseButton = document.querySelector('.nav-close-btn');
+let navList = document.querySelector('.navList');
 
 
 showSlides();
@@ -35,12 +37,14 @@ function showSlidesTwo(){
 }
 
 function showNav(){
-  navMenu.classList.toggle('noDisplay');
+  navMenu.style.transform = 'translateX(0%)' ;
+  
 }
 
-
-
-
-
+function closeNav(){
+  navMenu.style.transform = 'translateX(-100%)';
+}
 
 navButton.addEventListener('click',showNav);
+
+navCloseButton.addEventListener('click', closeNav);
