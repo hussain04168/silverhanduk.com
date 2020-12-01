@@ -65,7 +65,13 @@ a{
  **************************/
 
  header{
-   /* padding-bottom: var(--padding); */
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   height: auto;
+ }
+
+ .main-header{
    font-size: 1.3rem;
    height: 15vh;
    display: flex;
@@ -73,6 +79,17 @@ a{
    align-items: center;
    margin: 0 auto;
    width: 90vw;
+
+ }
+
+
+ /**Search bar**/
+
+ .search-bar-container{
+   align-self: flex-end;
+   height: 2vh;
+   margin-top: 2%;
+   margin-right: 4%;
  }
 
 
@@ -316,8 +333,6 @@ position: relative;
   height: 100%;
   z-index: -1 ;
 }
-
-
 
 
 .shop-men-product-now-btn{
