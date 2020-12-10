@@ -1,45 +1,43 @@
-
 /*******************************
 Reset all  margins, padding, anchor tags and
 Box-sizing
 ********************************/
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   color: black;
   text-decoration: none;
 }
-
-
-
 
 /********************************
    Defining all root variables
  *******************************/
 
-:root{
+:root {
   --mainColour: white;
   --secondaryColour: rgba(247, 0, 13, 1);
   --shadowColor: rgba(0, 0, 0, 0.12);
   --padding: 1em;
-  --btnColorDilute: rgba(247, 0, 13, .7);
+  --btnColorDilute: rgba(247, 0, 13, 0.7);
   --margin: 5%;
   --padding: 5%;
   --btnFontSize: 1.3rem;
-  --btnPadding: .5em;
-  --transition: .3s;
+  --btnPadding: 0.5em;
+  --transition: 0.3s;
   --fontWeight: 600;
   --headingSizeMobile: 2rem;
   --headingSize: 3rem;
-  --gridRowGap: .75rem;
-  --gridColumnGap: .75rem;
-  --transitionTime: .3s;
-  --letterSpacing: .1em;
+  --gridRowGap: 0.75rem;
+  --gridColumnGap: 0.75rem;
+  --transitionTime: 0.3s;
+  --letterSpacing: 0.1em;
   --btnBorderThickness: 4px;
   --btnBorderRadius: 4px;
   --fontColour: black;
@@ -53,48 +51,37 @@ a{
         Body
  ********************/
 
- body{
-   background-color: var(--mainColour);
-   font-family: 'Just Another Hand', cursive;
-
- }
+body {
+  background-color: var(--mainColour);
+  font-family: "Just Another Hand", cursive;
+}
 
 /***************************
   Header including navigation
   and logo Styling
  **************************/
 
- /* header{
-   display: flex;
-   flex-direction: column;
-   position: relative;
-   height: auto;
- } */
+header {
+  font-size: 1.3rem;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90vw;
+}
 
- header{
-   font-size: 1.3rem;
-   height: 15vh;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 0 auto;
-   width: 90vw;
+/**Search bar**/
 
- }
+.search-and-cart-container {
+  display: flex;
+}
 
+.search-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
 
- /**Search bar**/
-
- .search-and-cart-container{
-   display: flex;
- }
-
- .search-btn:hover{
-    color: rgba(0, 0, 0, 0.5);
- }
-
-
-.search-bar{
+.search-bar {
   position: fixed;
   top: 0;
   right: 0;
@@ -104,17 +91,16 @@ a{
   z-index: 1;
   background: white;
   transform: translateY(-100%);
-  transition: transform .65s ease-in-out;
+  transition: transform 0.65s ease-in-out;
   display: flex;
   flex-direction: column;
-
 }
 
-#userInput{
+#userInput {
   position: relative;
   /* top: 5%; */
   /* right: 50%; */
-  padding: 0 .25em;
+  padding: 0 0.25em;
   width: 80%;
   height: 2.5rem;
   border: none;
@@ -126,24 +112,22 @@ a{
   /* transform: translateX(50%); */
 }
 
-
-
-#userInput:focus{
+#userInput:focus {
   box-shadow: inset 0 2px 3px rgba(255, 0, 0, 0.5);
   outline: none;
 }
 
-.close-search-btn{
+.close-search-btn {
   position: relative;
   top: 2%;
   left: 2%;
 }
 
-.close-search-btn:hover{
+.close-search-btn:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.result-container{
+.result-container {
   height: 20vh;
   margin: 0 auto;
   margin-top: 5%;
@@ -153,7 +137,7 @@ a{
   display: flex;
 }
 
-.trainer-details{
+.trainer-details {
   /* align-self: center; */
   margin-left: 2%;
   display: flex;
@@ -163,11 +147,11 @@ a{
   /* background: red; */
 }
 
-.result-img{
+.result-img {
   height: 100%;
 }
 
-.view-btn{
+.view-btn {
   background: var(--secondaryColour);
   text-align: center;
   color: var(--mainColour);
@@ -175,163 +159,156 @@ a{
   /* padding: ; */
 }
 
-.view-btn:hover{
+.view-btn:hover {
   background: var(--btnColorDilute);
 }
 
- /*Navigation Container*/
- .nav-container{
-   display: flex;
-   justify-content: space-around;
+/*Navigation Container*/
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
 
- }
+/* Navigation items */
 
- /* Navigation items */
+.navList {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  padding: var(--navMenuPadding);
+  border: 1px solid black;
+  transition: all 0.7s ease-in-out;
+  overflow-x: hidden;
+  transform: translateX(-100%);
+}
 
- .navList{
-display: flex;
-flex-direction: column;
-position: fixed;
-justify-content: space-around;
-align-items: center;
-background: rgba(0, 0, 0, .95);
-width: 100%;
-height: 100vh;
-top: 0%;
-left: 0%;
-z-index: 1;
-padding: var(--navMenuPadding);
-border: 1px solid black;
-transition: all .7s ease-in-out;
-overflow-x: hidden;
-transform: translateX(-100%);
- }
-
- .navList li{
+.navList li {
   list-style: none;
+}
 
- }
-
- .nav-close-btn{
+.nav-close-btn {
   position: absolute;
   left: 5%;
   top: 5%;
   color: var(--mainColour);
-  transition: color .3s ease-in-out;
- }
+  transition: color 0.3s ease-in-out;
+}
 
-.nav-close-btn:hover{
+.nav-close-btn:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
- /* logo inside Navigation */
+/* logo inside Navigation */
 
- .nav-container + .logo{
-   height: 50px;
-   /* border-bottom: 2px solid black;
+.nav-container + .logo {
+  height: 50px;
+  /* border-bottom: 2px solid black;
    border-top: 2px solid green; */
-   margin-bottom: 2%;
- }
+  margin-bottom: 2%;
+}
 
- /******* nav Icons styling*********/
+/******* nav Icons styling*********/
 
-.nav-icon{
-  
+.nav-icon {
   position: relative;
   color: white;
 }
 
-.nav-icon::after{
+.nav-icon::after {
   position: absolute;
   bottom: 0%;
-  font-size: calc(var(--fontSize)*1.5);
-  transition: color .3s ease-in-out;
+  font-size: calc(var(--fontSize) * 1.5);
+  transition: color 0.3s ease-in-out;
 }
 
-.nav-icon:hover::after{
+.nav-icon:hover::after {
   color: var(--secondaryColour);
 }
 
-.nav-icon a{
+.nav-icon a {
   font-weight: var(--fontWeight);
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
   color: white;
 }
 
-.nav-icon a:hover, .nav-icon a:focus{
+.nav-icon a:hover,
+.nav-icon a:focus {
   color: red;
 }
 
-.nav-icon .material-icons{
-  font-size: calc(var(--fontSize)*1.5);
+.nav-icon .material-icons {
+  font-size: calc(var(--fontSize) * 1.5);
 }
 
-.aboutIcon::after{
- content: "About";
+.aboutIcon::after {
+  content: "About";
 }
 
-.contactIcon::after{
-  content: 'Contact';
+.contactIcon::after {
+  content: "Contact";
 }
 
-.sellIcon::after{
-  content: 'Sell';
+.sellIcon::after {
+  content: "Sell";
 }
 
-.shopIcon::after{
-  content: 'Shop';
+.shopIcon::after {
+  content: "Shop";
 }
 
 /****Nav button****/
 
-
-.nav-btn .material-icons{
-  font-size: calc(var(--fontSize)*1.5);
+.nav-btn .material-icons {
+  font-size: calc(var(--fontSize) * 1.5);
 }
 
-.nav-btn:hover{
+.nav-btn:hover {
   color: rgba(0, 0, 0, 0.5);
 }
 
+/******* Cart styling *******/
 
+.fa-cart-plus {
+  position: relative;
+  align-self: center;
+}
 
- /******* Cart styling *******/
-
- .fa-cart-plus{
-   position: relative;
-   align-self: center;
- }
-
- .cart-item{
-   position: absolute;
-   top: -47%;
-   right: -20%;
-   font-size: .95rem;
-   background-color: var(--mainColour);
-   color: var(--fontColour);
-   border-radius: 50000000000000000px;
-   padding: .1rem;
-   border: 1px solid black;
- }
-
+.cart-item {
+  position: absolute;
+  top: -47%;
+  right: -20%;
+  font-size: 0.95rem;
+  background-color: var(--mainColour);
+  color: var(--fontColour);
+  border-radius: 50000000000000000px;
+  padding: 0.1rem;
+  border: 1px solid black;
+}
 
 /******************************
     Main section styling both
   for Men and Women selections
  ******************************/
 
- .main{
- margin: 0 auto;
- width: 90vw;
- height: auto;
- }
+.main {
+  margin: 0 auto;
+  width: 90vw;
+  height: auto;
+}
 
-
- /****************************
+/****************************
     Intro and middle Slides
     styling
   ***************************/
-.intro{
+.intro {
   height: auto;
   /* padding-bottom: var(--padding); */
   margin-bottom: var(--margin);
@@ -340,53 +317,46 @@ transform: translateX(-100%);
 
 /* Slides Container */
 
-.slideContainer{
+.slideContainer {
   height: 65vh;
   width: 100%;
   display: flex;
   overflow-x: hidden;
 }
 
-
 /* Slide Items  */
 
-.slide{
+.slide {
   height: 100%;
   width: 100%;
   flex-shrink: 0;
-  animation: fade 1.5s  ease-in-out;
+  animation: fade 1.5s ease-in-out;
   transition: ease-in-out;
 }
 
-
-
- @keyframes fade {
-   from{
-     opacity: .4;
-   }
-   90%{
-     opacity: 1;
-   }
- }
-
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 1;
+  }
+}
 
 /* Logo inside of intro styling */
 
-.intro .logo{
+.intro .logo {
   position: absolute;
   bottom: 2%;
   right: 2%;
   height: 50px;
 }
 
-
-
-
- /********************
+/********************
      Men section
   *********************/
 
-.men-section-container{
+.men-section-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -395,7 +365,7 @@ transform: translateX(-100%);
   margin-bottom: var(--margin);
 }
 
-.men-section-product-container{
+.men-section-product-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -406,22 +376,21 @@ transform: translateX(-100%);
   margin-bottom: var(--margin);
 }
 
-.men-section-product{
+.men-section-product {
   height: 100%;
   width: 100%;
   position: relative;
   background: rgba(0, 0, 0, 0.5);
 }
 
-.men-product-img{
+.men-product-img {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -1 ;
+  z-index: -1;
 }
 
-
-.shop-men-product-now-btn{
+.shop-men-product-now-btn {
   font-size: var(--fontSize);
   color: var(--mainColour);
   position: absolute;
@@ -431,18 +400,19 @@ transform: translateX(-100%);
   letter-spacing: var(--letterSpacing);
 }
 
-.shop-men-product-now-btn::after{
-  content: '\00bb';
+.shop-men-product-now-btn::after {
+  content: "\00bb";
   font-size: var(--fontSize);
   transition: all var(--transition);
 }
 
-.shop-men-product-now-btn:hover, .shop-men-product-now-btn:focus{
+.shop-men-product-now-btn:hover,
+.shop-men-product-now-btn:focus {
   color: var(--secondaryColour);
 }
 
-.shop-btn-men{
-  font-size: calc(var(--fontSize)*1.2);
+.shop-btn-men {
+  font-size: calc(var(--fontSize) * 1.2);
   background: var(--secondaryColour);
   color: var(--mainColour);
   padding: var(--btnPadding);
@@ -450,40 +420,40 @@ transform: translateX(-100%);
   letter-spacing: var(--letterSpacing);
 }
 
-.shop-btn-men:hover{
+.shop-btn-men:hover {
   background: var(--btnColorDilute);
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
 /***********************
     Middle Slides
   *********************/
 
-.middle{
+.middle {
   height: auto;
   position: relative;
   margin-bottom: var(--margin);
 }
 
-.middle .logo{
+.middle .logo {
   position: absolute;
   bottom: 2%;
   right: 2%;
   height: 50px;
 }
 
-.middle-slides-container{
+.middle-slides-container {
   height: 65vh;
   width: 100%;
   display: flex;
   overflow-x: hidden;
 }
 
-.middle-slide-img{
+.middle-slide-img {
   height: 100%;
   width: 100%;
   flex-shrink: 0;
-  animation: fade 1.5s  ease-in-out;
+  animation: fade 1.5s ease-in-out;
   transition: ease-in-out;
 }
 
@@ -491,99 +461,97 @@ transform: translateX(-100%);
   Women's Section
  ******************/
 
-  .women-section-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: auto;
-    align-items: center;
-    margin-bottom: var(--margin);
-  }
-
-
-
-  .women-section-product-container{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    height: 80vh;
-    width: 100%;
-    grid-row-gap: var(--gridRowGap);
-    grid-column-gap: var(--gridColumnGap);
-    margin-bottom: var(--margin);
-  }
-
-  .women-section-product{
-    height: 100%;
-    width: 100%;
-    position: relative;
-    background: rgba(0, 0, 0, 0.5);
-  }
-
-  .women-product-img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1 ;
-  }
-
-
-  .shop-women-product-now-btn{
-    font-size: var(--fontSize);
-    color: var(--mainColour);
-    position: absolute;
-    bottom: 2%;
-    left: 1%;
-    font-weight: bold;
-    letter-spacing: var(--letterSpacing);
-  }
-
-  .shop-women-product-now-btn::after{
-    content: '\00bb';
-    font-size: var(--fontSize);
-    transition: all var(--transition);
-  }
-
-  .shop-women-product-now-btn:hover, .shop-women-product-now-btn:focus{
-    color: var(--secondaryColour);
-  }
-
-  .shop-btn-women{
-    font-size: calc(var(--fontSize)*1.2);
-    background: var(--secondaryColour);
-    color: var(--mainColour);
-    padding: var(--btnPadding);
-    transition: all var(--transition);
-    letter-spacing: var(--letterSpacing);
-  }
-
-  .shop-btn-women:hover{
-    background: var(--btnColorDilute);
-    transform: scale(.95);
-  }
-
-  /*****************
-     Sell Section
-   *****************/
-
-.sell-section-container{
-  height: 35vh;
-  position: relative;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 1.5px 1.5px 2.5px rgba(0, 0, 0, 0.5),
-  2px 2px 3px rgba(0, 0, 0, 0.5), 2.5px 2.5px 3.5px rgba(0, 0, 0, 0.5),
-  3px 3px 4px rgba(0, 0, 0, 0.5);
+.women-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+  margin-bottom: var(--margin);
 }
 
-.sell-section-img{
+.women-section-product-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+  width: 100%;
+  grid-row-gap: var(--gridRowGap);
+  grid-column-gap: var(--gridColumnGap);
+  margin-bottom: var(--margin);
+}
+
+.women-section-product {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.women-product-img {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: -1;
 }
 
-.sell-para-btn{
+.shop-women-product-now-btn {
+  font-size: var(--fontSize);
+  color: var(--mainColour);
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+  font-weight: bold;
+  letter-spacing: var(--letterSpacing);
+}
+
+.shop-women-product-now-btn::after {
+  content: "\00bb";
+  font-size: var(--fontSize);
+  transition: all var(--transition);
+}
+
+.shop-women-product-now-btn:hover,
+.shop-women-product-now-btn:focus {
+  color: var(--secondaryColour);
+}
+
+.shop-btn-women {
+  font-size: calc(var(--fontSize) * 1.2);
+  background: var(--secondaryColour);
+  color: var(--mainColour);
+  padding: var(--btnPadding);
+  transition: all var(--transition);
+  letter-spacing: var(--letterSpacing);
+}
+
+.shop-btn-women:hover {
+  background: var(--btnColorDilute);
+  transform: scale(0.95);
+}
+
+/*****************
+     Sell Section
+   *****************/
+
+.sell-section-container {
+  height: 35vh;
+  position: relative;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5),
+    1.5px 1.5px 2.5px rgba(0, 0, 0, 0.5), 2px 2px 3px rgba(0, 0, 0, 0.5),
+    2.5px 2.5px 3.5px rgba(0, 0, 0, 0.5), 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sell-section-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.sell-para-btn {
   display: flex;
   flex-direction: column;
   height: inherit;
@@ -592,46 +560,44 @@ transform: translateX(-100%);
   align-items: center;
 }
 
-.sell-section-paragraph{
-  font-size: calc(var(--fontSize)*2);
+.sell-section-paragraph {
+  font-size: calc(var(--fontSize) * 2);
   text-align: center;
   letter-spacing: var(--letterSpacing);
 }
 
-.sell-btn{
+.sell-btn {
   margin-top: var(--margin);
   color: inherit;
   padding: var(--btnPadding);
   background-color: var(--secondaryColour);
-  font-size: calc(var(--fontSize)*1.2);
+  font-size: calc(var(--fontSize) * 1.2);
   letter-spacing: var(--letterSpacing);
 }
 
-.sell-btn:hover{
+.sell-btn:hover {
   background-color: var(--btnColorDilute);
-  transform: scale(.95);
+  transform: scale(0.95);
 }
 
-
- /******************
+/******************
   Footer and icons
   within styling
   ******************/
 
-  .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    margin-top: var(--margin);
-  }
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin-top: var(--margin);
+}
 
-  .footer .logo{
-    height: 50px;
+.footer .logo {
+  height: 50px;
+}
 
-  }
-
-.footerHI{
+.footerHI {
   border-right: 2px solid black;
   margin-right: var(--margin);
   width: 30%;
@@ -639,113 +605,97 @@ transform: translateX(-100%);
   padding: var(--padding);
 }
 
-.footerHI h3{
- font-size: 1.5rem;
- text-align: center;
+.footerHI h3 {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* Icons in footer styling */
 
-.icons{
+.icons {
   display: flex;
   justify-content: space-around;
   padding: 0 var(--padding);
-
 }
 
-.fa-twitter:hover{
+.fa-twitter:hover {
   color: #00acee;
 }
 
-.fa-facebook-square:hover{
+.fa-facebook-square:hover {
   color: #3b5998;
 }
 
-.fa-instagram:hover{
+.fa-instagram:hover {
   color: #dd2a7b;
 }
-
 
 /******************
    Media query for
    small phones
  ******************/
 
-
-
- @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)   {
-
-
-    /****************
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  /****************
      Header and nav
      ***************/
-     .nav-container + .logo{
-       margin-bottom: 1.5%;
-     }
+  .nav-container + .logo {
+    margin-bottom: 1.5%;
+  }
 
-    /*****************
+  /*****************
       slides styling
      ****************/
 
-  .slideContainer, .middle-slides-container{
-       height: 45vh;
-     }
+  .slideContainer,
+  .middle-slides-container {
+    height: 45vh;
+  }
 
-.logo{
- transform: scale(.6);
-}
+  .logo {
+    transform: scale(0.6);
+  }
 
-.intro .logo, .middle .logo{
-  margin-right: -10%;
-  margin-bottom: -3%;
-}
+  .intro .logo,
+  .middle .logo {
+    margin-right: -10%;
+    margin-bottom: -3%;
+  }
 
-.middle{
-
-}
-
-/**********************
+  /**********************
   men and women section
  ***********************/
-.men-section-container, .women-section-container{
 
-}
+  .men-section-title,
+  .women-section-title {
+    font-size: var(--headingSizeMobile);
+  }
 
-.men-section-title, .women-section-title{
-  font-size: var(--headingSizeMobile);
-}
+  .men-section-product-container,
+  .women-section-product-container {
+    height: 30vh;
+  }
 
-.men-section-product-container, .women-section-product-container{
-   height: 30vh;
-}
+  .men-product-description,
+  .women-product-description {
+    top: 20%;
+    font-size: var(--mobileFontSize);
+  }
 
-.men-product-description, .women-product-description{
-  top: 20%;
-  font-size: var(--mobileFontSize);
-}
+  .men-product-price,
+  .women-product-price {
+    top: 35%;
+    font-size: var(--mobileFontSize);
+  }
 
-.men-product-price, .women-product-price{
-  top: 35%;
-  font-size: var(--mobileFontSize);
-}
-
-/**************
+  /**************
   Sell Section
  **************/
 
-.sell-section-container{
-
-}
-
-.sell-section-paragraph{
-  font-size: var(--mobileFontSize);
-  width: 80%;
-}
-
-
+  .sell-section-paragraph {
+    font-size: var(--mobileFontSize);
+    width: 80%;
+  }
 }
 
 /************************
@@ -753,42 +703,32 @@ transform: translateX(-100%);
     phones 5, 6
  ************************/
 
- @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-
- /****************
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  /****************
   Header and nav
   ***************/
-  .nav-container + .logo{
+  .nav-container + .logo {
     margin-bottom: 2%;
   }
 
-    /*****************
+  /*****************
       slides styling
      ****************/
 
-     .slideContainer, .middle-slides-container{
-       height: 45vh;
-     }
-
+  .slideContainer,
+  .middle-slides-container {
+    height: 45vh;
+  }
 
   /******************
      Men and Women
    *******************/
-    .men-section-product-container, .women-section-product-container{
-       height: 40vh;
+  .men-section-product-container,
+  .women-section-product-container {
+    height: 40vh;
+  }
 
-    }
-
-
-/**************
+  /**************
  sell section
 **************/
-    .sell-section-container{
-
-    }
-
-  }
+}
