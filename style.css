@@ -641,6 +641,16 @@ header {
     margin-bottom: 1.5%;
   }
 
+  /***** Search bar ****/
+
+  #userInput {
+    font-size: 1.5rem;
+  }
+
+  .result-container {
+    height: 13vh;
+  }
+
   /*****************
       slides styling
      ****************/
@@ -707,6 +717,16 @@ header {
   ***************/
   .nav-container + .logo {
     margin-bottom: 2%;
+  }
+
+  /******* Search bar *****/
+
+  #userInput {
+    font-size: 1.5rem;
+  }
+
+  .result-container {
+    height: 15vh;
   }
 
   /*****************
