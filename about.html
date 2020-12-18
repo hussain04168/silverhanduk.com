@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="about.css">
     <title>About silverhand</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <!-- Font Awesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google Icons link -->
@@ -16,27 +21,63 @@
     --------------------------------------->
 
     <header class="header">
+      
+      <nav class="nav-container">
+
+        <a  class="nav-btn" href="#"><i class="material-icons ">view_headline</i></a>
+   
+           <ul id="navMenu" class="navList">
+             <a href="#" class="nav-close-btn"><i class="fa fa-close fa-1x"></i></a>
+
+             <li class="nav-icon homeIcon"><a  href="index.html"><i class="material-icons ">home</i></a></li>
+   
+             <li class="nav-icon contactIcon">  <a  href="contact.html"><i class="material-icons ">mail</i></a></li>
+   
+             <li class=" nav-icon sellIcon"> <a  href="sell.html"><i class="material-icons ">local_atm</i></a></li>
+   
+             <li class=" nav-icon shopIcon" ><a  href="#"><i class="material-icons ">local_mall</i></a></li>
+   
+           </ul>
+         </nav>
+   
+         <img src="/Images/silverHandsLogo.png" class="logo" alt="Silver Hand UK Logo">
+   
+   <!-- Search bar and cart -->
+   
+        <div class="search-and-cart-container">
+   
+            <div class="search-container">
+              <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+   
+              <div class="search-bar">
+                <a href="#" class="close-search-btn"><i class="fa fa-close fa-1x"></i></a>
+   
+                <input id="userInput" class="userInput"placeholder="Search products..." type="text">
+   
+                <div class="result-container">
+   
+                 <!-- <div class="result">
+                  <img src="Images/MaleTrainers/maleTrainer1.jpg" alt="" class="result-img">
+   
+                  <div class="trainer-details">
+                  <h4 class="result-title">Nike Airmax 720</h4>
+                  <h4 class="trainer-size">Size: 9 uk</h4>
+                  <h4 class="result-price">£70</h4>
+                  <a href="#" class="view-btn">view</a>
+                  </div>
+                 </div> -->
+                  
+   
+                </div>
+   
+              </div>
+   
+            </div>
+   
+            <a href='#'><i class="fa fa-cart-plus"></i></a>
+        </div>
 
 
-
-      <nav class="nav">
-
-        <ul class="navList">
-          <li><a class="homeIcon" href="index.html"><i class="material-icons ">home</i></a></li>
-          <li><a class="shopIcon" href="#"><i class="material-icons ">local_mall</i></a></li>
-        </ul>
-
-        <img src="/Images/silverHandsLogo.PNG" class="logo" alt="Silver Hand UK Logo">
-
-        <ul class="navList">
-          <li><a class="sellIcon" href="sell.html"><i class="material-icons">local_atm</i></a></li>
-          <li><a class="contactIcon" href="contact.html"><i class="material-icons ">mail</i></a></li>
-          <li><i class="fa fa-cart-plus">
-              <span class="cart-item">0<span/>
-            </i></li>
-        </ul>
-
-      </nav>
 
     </header>
 
@@ -57,20 +98,27 @@
     <main class="main">
       <div class="paragaphs">
 
-      <p class="para">Silver Hand - Find Your Sole The place to find your sole, Silver Hand UK is the number 1 place to find your preloved trainers, all brands, sizes and colours and all footwear are good value & quality.</p>
-
-      <p class="para">Silver Hand - Find Your Sole The place to find your sole, Silver Hand UK is the number 1 place to find your preloved trainers, all brands, sizes and colours and all footwear are good value & quality.</p>
-
-      <p class="para">Silver Hand - Find Your Sole The place to find your sole, Silver Hand UK is the number 1 place to find your preloved trainers, all brands, sizes and colours and all footwear are good value & quality.</p>
-
-      <p class="para">We have all types of shoes, boots, sandals, for you, him & her. Save the planet and get yourself a pair of preloved trainers at Silver Hand UK step by step this increases Recycling & Reduces Landfill waste.</p>
-
-      <p class="para">We have all types of shoes, boots, sandals, for you, him & her. Save the planet and get yourself a pair of preloved trainers at Silver Hand UK step by step this increases Recycling & Reduces Landfill waste.</p>
-
-      <p class="para">We have all types of shoes, boots, sandals, for you, him & her. Save the planet and get yourself a pair of preloved trainers at Silver Hand UK step by step this increases Recycling & Reduces Landfill waste.</p>
-
-      <p class="para social-para">Follow our journey on our social media platforms <a href='#footer-icons' class="social-link">@SilverHandUK</a></p>
-
+        <p class="about-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Corporis quaerat assumenda mollitia nulla laudantium magnam, nisi sed sapiente 
+          nihil officiis architecto necessitatibus eveniet, totam voluptates velit expedita 
+          beatae odit? Dolorum id similique facere pariatur maiores nam doloribus officia? 
+          Dolore quasi nisi nobis esse? Rerum iure libero quas iste quidem voluptates.</p>
+        <p class="about-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Quidem, praesentium nobis voluptatum fugiat expedita tenetur at quos illum vero, 
+          corporis suscipit ex incidunt magni facilis cupiditate dolorum distinctio tempora a 
+          laborum assumenda nesciunt aut! Doloremque incidunt deserunt praesentium delectus! 
+          Ex atque nulla distinctio neque repellendus laudantium voluptas ad beatae saepe?</p>
+        <p class="about-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Quidem, praesentium nobis voluptatum fugiat expedita tenetur at quos illum vero, 
+          corporis suscipit ex incidunt magni facilis cupiditate dolorum distinctio tempora a 
+          laborum assumenda nesciunt aut! Doloremque incidunt deserunt praesentium delectus! 
+          Ex atque nulla distinctio neque repellendus laudantium voluptas ad beatae saepe?</p>
+        <p class="about-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Quidem, praesentium nobis voluptatum fugiat expedita tenetur at quos illum vero, 
+          corporis suscipit ex incidunt magni facilis cupiditate dolorum distinctio tempora a 
+          laborum assumenda nesciunt aut! Doloremque incidunt deserunt praesentium delectus! 
+          Ex atque nulla distinctio neque repellendus laudantium voluptas ad beatae <a href= '#footer-icons' class="social-link">saepe?</a></p>
+       
       </div>
 
     </main>
@@ -94,7 +142,7 @@
       <img src="/Images/silverHandsLogo.png" class="logo" alt="silver hand uk logo">
 
     </footer>
-
+    <script src="about.js"></script>
 
   </body>
 </html>
