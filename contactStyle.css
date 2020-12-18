@@ -1,21 +1,16 @@
-/********************
-Google fonts import
-********************/
-
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
-
 /*******************************
 Reset all  margins, padding, anchor tags and
 Box-sizing
 ********************************/
-
-*{
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   color: black;
   text-decoration: none;
 }
@@ -24,210 +19,330 @@ a{
    Defining all root variables
  *******************************/
 
-:root{
-  --mainColour: hsl(200, 6%, 10%);
-  --secondaryColour: white;
+:root {
+  --mainColour: white;
+  --secondaryColour: rgba(247, 0, 13, 1);
   --shadowColor: rgba(0, 0, 0, 0.12);
   --padding: 1em;
-  --margin: 1em;
+  --btnColorDilute: rgba(247, 0, 13, 0.7);
+  --margin: 5%;
+  --padding: 5%;
   --btnFontSize: 1.3rem;
-  --btnPadding: .5em;
-  --transition: .3s;
+  --btnPadding: 0.5em;
+  --transition: 0.3s;
   --fontWeight: 600;
-  --directionBtnColor: rgba(245, 245, 240, 0.3);
-  --directionBtnHoverColor: rgba(245, 245, 240, 0.75);
-  --sectionColour: hsl(216, 23%, 9%);
-  --headingSize: 2.5rem;
-  --gridGap: 1.5em;
-  --transitionTime: .3s;
-  --addToCartColor: hsl(17, 100%, 50%);
-  --addToCartColorDiluted: hsl(17, 100%, 60%);
-  --sellSectionBackground: hsl(250, 100%, 90%);
-  --letterSpacing: .1em;
+  --headingSizeMobile: 2rem;
+  --headingSize: 3rem;
+  --gridRowGap: 0.75rem;
+  --gridColumnGap: 0.75rem;
+  --transitionTime: 0.3s;
+  --letterSpacing: 0.1em;
+  --btnBorderThickness: 4px;
+  --btnBorderRadius: 4px;
+  --fontColour: black;
+  --navMenuColour: snow;
+  --fontSize: 22px;
+  --mobileFontSize: 1.5rem;
+  --navMenuPadding: 1.5em 1em;
 }
 
 /*********************
         Body
  ********************/
 
- body{
-   background-color: var(--mainColour);
-   font-family: 'Baloo Tamma 2', cursive;
- }
+body {
+  background-color: var(--mainColour);
+  font-family: "Just Another Hand", cursive;
+}
 
 /***************************
   Header including navigation
   and logo Styling
  **************************/
 
- header{
-   padding-bottom: var(--padding);
-   margin-top: .5%;
-   font-size: 1.3rem;
- }
+header {
+  font-size: 1.3rem;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90vw;
+}
 
+/**Search bar**/
 
- /*Navigation Container*/
- .nav{
-   display: flex;
-   justify-content: space-between;
-   background-color: var(--secondaryColour);
-   padding: var(--padding);
-   box-shadow: 0px 2px 2px var(--shadowColor), 0 4px 4px var(--shadowColor),
-               0px 8px 8px var(--shadowColor), 0 16px 16px var(--shadowColor),
-               0px 32px 32px var(--shadowColor);
- }
+.search-and-cart-container {
+  display: flex;
+}
 
- /* Navigation items */
+.search-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
 
- .navList{
-   display: flex;
-   align-items: flex-end;
- }
+.search-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 1;
+  background: white;
+  transform: translateY(-100%);
+  transition: transform 0.65s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
 
- .navList li{
+#userInput {
+  position: relative;
+  padding: 0 0.25em;
+  width: 80%;
+  height: 3.5rem;
+  border: none;
+  border-bottom: 2px solid rgb(131, 95, 95);
+  outline: none;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+#userInput:hover,
+#userInput:focus {
+  border: 2px solid var(--secondaryColour);
+  outline: none;
+}
+
+.close-search-btn {
+  position: relative;
+  top: 2%;
+  left: 2%;
+}
+
+.close-search-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.result {
+  height: 20vh;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 80%;
+  border-bottom: 1px solid grey;
+  padding-bottom: 2%;
+  display: flex;
+}
+
+.trainer-details {
+  /* align-self: center; */
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 70%; */
+  /* background: red; */
+}
+
+.result-img {
+  height: 100%;
+}
+
+.view-btn {
+  background: var(--secondaryColour);
+  text-align: center;
+  color: var(--mainColour);
+  font-size: 2rem;
+  /* padding: ; */
+}
+
+.view-btn:hover {
+  background: var(--btnColorDilute);
+}
+
+/*Navigation Container*/
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Navigation items */
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  padding: var(--navMenuPadding);
+  border: 1px solid black;
+  transition: all 0.7s ease-in-out;
+  overflow-x: hidden;
+  transform: translateX(-100%);
+}
+
+.navList li {
   list-style: none;
-  margin-right: var(--margin);
- }
+}
 
+.nav-close-btn {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  color: var(--mainColour);
+  transition: color 0.3s ease-in-out;
+}
 
-  .navList img{
-    height: 2rem;
-  }
+.nav-close-btn:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
 
+/* logo inside Navigation */
 
- /* logo inside Navigation */
+.nav-container + .logo {
+  height: 50px;
+  /* border-bottom: 2px solid black;
+   border-top: 2px solid green; */
+  margin-bottom: 2%;
+}
 
- .nav .logo{
-   height: 50px;
-   position: relative;
- }
+/******* nav Icons styling*********/
 
- /******* Cart styling *******/
+.nav-icon {
+  position: relative;
+  color: white;
+}
 
- .fa-cart-plus{
-   position: relative;
-   bottom: 5px;
- }
+.nav-icon::after {
+  position: absolute;
+  bottom: 0%;
+  font-size: calc(var(--fontSize) * 1.5);
+  transition: color 0.3s ease-in-out;
+}
 
- .cart-item{
-   position: absolute;
-   top: -47%;
-   right: -20%;
-   font-size: .95rem;
-   background-color: var(--mainColour);
-   color: white;
-   border-radius: 50000000000000000px;
-   padding: .1rem;
- }
+.nav-icon:hover::after {
+  color: var(--secondaryColour);
+}
 
- /*******************
-   nav Icons styling
+.nav-icon a {
+  font-weight: var(--fontWeight);
+  transition: color 0.3s ease-in-out;
+  color: white;
+}
+
+.nav-icon a:hover,
+.nav-icon a:focus {
+  color: red;
+}
+
+.nav-icon .material-icons {
+  font-size: calc(var(--fontSize) * 1.5);
+}
+
+.homeIcon::after {
+  content: "Home";
+}
+
+.contactIcon::after {
+  content: "Contact";
+}
+
+.sellIcon::after {
+  content: "Sell";
+}
+
+.shopIcon::after {
+  content: "Shop";
+}
+
+/****Nav button****/
+
+.nav-btn .material-icons {
+  font-size: calc(var(--fontSize) * 1.5);
+}
+
+.nav-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/******* Cart styling *******/
+
+.fa-cart-plus {
+  position: relative;
+  align-self: center;
+}
+
+.cart-item {
+  position: absolute;
+  top: -47%;
+  right: -20%;
+  font-size: 0.95rem;
+  background-color: var(--mainColour);
+  color: var(--fontColour);
+  border-radius: 50000000000000000px;
+  padding: 0.1rem;
+  border: 1px solid black;
+}
+
+/********************
+     Hero styling  
  ********************/
 
+.hero {
+  position: relative;
+  height: 50vh;
+  width: 90vw;
+  background: url("Images/MaleTrainers/maleTrainer20.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0 auto;
+  border: 1px solid black;
+}
 
- .shopIcon, .aboutIcon, .sellIcon, .homeIcon{
-   position: relative;
-   /* transition: hover calc(var(--transition) * 2) ease-in-out; */
- }
+.hero-title {
+  text-align: center;
+  color: var(--mainColour);
+  font-size: 5rem;
+  margin: 0 auto;
+  position: relative;
+}
 
-
- .shopIcon::before, .aboutIcon::before, .sellIcon::before,
- .homeIcon::before{
-   width: max-content;
-   font-size: calc(var(--btnFontSize) / 2);
-   font-weight: var(--fontWeight);
-   color: var(--secondaryColour);
-   background-color: var(--mainColour);
-   position: absolute;
-   bottom: 120%;
-   border-radius: 10%;
-   padding: calc(var(--btnPadding) - .15rem) var(--btnPadding);
-   left: 50%;
-   transform: translateX(-50%) scale(0);
-   transform-origin: right;
-   transition: transform .3s ease-in-out;
- }
-
- .shopIcon:hover::before{
-   content:"shop";
-   transform: translateX(-50%) scale(1);
-
- }
-
- .shopIcon:hover::after, .aboutIcon:hover::after, .sellIcon:hover::after, .homeIcon:hover::after {
-   content: '';
-   width: 0;
-   height: 0;
-   border-left: 5px solid transparent;
-   border-right: 5px solid transparent;
-   border-top: 7px solid var(--mainColour);
-   position: absolute;
-   bottom: 99.5%;
-   transform: translateX(-50%);
-   left: 50%;
- }
-
- .aboutIcon:hover::before{
-   content:"About";
-   transform: translateX(-50%) scale(1);
- }
-
- .sellIcon:hover::before{
-   content:"Sell";
-   transform: translateX(-50%) scale(1);
- }
-
- .homeIcon:hover::before{
-   content:"Home";
-   transform: translateX(-50%) scale(1);
- }
-
- .hero{
-   position: relative;
-   height: 50vh;
-   width: 98vw;
-   background: url('Images/MaleTrainers/maleTrainer20.jpg'), rgba(0, 0, 0, .5);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-   margin: 0 auto;
-   border: 1px solid black;
- }
-
- .hero-title{
-   text-align: center;
-   color: var(--secondaryColour);
-   font-size: 5rem;
-   margin: 0 auto;
-   position: relative;
- }
-
- .dark-filter{
-   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
-   height: 100%;
-   width: 100%;
-   position: absolute;
-   display: flex;
-   align-items: center;
- }
-
+.dark-filter {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
 
 /*************************
    main section styling
     including icons
  *************************/
 
- .main{
-   color: var(--secondaryColour);
-   text-align: center;
-   padding: calc( var(--padding) *1.5) 0;
- }
+.main {
+  text-align: center;
+  padding: calc(var(--padding) * 1.5) 0;
+}
 
-.page-title{
+/*****************
+   
+******************/
+
+.page-title {
   margin-bottom: 3%;
-  font-size: calc( var(--headingSize) * 1.1);
+  font-size: calc(var(--headingSize) * 1.1);
   letter-spacing: var(--letterSpacing);
+  color: black;
 }
 
 /***************
@@ -235,201 +350,81 @@ a{
   body styling
  **************/
 
- .icon-container{
-
- }
-
 .icon-container a {
   position: relative;
-  color: var(--secondaryColour);
-
+  color: black;
 }
 
-.icon-container i{
-  border: 3px solid var(--secondaryColour);
+.icon-container i {
+  border: 3px solid black;
   padding: var(--btnPadding);
   margin-right: 1%;
   position: relative;
 }
 
-.icon-container i:hover{
-   background-color: var(--secondaryColour);
+.icon-container i:hover {
+  background-color: black;
 }
 
-.icon-container a:hover{
-   color: var(--mainColour);
-}
-
-
-.facebook-icon:hover::after, .instagram-icon:hover::after,
-.twitter-icon:hover::after, .envelope-icon:hover::after,
-.phone-icon:hover::after{
-  content: '';
-  width: 0;
-  height: 0;
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 14px solid var(--secondaryColour);
-  position: absolute;
-  bottom: 300%;
-  transform: translateX(-50%);
-  left: 45%;
-}
-
-.facebook-icon:hover::before, .instagram-icon:hover::before,
-.twitter-icon:hover::before, .envelope-icon:hover::before,
-.phone-icon:hover::before{
-  width: max-content;
-  font-size: calc(var(--btnFontSize));
-  font-weight: var(--fontWeight);
+.icon-container a:hover {
   color: var(--mainColour);
-  background-color: var(--secondaryColour);
-  position: absolute;
-  bottom: 350%;
-  border-radius: 4px;
-  padding: calc(var(--btnPadding) - .35rem) var(--btnPadding);
-  left: 45%;
-  transform: translateX(-50%);
 }
-
 
 /****facebook icon styling*****/
-  .facebook-icon:hover::before{
-    content: 'Facebook';
-  }
-
 
 /*****instagram icon styling*****/
-  .instagram-icon:hover::before{
-    content: 'Instagram';
-  }
-
 
 /*****twitter styling*****/
-  .twitter-icon:hover::before{
-    content: 'Twitter';
-  }
-
 
 /*****envelope icon styling*****/
 
-  .envelope-icon:hover::before{
-    content: 'email: silverhanduk@gmail.com';
-  }
+/*****phone icon styling****/
 
-  /*****phone icon styling****/
+/***********************
+  comment form styling
+***********************/
 
-    .phone-icon:hover::before{
-      content: 'phone: 075 7587 8035';
-    }
-
-
-    /***********************
-       comment form styling
-     ***********************/
-
-     .comment-form{
-       width: 30%;
-       margin: 0 auto;
-
-     }
-
-     .form-title{
-       font-size: var(--headingSize);
-       letter-spacing: var(--letterSpacing);
-     }
-
-    .form-section{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .comment{
-      resize: vertical;
-      outline: none;
-      border: none;
-      font-size: 1.5rem;
-    }
-
-    .first-name, .second-name, .email{
-      padding: calc(var(--padding) / 2) 0;
-      font-size: 1.5rem;
-      border-radius: 3px;
-      outline: none;
-      border: none;
-      padding-left: 10px;
-      text-transform: capitalize;
-    }
-
-
-    label{
-      font-size: calc(var(--headingSize) * .75);
-      align-self: flex-start;
-    }
-
-    .submit-btn{
-      padding:  var(--btnPadding);
-      margin-top: 10px;
-      font-size: var(--btnFontSize);
-      cursor: pointer;
-      background: none;
-      border: 3px solid var(--secondaryColour);
-      color: var(--secondaryColour);
-      outline: none;
-      font-weight: var(--fontWeight);
-      border-radius: 3px;
-    }
-
-    .submit-btn:hover{
-      color: var(--mainColour);
-      background-color: var(--secondaryColour);
-    }
-
- /******************
+/******************
   Footer and icons
   within styling
   ******************/
 
-  .footer{
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
-    background-color: var(--secondaryColour);
-    box-shadow: 1px 2px 4px var(--shadowColor);
-  }
+.footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  width: 90vw;
+  background-color: var(--mainColour);
+}
 
-  .footer .logo{
-    height: 50px;
-  }
+.footer .logo {
+  height: 50px;
+}
 
-.footerHI{
+.footerHI {
   border-right: 2px solid black;
   padding: var(--padding);
   margin-right: var(--margin);
   position: relative;
 }
 
-.footerHI h3{
-
-}
-
 /* Icons in footer styling */
 
-.icons{
+.icons {
   display: flex;
   justify-content: space-around;
 }
 
-.footerHI .fa-twitter:hover{
+.footerHI .fa-twitter:hover {
   color: #00acee;
 }
 
-.footerHI .fa-facebook-square:hover{
+.footerHI .fa-facebook-square:hover {
   color: #3b5998;
 }
 
-.footerHI .fa-instagram:hover{
+.footerHI .fa-instagram:hover {
   color: #dd2a7b;
 }
