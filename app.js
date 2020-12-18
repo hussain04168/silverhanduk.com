@@ -9,6 +9,7 @@ let navList = document.querySelector('.navList');
 let closeSearchButon = document.querySelector('.close-search-btn');
 let searchBarDiv = document.querySelector('.search-bar');
 let searchButton = document.querySelector('.search-btn');
+let userInput = document.getElementById('userInput');
 
 // slide show logic
 showSlides();
@@ -209,6 +210,49 @@ searchButton.addEventListener('click', function(){
 
 closeSearchButon.addEventListener('click', function(){
   searchBarDiv.style.transform = 'translateY(-100%)';
+})
+
+userInput.addEventListener('keyUp', function(event){
+
+  let searchQuery = event.target.value.toLowerCase();
+  let resultContainer = document.querySelector('.result-container');
+  let newTrainerDiv = document.createElement('div');
+  let newTrainerImage = document.createElement('img');
+  let newViewButton = document.createElement('a');
+  let newTrainerName = document.createElement('p4');
+  let newTrainerSize = document.createElement('p4');
+  let newTrainerPrice = document.createElement('p4');
+  let newTrainerDetailsDiv = document.createElement('div');
+  
+  
+
+  function displaySearch(array){
+
+    for(let i = 0; i < array.length; i++){
+      if(array[i].gender.toLowerCase == searchQuery || array[i].brand.toLowerCase == searchQuery  || array[i].name.toLowerCase == searchQuery){
+         
+        newTrainerImage.setAttribute('src', array[i].image).classList.add('result-img');
+        newTrainerName.textContent = array[i].name;
+        newTrainerSize.textContent = 'Size: ' + array[i].size;
+        newTrainerPrice.textContent = array[i].price;
+        newViewButton.classList.add('view-btn').textContent = 'View';
+        newTrainerDetailsDiv.classList.add('trainer-details');
+        newTrainerDiv.classList.add('result');
+        newTrainerDetailsDiv.append(newTrainerName, newTrainerSize, newTrainerPrice, newViewButton);
+        newTrainerDiv.appendChild(newTrainerImage, newTrainerDetailsDiv);
+        resultContainer.appendChild(newTrainerDiv);
+      }else{
+        let noResult = document.createElement('p');
+        noResult.textContent = 'No result found';
+        noResult.style.fontSize = '1.5rem';
+        newTrainerDiv.appendChild(noResult);
+      }
+
+    }
+  }
+
+  displaySearch(itemsCollectionMen);
+  displaySearch(itemsCollectionWomen);
 
 })
 
