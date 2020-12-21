@@ -87,13 +87,14 @@ header {
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100vh;
+  min-height: 100vh;
   z-index: 1;
   background: white;
   transform: translateY(-100%);
   transition: transform 0.65s ease-in-out;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
 }
 
 #userInput {
@@ -123,6 +124,12 @@ header {
 
 .close-search-btn:hover {
   color: rgba(0, 0, 0, 0.5);
+}
+
+.result-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .result {
