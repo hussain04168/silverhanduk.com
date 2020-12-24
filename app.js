@@ -59,14 +59,14 @@ navCloseButton.addEventListener("click", closeNav);
 
 // Search bar logic
 
-// searchButton.addEventListener('click', function(){
-//   searchBarDiv.style.transform = 'translateY(0%)';
-// })
+searchButton.addEventListener("click", function () {
+  searchBarDiv.style.transform = "translateY(0%)";
+});
 
-// closeSearchButon.addEventListener('click', function(){
-//   searchBarDiv.style.transform = 'translateY(-100%)';
-// })
+closeSearchButon.addEventListener("click", function () {
+  searchBarDiv.style.transform = "translateY(-100%)";
+});
 
-// userInput.addEventListener('keyUp', function(event){
-
-// })
+userInput.addEventListener("keyup", function (event) {
+  let searchQuery = event.target.value.toLowerCase();
+});
