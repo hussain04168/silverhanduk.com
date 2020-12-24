@@ -169,7 +169,9 @@ header {
   text-align: center;
   color: var(--mainColour);
   font-size: 2rem;
-  /* padding: ; */
+  padding: 0 0.6em;
+  width: max-content;
+  height: max-content;
 }
 
 .view-btn:hover {
