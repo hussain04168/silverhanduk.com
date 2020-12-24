@@ -1,290 +1,380 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale=1.0" />
     <title>SilverHand UK</title>
     <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Font Awesome link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Google Icons link -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
   </head>
   <body>
-
     <!-------------------------------------
     Header including navigation bar and logo
     --------------------------------------->
 
     <header class="header">
-
-
       <nav class="nav-container">
-
-     <a  class="nav-btn" href="#"><i class="material-icons ">view_headline</i></a>
+        <a class="nav-btn" href="#"
+          ><i class="material-icons">view_headline</i></a
+        >
 
         <ul id="navMenu" class="navList">
-          <a href="#" class="nav-close-btn"><i class="fa fa-close fa-1x"></i></a>
-          <li class="nav-icon aboutIcon"><a  href="about.html"><i class="material-icons ">description</i></a></li>
+          <a href="#" class="nav-close-btn"
+            ><i class="fa fa-close fa-1x"></i
+          ></a>
+          <li class="nav-icon aboutIcon">
+            <a href="about.html"><i class="material-icons">description</i></a>
+          </li>
 
-          <li class="nav-icon contactIcon">  <a  href="contact.html"><i class="material-icons ">mail</i></a></li>
+          <li class="nav-icon contactIcon">
+            <a href="contact.html"><i class="material-icons">mail</i></a>
+          </li>
 
-          <li class=" nav-icon sellIcon"> <a  href="sell.html"><i class="material-icons ">local_atm</i></a></li>
+          <li class="nav-icon sellIcon">
+            <a href="sell.html"><i class="material-icons">local_atm</i></a>
+          </li>
 
-          <li class=" nav-icon shopIcon" ><a  href="#"><i class="material-icons ">local_mall</i></a></li>
-
+          <li class="nav-icon shopIcon">
+            <a href="#"><i class="material-icons">local_mall</i></a>
+          </li>
         </ul>
       </nav>
 
-      <img src="/Images/silverHandsLogo.png" class="logo" alt="Silver Hand UK Logo">
+      <img
+        src="/Images/silverHandsLogo.png"
+        class="logo"
+        alt="Silver Hand UK Logo"
+      />
 
-<!-- Search bar and cart -->
+      <!-- Search bar and cart -->
 
-     <div class="search-and-cart-container">
+      <div class="search-and-cart-container">
+        <div class="search-container">
+          <a href="search.html" class="search-btn"
+            ><i class="fa fa-search"></i
+          ></a>
 
-         <div class="search-container">
-           <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+          <div class="search-bar">
+            <a href="#" class="close-search-btn"
+              ><i class="fa fa-close fa-1x"></i
+            ></a>
 
-           <div class="search-bar">
-             <a href="#" class="close-search-btn"><i class="fa fa-close fa-1x"></i></a>
+            <input
+              id="userInput"
+              class="userInput"
+              placeholder="Search products..."
+              type="text"
+            />
 
-             <input id="userInput" class="userInput"placeholder="Search products..." type="text">
-
-             <div class="result-container">
-
+            <div class="result-container">
               <div class="result">
-               <img src="Images/MaleTrainers/maleTrainer1.jpg" alt="" class="result-img">
+                <img
+                  src="Images/MaleTrainers/maleTrainer1.jpg"
+                  alt=""
+                  class="result-img"
+                />
 
-               <div class="trainer-details">
-               <h4 class="result-title">Nike Airmax 720</h4>
-               <h4 class="trainer-size">Size: 9 uk</h4>
-               <h4 class="result-price">£70</h4>
-               <a href="#" class="view-btn">view</a>
-               </div>
+                <div class="trainer-details">
+                  <h4 class="result-title">Nike Airmax 720</h4>
+                  <h4 class="trainer-size">Size: 9 uk</h4>
+                  <h4 class="result-price">£70</h4>
+                  <a href="#" class="view-btn">view</a>
+                </div>
               </div>
-               
+
               <div class="result">
-                <img src="Images/MaleTrainers/maleTrainer2.jpg" alt="" class="result-img">
- 
+                <img
+                  src="Images/MaleTrainers/maleTrainer2.jpg"
+                  alt=""
+                  class="result-img"
+                />
+
                 <div class="trainer-details">
-                <h4 class="result-title">Nike Air force 1</h4>
-                <h4 class="trainer-size">Size: 8.5 uk</h4>
-                <h4 class="result-price">£65</h4>
-                <a href="#" class="view-btn">view</a>
+                  <h4 class="result-title">Nike Air force 1</h4>
+                  <h4 class="trainer-size">Size: 8.5 uk</h4>
+                  <h4 class="result-price">£65</h4>
+                  <a href="#" class="view-btn">view</a>
                 </div>
-               </div>
-               
+              </div>
 
-               <div class="result">
-                <img src="Images/MaleTrainers/maleTrainer3.jpg" alt="" class="result-img">
- 
+              <div class="result">
+                <img
+                  src="Images/MaleTrainers/maleTrainer3.jpg"
+                  alt=""
+                  class="result-img"
+                />
+
                 <div class="trainer-details">
-                <h4 class="result-title">Nike Air force 1 mid</h4>
-                <h4 class="trainer-size">Size: 10 uk</h4>
-                <h4 class="result-price">£75</h4>
-                <a href="#" class="view-btn">view</a>
+                  <h4 class="result-title">Nike Air force 1 mid</h4>
+                  <h4 class="trainer-size">Size: 10 uk</h4>
+                  <h4 class="result-price">£75</h4>
+                  <a href="#" class="view-btn">view</a>
                 </div>
-               </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-               
-
-             </div>
-
-           </div>
-
-         </div>
-
-         <a href='#'><i class="fa fa-cart-plus"></i></a>
-     </div>
-
-
-
+        <a href="#"><i class="fa fa-cart-plus"></i></a>
+      </div>
     </header>
-
 
     <!----------------------------------
     Main Section including Men and Women
     Selections
     ----------------------------------->
     <main class="main">
-
-
-    <!------------------------------------
+      <!------------------------------------
        Home page intro including slides
     -------------------------------------->
 
-    <div class="intro">
-
+      <div class="intro">
         <!-- Slide Container -->
 
-      <div class="slideContainer">
-        <img src="/Images/slideImages/introImage1.jpg" class="slide" alt="slide image 1">
-        <img src="/Images/slideImages/introImage2.jpg" class="slide" alt=" slide image 2">
-        <img src="/Images/slideImages/introImage3.jpg" class="slide" alt="slide image 3">
-        <img src="/Images/slideImages/introImage4.jpg" class="slide" alt="slide image 4">
-        <img src="/Images/slideImages/introImage5.jpg" class="slide" alt="slide image 5">
+        <div class="slideContainer">
+          <img
+            src="/Images/slideImages/introImage1.jpg"
+            class="slide"
+            alt="slide image 1"
+          />
+          <img
+            src="/Images/slideImages/introImage2.jpg"
+            class="slide"
+            alt=" slide image 2"
+          />
+          <img
+            src="/Images/slideImages/introImage3.jpg"
+            class="slide"
+            alt="slide image 3"
+          />
+          <img
+            src="/Images/slideImages/introImage4.jpg"
+            class="slide"
+            alt="slide image 4"
+          />
+          <img
+            src="/Images/slideImages/introImage5.jpg"
+            class="slide"
+            alt="slide image 5"
+          />
+        </div>
+
+        <!-- COMPANY LOGO  -->
+
+        <img
+          src="/Images/silverHandsLogo.png"
+          class="logo"
+          alt="silver hand uk logo"
+        />
       </div>
-
-      <!-- COMPANY LOGO  -->
-
-      <img src="/Images/silverHandsLogo.png" class="logo" alt="silver hand uk logo">
-
-    </div>
-
-
 
       <!--***************
            Men Collection
         ******************-->
 
-        <div class="men-section-container">
+      <div class="men-section-container">
+        <div class="men-section-product-container">
+          <div class="men-section-product men-product-1">
+            <img
+              src="Images/MaleTrainers/maleTrainer1.jpg"
+              alt=""
+              class="men-product-img"
+            />
 
-
-          <div class="men-section-product-container">
-
-            <div class="men-section-product men-product-1">
-              <img src="Images/MaleTrainers/maleTrainer1.jpg" alt="" class="men-product-img">
-
-              <a href="" class="shop-men-product-now-btn">Shop now</a>
-            </div>
-
-            <div class="men-section-product men-product-2">
-              <img src="Images/MaleTrainers/maleTrainer2.jpg" alt="" class="men-product-img">
-
-              <a href="" class="shop-men-product-now-btn">Shop now</a>
-            </div>
-
-            <div class="men-section-product men-product-3">
-              <img src="Images/MaleTrainers/maleTrainer3.jpg" alt="" class="men-product-img">
-
-              <a href="" class="shop-men-product-now-btn">Shop now</a>
-            </div>
-
-            <div class="men-section-product men-product-4">
-              <img src="Images/MaleTrainers/maleTrainer4.jpg" alt="" class="men-product-img">
-
-              <a href="" class="shop-men-product-now-btn">Shop now</a>
-            </div>
-
+            <a href="" class="shop-men-product-now-btn">Shop now</a>
           </div>
 
-          <a href="#" class="shop-btn-men">Find Your Sole</a>
+          <div class="men-section-product men-product-2">
+            <img
+              src="Images/MaleTrainers/maleTrainer2.jpg"
+              alt=""
+              class="men-product-img"
+            />
+
+            <a href="" class="shop-men-product-now-btn">Shop now</a>
+          </div>
+
+          <div class="men-section-product men-product-3">
+            <img
+              src="Images/MaleTrainers/maleTrainer3.jpg"
+              alt=""
+              class="men-product-img"
+            />
+
+            <a href="" class="shop-men-product-now-btn">Shop now</a>
+          </div>
+
+          <div class="men-section-product men-product-4">
+            <img
+              src="Images/MaleTrainers/maleTrainer4.jpg"
+              alt=""
+              class="men-product-img"
+            />
+
+            <a href="" class="shop-men-product-now-btn">Shop now</a>
+          </div>
         </div>
 
-
-
+        <a href="#" class="shop-btn-men">Find Your Sole</a>
+      </div>
 
       <!---***************************
                 Middle slides
        *****************************-->
-     <div class="middle">
-
-       <div class="middle-slides-container">
-         <img src="/Images/slideImages/introImage1.jpg" alt="" class="middle-slide-img">
-         <img src="/Images/slideImages/introImage2.jpg" alt="" class="middle-slide-img">
-         <img src="/Images/slideImages/introImage3.jpg" alt="" class="middle-slide-img">
-         <img src="/Images/slideImages/introImage4.jpg" alt="" class="middle-slide-img">
-         <img src="/Images/slideImages/introImage5.jpg" alt="" class="middle-slide-img">
-       </div>
-       <img src="/Images/silverHandsLogo.png" alt="" class="logo">
-
-     </div>
-
-
+      <div class="middle">
+        <div class="middle-slides-container">
+          <img
+            src="/Images/slideImages/introImage1.jpg"
+            alt=""
+            class="middle-slide-img"
+          />
+          <img
+            src="/Images/slideImages/introImage2.jpg"
+            alt=""
+            class="middle-slide-img"
+          />
+          <img
+            src="/Images/slideImages/introImage3.jpg"
+            alt=""
+            class="middle-slide-img"
+          />
+          <img
+            src="/Images/slideImages/introImage4.jpg"
+            alt=""
+            class="middle-slide-img"
+          />
+          <img
+            src="/Images/slideImages/introImage5.jpg"
+            alt=""
+            class="middle-slide-img"
+          />
+        </div>
+        <img src="/Images/silverHandsLogo.png" alt="" class="logo" />
+      </div>
 
       <!--****************
          Women Collection
         *****************-->
 
-        <div class="women-section-container">
+      <div class="women-section-container">
+        <div class="women-section-product-container">
+          <div class="women-section-product women-product-1">
+            <img
+              src="/Images/FemaleTrainers/femaletrainer1.jpg"
+              alt=""
+              class="women-product-img"
+            />
 
-
-          <div class="women-section-product-container">
-
-            <div class="women-section-product women-product-1">
-
-              <img src="/Images/FemaleTrainers/femaletrainer1.jpg" alt="" class="women-product-img">
-
-              <a href="" class="shop-women-product-now-btn">Shop now</a>
-
-            </div>
-
-            <div class="women-section-product women-product-2">
-
-              <img src="/Images/FemaleTrainers/femaletrainer2.jpg" alt="" class="women-product-img">
-
-              <a href="" class="shop-women-product-now-btn">Shop now</a>
-
-            </div>
-
-            <div class="women-section-product women-product-3">
-
-              <img src="/Images/FemaleTrainers/femaletrainer3.jpg" alt="" class="women-product-img">
-
-              <a href="" class="shop-women-product-now-btn">Shop now</a>
-
-            </div>
-
-            <div class="women-section-product women-product-4">
-
-              <img src="/Images/FemaleTrainers/femaletrainer4.jpg" alt="" class="women-product-img">
-
-              <a href="" class="shop-women-product-now-btn">Shop now</a>
-
-            </div>
-
+            <a href="" class="shop-women-product-now-btn">Shop now</a>
           </div>
+
+          <div class="women-section-product women-product-2">
+            <img
+              src="/Images/FemaleTrainers/femaletrainer2.jpg"
+              alt=""
+              class="women-product-img"
+            />
+
+            <a href="" class="shop-women-product-now-btn">Shop now</a>
+          </div>
+
+          <div class="women-section-product women-product-3">
+            <img
+              src="/Images/FemaleTrainers/femaletrainer3.jpg"
+              alt=""
+              class="women-product-img"
+            />
+
+            <a href="" class="shop-women-product-now-btn">Shop now</a>
+          </div>
+
+          <div class="women-section-product women-product-4">
+            <img
+              src="/Images/FemaleTrainers/femaletrainer4.jpg"
+              alt=""
+              class="women-product-img"
+            />
+
+            <a href="" class="shop-women-product-now-btn">Shop now</a>
+          </div>
+        </div>
 
         <a href="#" class="shop-btn-women">Find Your Sole</a>
       </div>
 
-
       <!--***********************
           Customer sell section
        *************************-->
-       <div class="sell-section-container">
+      <div class="sell-section-container">
+        <img
+          src="/Images/slideImages/footImage1.jpg"
+          alt="Image of trainer boxes"
+          class="sell-section-img"
+        />
 
-         <img src="/Images/slideImages/footImage1.jpg" alt="Image of trainer boxes" class="sell-section-img">
-
-         <div class='sell-para-btn'>
-         <p class="sell-section-paragraph">If you got any footwear that you no longer love
-           why not sell it to us and earn some money</p>
-         <a href="sell.html" class="sell-btn">Sell Sole</a>
-         </div>
-
-       </div>
-
+        <div class="sell-para-btn">
+          <p class="sell-section-paragraph">
+            If you got any footwear that you no longer love why not sell it to
+            us and earn some money
+          </p>
+          <a href="sell.html" class="sell-btn">Sell Sole</a>
+        </div>
+      </div>
     </main>
-
-
 
     <!-----------------------------
           Footer With Icons
      ----------------------------->
 
     <footer class="footer">
-
       <div class="footerHI">
-      <h3>Connect with us</h3>
+        <h3>Connect with us</h3>
 
-      <!-- ICONS CONTAINER -->
-      <div class="icons">
-        <a href="https://twitter.com/SilverHandUK" title='Twitter' target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-        <a href="https://facebook.com/SilverHandUK" title="Facebook" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-        <a href="https://instagram.com/SilverHandUK" title="Instagram" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+        <!-- ICONS CONTAINER -->
+        <div class="icons">
+          <a
+            href="https://twitter.com/SilverHandUK"
+            title="Twitter"
+            target="_blank"
+            ><i class="fa fa-twitter fa-2x"></i
+          ></a>
+          <a
+            href="https://facebook.com/SilverHandUK"
+            title="Facebook"
+            target="_blank"
+            ><i class="fa fa-facebook-square fa-2x"></i
+          ></a>
+          <a
+            href="https://instagram.com/SilverHandUK"
+            title="Instagram"
+            target="_blank"
+            ><i class="fa fa-instagram fa-2x"></i
+          ></a>
+        </div>
       </div>
-      </div>
-      <img src="/Images/silverHandsLogo.png" class="logo" alt="silver hand uk logo">
-
+      <img
+        src="/Images/silverHandsLogo.png"
+        class="logo"
+        alt="silver hand uk logo"
+      />
     </footer>
 
     <script src="app.js"></script>
-
-
-
   </body>
 </html>
