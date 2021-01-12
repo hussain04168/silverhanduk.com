@@ -351,6 +351,48 @@ header {
 }
 
 /**** Filter section ****/
+.filters-container ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.filters-container {
+  /* background-color: yellow; */
+}
+
+.filters-container ul li a,
+.filter-btn {
+  font-size: 1.5rem;
+}
+
+.filter-btn,
+.brand-btn,
+.gender-btn,
+.style-btn {
+  background-color: hsl(0, 0%, 40%);
+  color: var(--mainColour);
+  padding: 0.3em 1em;
+}
+
+.filter-btn:focus,
+.filter-btn:hover,
+.brand-btn:focus,
+.brand-btn:hover,
+.gender-btn:focus,
+.gender-btn:hover,
+.style-btn:focus,
+.style-btn:hover {
+  background-color: hsl(0, 0%, 56%);
+}
+
+.fa-chevron-up {
+}
+
+.filter-list {
+  display: flex;
+  /* background-color: purple; */
+  justify-content: space-between;
+}
 
 /******************
   Footer and icons
