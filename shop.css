@@ -340,3 +340,64 @@ header {
   display: flex;
   align-items: center;
 }
+
+/******************
+        Main  
+ ******************/
+
+.main {
+  width: 90vw;
+  margin: 1rem auto;
+}
+
+/**** Filter section ****/
+
+/******************
+  Footer and icons
+  within styling
+  ******************/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  margin-top: var(--margin);
+}
+
+.footer .logo {
+  height: 50px;
+}
+
+.footerHI {
+  border-right: 2px solid black;
+  margin-right: var(--margin);
+  width: 30%;
+  position: relative;
+  padding: var(--padding);
+}
+
+.footerHI h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Icons in footer styling */
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 var(--padding);
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+}
+
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+.fa-instagram:hover {
+  color: #dd2a7b;
+}
