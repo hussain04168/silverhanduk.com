@@ -1,0 +1,309 @@
+/*******************************
+Reset all  margins, padding, anchor tags and
+Box-sizing
+********************************/
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/********************************
+   Defining all root variables
+ *******************************/
+
+:root {
+  --mainColour: white;
+  --secondaryColour: rgba(247, 0, 13, 1);
+  --shadowColor: rgba(0, 0, 0, 0.12);
+  --padding: 1em;
+  --btnColorDilute: rgba(247, 0, 13, 0.7);
+  --margin: 5%;
+  --padding: 5%;
+  --btnFontSize: 1.3rem;
+  --btnPadding: 0.5em;
+  --transition: 0.3s;
+  --fontWeight: 600;
+  --headingSizeMobile: 2rem;
+  --headingSize: 3rem;
+  --gridRowGap: 0.75rem;
+  --gridColumnGap: 0.75rem;
+  --transitionTime: 0.3s;
+  --letterSpacing: 0.1em;
+  --btnBorderThickness: 4px;
+  --btnBorderRadius: 4px;
+  --fontColour: black;
+  --navMenuColour: snow;
+  --fontSize: 22px;
+  --mobileFontSize: 1.5rem;
+  --navMenuPadding: 1.5em 1em;
+}
+
+/*********************
+        Body
+ ********************/
+
+body {
+  background-color: var(--mainColour);
+  font-family: "Just Another Hand", cursive;
+}
+
+/***************************
+  Header including navigation
+  and logo Styling
+ **************************/
+
+header {
+  font-size: 1.3rem;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90vw;
+}
+
+/**Search bar**/
+
+.search-and-cart-container {
+  display: flex;
+}
+
+.search-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.search-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 8;
+  background: white;
+  transform: translateY(-100%);
+  transition: transform 0.65s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+#userInput {
+  position: relative;
+  padding: 0 0.25em;
+  width: 80%;
+  height: 3.5rem;
+  border: none;
+  border-bottom: 2px solid rgb(131, 95, 95);
+  outline: none;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 0.5em 0;
+}
+
+#userInput:hover,
+#userInput:focus {
+  border: 2px solid var(--secondaryColour);
+  outline: none;
+}
+
+.close-search-btn {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.close-search-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.result-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 1.5rem;
+}
+
+.result {
+  height: 20vh;
+  margin: 0 auto;
+  margin-top: 5%;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding-bottom: 2%;
+  display: none;
+}
+
+.result-section-title {
+  padding-top: 1.5rem;
+}
+
+.trainer-details {
+  /* align-self: center; */
+  margin-left: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* height: 70%; */
+  /* background: red; */
+}
+
+.result-img {
+  height: 100%;
+}
+
+.view-btn {
+  background: var(--secondaryColour);
+  text-align: center;
+  color: var(--mainColour);
+  font-size: 2rem;
+  padding: 0 0.6em;
+  width: max-content;
+  height: max-content;
+}
+
+.view-btn:hover {
+  background: var(--btnColorDilute);
+}
+
+/*Navigation Container*/
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Navigation items */
+
+.navList {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  padding: var(--navMenuPadding);
+  border: 1px solid black;
+  transition: all 0.7s ease-in-out;
+  overflow-x: hidden;
+  transform: translateX(-100%);
+}
+
+.navList li {
+  list-style: none;
+}
+
+.nav-close-btn {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  color: var(--mainColour);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-close-btn:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* logo inside Navigation */
+
+.nav-container + .logo {
+  height: 50px;
+  /* border-bottom: 2px solid black;
+   border-top: 2px solid green; */
+  margin-bottom: 2%;
+}
+
+/******* nav Icons styling*********/
+
+.nav-icon {
+  position: relative;
+  color: white;
+}
+
+.nav-icon::after {
+  position: absolute;
+  bottom: 0%;
+  font-size: calc(var(--fontSize) * 1.5);
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-icon:hover::after {
+  color: var(--secondaryColour);
+}
+
+.nav-icon a {
+  font-weight: var(--fontWeight);
+  transition: color 0.3s ease-in-out;
+  color: white;
+}
+
+.nav-icon a:hover,
+.nav-icon a:focus {
+  color: red;
+}
+
+.nav-icon .material-icons {
+  font-size: calc(var(--fontSize) * 1.5);
+}
+
+.aboutIcon::after {
+  content: "About";
+}
+
+.contactIcon::after {
+  content: "Contact";
+}
+
+.sellIcon::after {
+  content: "Sell";
+}
+
+.homeIcon::after {
+  content: "Home";
+}
+
+/****Nav button****/
+
+.nav-btn .material-icons {
+  font-size: calc(var(--fontSize) * 1.5);
+}
+
+.nav-btn:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/******* Cart styling *******/
+
+.fa-cart-plus {
+  position: relative;
+  align-self: center;
+}
+
+.cart-item {
+  position: absolute;
+  top: -47%;
+  right: -20%;
+  font-size: 0.95rem;
+  background-color: var(--mainColour);
+  color: var(--fontColour);
+  border-radius: 50000000000000000px;
+  padding: 0.1rem;
+  border: 1px solid black;
+}

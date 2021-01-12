@@ -3,7 +3,647 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Shop</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shop.css" />
+
+    <!-- Font Awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- Google Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script src="about.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <!-------------------------------------
+    Header including navigation bar and logo
+    --------------------------------------->
+
+    <header class="header">
+      <nav class="nav-container">
+        <a class="nav-btn" href="#"
+          ><i class="material-icons">view_headline</i></a
+        >
+
+        <ul id="navMenu" class="navList">
+          <a href="#" class="nav-close-btn"
+            ><i class="fa fa-close fa-1x"></i
+          ></a>
+          <li class="nav-icon homeIcon">
+            <a href="index.html"><i class="material-icons">home</i></a>
+          </li>
+
+          <li class="nav-icon contactIcon">
+            <a href="contact.html"><i class="material-icons">mail</i></a>
+          </li>
+
+          <li class="nav-icon sellIcon">
+            <a href="sell.html"><i class="material-icons">local_atm</i></a>
+          </li>
+
+          <li class="nav-icon aboutIcon">
+            <a href="about.html"><i class="material-icons">description</i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <img
+        src="/Images/silverHandsLogo.png"
+        class="logo"
+        alt="Silver Hand UK Logo"
+      />
+
+      <!-- Search bar and cart -->
+
+      <div class="search-and-cart-container">
+        <div class="search-container">
+          <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+
+          <div class="search-bar">
+            <a href="" class="close-search-btn"
+              ><i class="fa fa-close fa-1x"></i
+            ></a>
+
+            <input
+              id="userInput"
+              class="userInput"
+              placeholder="Search products..."
+              type="text"
+            />
+
+            <!----------------------
+                    Results container 
+                 ----------------------->
+            <div class="result-container">
+              <!----------------------------
+                    Men results container
+                 ---------------------------->
+              <div class="men-results">
+                <h2 class="result-section-title">Men</h2>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer1.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Airmax 720</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£70</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer2.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1</h4>
+                    <h4 class="trainer-size">Size: 8.5 uk</h4>
+                    <h4 class="result-price">£65</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer3.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1 mid</h4>
+                    <h4 class="trainer-size">Size: 11 uk</h4>
+                    <h4 class="result-price">£75</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer4.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1 suede</h4>
+                    <h4 class="trainer-size">Size: 10 uk</h4>
+                    <h4 class="result-price">£75</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result adidas men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer5.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Tubular</h4>
+                    <h4 class="trainer-size">Size: 8 uk</h4>
+                    <h4 class="result-price">£85</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer6.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1 suede</h4>
+                    <h4 class="trainer-size">Size: 12 uk</h4>
+                    <h4 class="result-price">£90</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer7.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1</h4>
+                    <h4 class="trainer-size">Size: 10 uk</h4>
+                    <h4 class="result-price">£80</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer8.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Airmax 95</h4>
+                    <h4 class="trainer-size">Size: 10.5 uk</h4>
+                    <h4 class="result-price">£90</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer9.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Tiempo</h4>
+                    <h4 class="trainer-size">Size: 10 uk</h4>
+                    <h4 class="result-price">£65</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result jordan men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer10.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Jordan retro 8</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£100</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer11.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1 suede</h4>
+                    <h4 class="trainer-size">Size: 7 uk</h4>
+                    <h4 class="result-price">£70</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer12.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1</h4>
+                    <h4 class="trainer-size">Size: 8 uk</h4>
+                    <h4 class="result-price">£70</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result adidas men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer13.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Campus</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£60</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result adidas men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer14.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Classics</h4>
+                    <h4 class="trainer-size">Size: 7.5 uk</h4>
+                    <h4 class="result-price">£70</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer15.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Airmax 97</h4>
+                    <h4 class="trainer-size">Size: 8 uk</h4>
+                    <h4 class="result-price">£105</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result jordan men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer16.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Jordan Flight 32</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£70</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer17.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Tiempo</h4>
+                    <h4 class="trainer-size">Size: 11 uk</h4>
+                    <h4 class="result-price">£80</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result jordan men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer18.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Jordan retro 1</h4>
+                    <h4 class="trainer-size">Size: 8 uk</h4>
+                    <h4 class="result-price">£100</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer19.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£55</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer20.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Runners</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£50</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result jordan men">
+                  <img
+                    src="Images/MaleTrainers/maleTrainer21.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Jordan retro 4</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£110</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+              </div>
+
+              <!----------------------------
+                    Women results container 
+                 ----------------------------->
+              <div class="women-results">
+                <h2 class="result-section-title">Women</h2>
+
+                <div class="result nike women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer1.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Wedge</h4>
+                    <h4 class="trainer-size">Size: 5 uk</h4>
+                    <h4 class="result-price">£60</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result puma women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer2.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Puma Suede</h4>
+                    <h4 class="trainer-size">Size: 4 uk</h4>
+                    <h4 class="result-price">£40</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer3.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Cortez</h4>
+                    <h4 class="trainer-size">Size: 3.5 uk</h4>
+                    <h4 class="result-price">£50</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer4.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Wedge</h4>
+                    <h4 class="trainer-size">Size: 4.5 uk</h4>
+                    <h4 class="result-price">£60</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result dunlope women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer5.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Dunlope Platform</h4>
+                    <h4 class="trainer-size">Size: 4 uk</h4>
+                    <h4 class="result-price">£30</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer6.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Thea</h4>
+                    <h4 class="trainer-size">Size: 5.5 uk</h4>
+                    <h4 class="result-price">£70</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result rebok women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer7.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Rebok Mid</h4>
+                    <h4 class="trainer-size">Size: 4.5 uk</h4>
+                    <h4 class="result-price">£45</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result adidas women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer8.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Zx flux</h4>
+                    <h4 class="trainer-size">Size: 6 uk</h4>
+                    <h4 class="result-price">£50</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer9.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Mid</h4>
+                    <h4 class="trainer-size">Size: 5 uk</h4>
+                    <h4 class="result-price">£60</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer10.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Continental</h4>
+                    <h4 class="trainer-size">Size: 5.5 uk</h4>
+                    <h4 class="result-price">£40</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer11.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Wedge</h4>
+                    <h4 class="trainer-size">Size: 3.5 uk</h4>
+                    <h4 class="result-price">£60</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer12.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Cortez</h4>
+                    <h4 class="trainer-size">Size: 6.5 uk</h4>
+                    <h4 class="result-price">£50</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result adidas women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer13.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas L.A Trainer</h4>
+                    <h4 class="trainer-size">Size: 5 uk</h4>
+                    <h4 class="result-price">£65</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result adidas women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer14.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Zx flux</h4>
+                    <h4 class="trainer-size">Size: 4.5 uk</h4>
+                    <h4 class="result-price">£55</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+
+                <div class="result nike women">
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer15.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Huarache</h4>
+                    <h4 class="trainer-size">Size: 6 uk</h4>
+                    <h4 class="result-price">£70</h4>
+                    <a href="#" class="view-btn">view</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#"><i class="fa fa-cart-plus"></i></a>
+      </div>
+    </header>
+  </body>
 </html>
