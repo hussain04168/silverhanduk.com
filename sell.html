@@ -22,6 +22,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <script src="about.js" defer></script>
   </head>
   <body>
     <!-------------------------------------
@@ -39,7 +40,7 @@
             ><i class="fa fa-close fa-1x"></i
           ></a>
           <li class="nav-icon aboutIcon">
-            <a href="about.html"><i class="material-icons">description</i></a>
+            <a href="index.html"><i class="material-icons">home</i></a>
           </li>
 
           <li class="nav-icon contactIcon">
@@ -47,7 +48,7 @@
           </li>
 
           <li class="nav-icon sellIcon">
-            <a href="sell.html"><i class="material-icons">local_atm</i></a>
+            <a href="about.html"><i class="material-icons">description</i></a>
           </li>
 
           <li class="nav-icon shopIcon">
@@ -663,6 +664,8 @@
       <!------------------------
   image and para section
  ------------------------>
+
+      <h1>3 Easy steps to sell your sole</h1>
       <div class="sell-container">
         <div class="sell-image-container sell-image-container1">
           <img
@@ -671,13 +674,11 @@
             class="sell-img sell-img1"
           />
           <p class="sell-para">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            voluptate possimus velit quis atque adipisci dolore veritatis magni
-            exercitationem, soluta laborum, similique perspiciatis, ullam
-            voluptatem consequatur perferendis placeat ipsum sequi unde ratione
-            voluptatibus deleniti suscipit nobis aut? Corrupti excepturi
-            voluptates iste eveniet quae, accusantium repellat nostrum veniam
-            aperiam. Exercitationem, alias!
+            <span class="sell-step">Step 1.</span>Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Rerum voluptate possimus velit quis
+            atque adipisci dolore veritatis magni exercitationem, soluta
+            laborum, similique perspiciatis, ullam voluptatem consequatur
+            perferendis placeat ipsum sequi unde ratione
           </p>
         </div>
         <div class="sell-image-container sell-image-container2">
@@ -687,15 +688,14 @@
             class="sell-img sell-img2"
           />
           <p class="sell-para">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            voluptate possimus velit quis atque adipisci dolore veritatis magni
-            exercitationem, soluta laborum, similique perspiciatis, ullam
-            voluptatem consequatur perferendis placeat ipsum sequi unde ratione
-            voluptatibus deleniti suscipit nobis aut? Corrupti excepturi
-            voluptates iste eveniet quae, accusantium repellat nostrum veniam
-            aperiam. Exercitationem, alias!
+            <span class="sell-step">Step 2.</span>Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Rerum voluptate possimus velit quis
+            atque adipisci dolore veritatis magni exercitationem, soluta
+            laborum, similique perspiciatis, ullam voluptatem consequatur
+            perferendis placeat ipsum sequi unde ratione
           </p>
         </div>
+
         <div class="sell-image-container sell-image-container3">
           <img
             src="Images/Other/footImage3.jpg"
@@ -703,15 +703,51 @@
             class="sell-img sell-img3"
           />
           <p class="sell-para">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum
-            voluptate possimus velit quis atque adipisci dolore veritatis magni
-            exercitationem, soluta laborum, similique perspiciatis, ullam
-            voluptatem consequatur perferendis placeat ipsum sequi unde ratione
-            voluptatibus deleniti suscipit nobis aut? Corrupti excepturi
-            voluptates iste eveniet quae, accusantium repellat nostrum veniam
-            aperiam. Exercitationem, alias!
+            <span class="sell-step"> Step 3.</span>Lorem ipsum dolor sit, amet
+            consectetur adipisicing elit. Rerum voluptate possimus velit quis
+            atque adipisci dolore veritatis magni exercitationem, soluta
+            laborum, similique perspiciatis, ullam voluptatem consequatur
+            perferendis placeat ipsum sequi unde ratione
           </p>
         </div>
+      </div>
+
+      <!---------------
+        Style form  
+      ------------------>
+
+      <div class="sell-form-wrapper">
+        <h1>Sell form</h1>
+
+        <form action="" class="form-container">
+          <div class="first-name-container form-section">
+            <label for="first-name">First Name</label>
+            <input type="text" class="first-name" placeholder="provide name" />
+          </div>
+
+          <div class="second-name-container form-section">
+            <label for="second-name">Second name</label>
+            <input type="text" class="second-name" placeholder="provide name" />
+          </div>
+
+          <div class="email-container form-section">
+            <label for="email">Email</label>
+            <input type="email" class="email" placeholder="provide email" />
+          </div>
+
+          <div class="phone-container form-section">
+            <label for="phone">Phone</label>
+            <input type="tel" class="phone" placeholder="provide number" />
+          </div>
+
+          <div class="file-container form-section">
+            <label for="image">Image</label>
+            <input type="file" name="image" class="image" />
+            <input type="file" name="image" class="image" />
+            <input type="file" name="image" class="image" />
+          </div>
+          <a href="" class="submit-btn">Submit</a>
+        </form>
       </div>
     </main>
 
