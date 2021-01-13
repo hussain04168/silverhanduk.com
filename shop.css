@@ -356,10 +356,6 @@ header {
   margin-top: 1rem;
 }
 
-.filters-container {
-  /* background-color: yellow; */
-}
-
 .filters-container ul li a,
 .filter-btn {
   font-size: 1.5rem;
@@ -385,13 +381,14 @@ header {
   background-color: hsl(0, 0%, 56%);
 }
 
-.fa-chevron-up {
-}
-
 .filter-list {
   display: flex;
   /* background-color: purple; */
   justify-content: space-between;
+}
+
+.hide {
+  display: none;
 }
 
 /******************
