@@ -351,6 +351,16 @@ header {
 }
 
 /**** Filter section ****/
+.filters-container {
+  overflow-y: hidden;
+  /* background-color: blue; */
+}
+
+.filter-main {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
 .filters-container ul {
   list-style: none;
   margin-top: 1rem;
@@ -361,6 +371,11 @@ header {
   font-size: 1.5rem;
 }
 
+.filter-btn {
+  width: 13%;
+  margin-bottom: 1rem;
+}
+
 .filter-btn,
 .brand-btn,
 .gender-btn,
@@ -368,6 +383,20 @@ header {
   background-color: hsl(0, 0%, 40%);
   color: var(--mainColour);
   padding: 0.3em 1em;
+}
+
+.brands-list,
+.gender-list,
+.style-list {
+  /* background-color: yellow; */
+  overflow-y: hidden;
+}
+
+.brand-item,
+.gender-item,
+.style-item {
+  transform: translateY(-330%);
+  transition: all 0.5s ease-in-out;
 }
 
 .filter-btn:focus,
@@ -383,12 +412,19 @@ header {
 
 .filter-list {
   display: flex;
-  /* background-color: purple; */
   justify-content: space-between;
+  transform: translateY(-110%);
+  transition: all 0.5s ease-in-out;
 }
 
-.hide {
-  display: none;
+.apply-filter-btn {
+  background-color: var(--secondaryColour);
+  color: var(--mainColour);
+  margin: 0 auto;
+  font-size: 1.5rem;
+  padding: 0.3em 1.5em;
+  transform: translateY(110%);
+  transition: all 0.5s ease-in-out;
 }
 
 /******************
