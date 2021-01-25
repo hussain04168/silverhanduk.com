@@ -12,24 +12,24 @@ let brandItems = document.getElementsByClassName("brand-item");
 let styleItems = document.getElementsByClassName("style-item");
 
 filterButton.addEventListener("click", () => {
-  filterSelection.style.transform = "translateY(0)";
-  applyFilterButton.style.transform = "translateY(0)";
+  filterSelection.classList.toggle("translate");
+  applyFilterButton.classList.toggle("translate");
 });
 
 brandButton.addEventListener("click", () => {
   for (let i = 0; i < brandItems.length; i++) {
-    brandItems[i].style.transform = "translateY(0)";
+    brandItems[i].classList.toggle("translate");
   }
 });
 
 genderButton.addEventListener("click", () => {
   for (let i = 0; i < genderItems.length; i++) {
-    genderItems[i].style.transform = "translateY(0)";
+    genderItems[i].classList.toggle("translate");
   }
 });
 
 styleButton.addEventListener("click", () => {
   for (let i = 0; i < styleItems.length; i++) {
-    styleItems[i].style.transform = "translateY(0)";
+    styleItems[i].classList.toggle("translate");
   }
 });
