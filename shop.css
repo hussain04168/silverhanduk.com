@@ -348,18 +348,23 @@ header {
 .main {
   width: 90vw;
   margin: 1rem auto;
+  /* background-color: blue; */
 }
 
 /**** Filter section ****/
 .filters-container {
   overflow-y: hidden;
-  /* background-color: blue; */
+  /* background-color: brown; */
+  /* position: sticky; */
+  top: 0px;
 }
 
 .filter-main {
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
+  /* background-color: purple; */
+  margin-top: 1rem;
 }
 .filters-container ul {
   list-style: none;
@@ -397,6 +402,17 @@ header {
 .style-item {
   transform: translateY(-330%);
   transition: all 0.5s ease-in-out;
+  /* background-color: yellow; */
+  padding: 0.5em 0;
+}
+
+.brand-filter-btn:focus,
+.brand-filter-btn:hover,
+.gender-filter-btn:focus,
+.gender-filter-btn:hover,
+.style-filter-btn:focus,
+.style-filter-btn:hover {
+  color: rgba(190, 31, 31, 0.5);
 }
 
 .filter-btn:focus,
@@ -415,6 +431,8 @@ header {
   justify-content: space-between;
   transform: translateY(-110%);
   transition: all 0.5s ease-in-out;
+  /* background-color: yellowgreen; */
+  margin-bottom: 1rem;
 }
 
 .apply-filter-btn {
@@ -424,7 +442,41 @@ header {
   font-size: 1.5rem;
   padding: 0.3em 1.5em;
   transform: translateY(110%);
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.apply-filter-btn:focus,
+.apply-filter-btn:hover {
+  background-color: var(--btnColorDilute);
+}
+
+.translate {
+  transform: translateY(0);
+}
+
+/***Collection***/
+
+.collection-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: lightblue; */
+  margin: 1rem 0;
+}
+
+.collection-item {
+  /* background-color: yellow; */
+  border: 1px solid black;
+  width: 48%;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+}
+
+.collection-img {
+  width: 100%;
+  /* margin-left: 1rem; */
 }
 
 /******************
@@ -438,6 +490,7 @@ header {
   align-items: center;
   height: 30vh;
   margin-top: var(--margin);
+  /* background-color: chartreuse; */
 }
 
 .footer .logo {
@@ -475,4 +528,21 @@ header {
 
 .fa-instagram:hover {
   color: #dd2a7b;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .logo {
+    transform: scale(0.6);
+  }
+
+  /* filter */
+
+  .filters-container ul li a,
+  .filter-btn {
+    font-size: 1.2rem;
+  }
+
+  .apply-filter-btn {
+    font-size: 1.2rem;
+  }
 }
