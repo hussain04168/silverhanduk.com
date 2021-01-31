@@ -356,7 +356,7 @@ header {
   overflow-y: hidden;
   /* background-color: brown; */
   /* position: sticky; */
-  top: 0px;
+  /* top: 0px; */
 }
 
 .filter-main {
@@ -364,6 +364,7 @@ header {
   flex-direction: column;
   overflow-y: hidden;
   /* background-color: purple; */
+  /* height: 0; */
   margin-top: 1rem;
 }
 .filters-container ul {
@@ -457,8 +458,9 @@ header {
 /***Collection***/
 
 .collection-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
   /* background-color: lightblue; */
   margin: 1rem 0;
 }
@@ -466,12 +468,11 @@ header {
 .collection-item {
   /* background-color: yellow; */
   border: 1px solid black;
-  width: 48%;
-  margin: 0.5rem;
+  width: 100%;
+  /* margin: 0.5rem 0; */
   display: flex;
   flex-direction: column;
-
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .collection-img {
@@ -544,5 +545,28 @@ header {
 
   .apply-filter-btn {
     font-size: 1.2rem;
+  }
+
+  /**************
+    Collection  
+   **************/
+
+  .collection-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 0.75rem;
+    /* background-color: lightblue; */
+    margin: 1rem 0;
+  }
+
+  .collection-item {
+    /* background-color: yellow; */
+    border: 1px solid black;
+    width: 100%;
+    /* margin: 0.5rem 0; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 1rem; */
   }
 }
