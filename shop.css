@@ -364,8 +364,9 @@ header {
   flex-direction: column;
   overflow-y: hidden;
   /* background-color: purple; */
-  /* height: 0; */
+  height: 0;
   margin-top: 1rem;
+  /* transform: translateY(-170%); */
 }
 .filters-container ul {
   list-style: none;
@@ -453,6 +454,7 @@ header {
 
 .translate {
   transform: translateY(0);
+  height: auto;
 }
 
 /***Collection***/
@@ -469,7 +471,6 @@ header {
   /* background-color: yellow; */
   /* border: 1px solid black; */
   width: 100%;
-  /* margin: 0.5rem 0; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -494,6 +495,7 @@ header {
   text-align: center;
   margin-top: 0.5rem;
   font-size: 2rem;
+  padding: 0.15em 0;
 }
 
 .collection-view-btn:focus,

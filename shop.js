@@ -10,10 +10,12 @@ let applyFilterButton = document.querySelector(".apply-filter-btn");
 let genderItems = document.getElementsByClassName("gender-item");
 let brandItems = document.getElementsByClassName("brand-item");
 let styleItems = document.getElementsByClassName("style-item");
+let filterMainDiv = document.querySelector(".filter-main");
 
 filterButton.addEventListener("click", () => {
   filterSelection.classList.toggle("translate");
   applyFilterButton.classList.toggle("translate");
+  filterMainDiv.classList.toggle("translate");
 });
 
 brandButton.addEventListener("click", () => {
