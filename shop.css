@@ -467,17 +467,38 @@ header {
 
 .collection-item {
   /* background-color: yellow; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 100%;
   /* margin: 0.5rem 0; */
   display: flex;
   flex-direction: column;
-  /* padding: 1rem; */
+  justify-content: space-between;
+  padding: 1rem 0.75rem;
+  font-size: 1.5rem;
+  box-shadow: 0.5px 1px 2px rgba(0, 0, 0, 0.5),
+    1px 1.5px 2.5px rgba(0, 0, 0, 0.5), 1.5px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .collection-img {
   width: 100%;
-  /* margin-left: 1rem; */
+  margin-bottom: 0.75rem;
+}
+
+.collection-item-name {
+  margin-bottom: 0.25rem;
+}
+
+.collection-view-btn {
+  background-color: var(--secondaryColour);
+  color: var(--mainColour);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 2rem;
+}
+
+.collection-view-btn:focus,
+.collection-view-btn:hover {
+  background-color: var(--btnColorDilute);
 }
 
 /******************
@@ -556,17 +577,13 @@ header {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     grid-gap: 0.75rem;
-    /* background-color: lightblue; */
     margin: 1rem 0;
   }
 
   .collection-item {
-    /* background-color: yellow; */
-    border: 1px solid black;
     width: 100%;
-    /* margin: 0.5rem 0; */
     display: flex;
     flex-direction: column;
-    /* padding: 1rem; */
+    font-size: 1.25rem;
   }
 }
