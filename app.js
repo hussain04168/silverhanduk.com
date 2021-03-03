@@ -66,31 +66,3 @@ searchButton.addEventListener("click", function () {
 closeSearchButon.addEventListener("click", function () {
   searchBarDiv.style.transform = "translateY(-100%)";
 });
-
-userInput.addEventListener("keyup", function (event) {
-  let searchQuery = event.target.value.toLowerCase();
-  let brandsCollectionNike = document.getElementsByClassName("nike");
-  let brandsCollectionAdidas = document.getElementsByClassName("adidas");
-  let brandsCollectionPuma = document.getElementsByClassName("puma");
-  let brandsCollectionDunlope = document.getElementsByClassName("dunlope");
-  let genderCollectionMen = document.getElementsByClassName("men");
-  let genderCollectionWomen = document.getElementsByClassName("women");
-  let allCollection =
-    brandsCollectionNike +
-    brandsCollectionAdidas +
-    brandsCollectionPuma +
-    brandsCollectionDunlope +
-    genderCollectionMen +
-    genderCollectionWomen;
-  for (let i = 0; i < allCollection.length; i++) {
-    const searchCollection = allCollection[i];
-
-    console.log(searchCollection);
-
-    // if (searchCollection[i] == searchQuery) {
-    //   searchCollection[i][i].style.display = "flex";
-    // } else {
-    //   searchCollection[i][i].style.display = "none";
-    // }
-  }
-});
