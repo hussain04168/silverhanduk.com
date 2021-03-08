@@ -9,7 +9,6 @@ let navList = document.querySelector(".navList");
 let closeSearchButon = document.querySelector(".close-search-btn");
 let searchBarDiv = document.querySelector(".search-bar");
 let searchButton = document.querySelector(".search-btn");
-let userInput = document.getElementById("userInput");
 
 // slide show logic
 showSlides();
