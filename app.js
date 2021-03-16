@@ -6,7 +6,7 @@ let navButton = document.querySelector(".nav-btn");
 let navMenu = document.querySelector("#navMenu");
 let navCloseButton = document.querySelector(".nav-close-btn");
 let navList = document.querySelector(".navList");
-let closeSearchButon = document.querySelector(".close-search-btn");
+let closeSearchButton = document.querySelector(".close-search-btn");
 let searchBarDiv = document.querySelector(".search-bar");
 let searchButton = document.querySelector(".search-btn");
 
@@ -62,6 +62,6 @@ searchButton.addEventListener("click", function () {
   searchBarDiv.style.transform = "translateY(0%)";
 });
 
-closeSearchButon.addEventListener("click", function () {
+closeSearchButton.addEventListener("click", function () {
   searchBarDiv.style.transform = "translateY(-100%)";
 });
