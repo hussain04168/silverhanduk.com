@@ -12,6 +12,13 @@
     />
     <link rel="stylesheet" href="shop.css" />
 
+    <!-- Snipcart  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.1.1/default/snipcart.css"
+    />
+
     <!-- Font Awesome link -->
     <link
       rel="stylesheet"
@@ -643,7 +650,9 @@
           </div>
         </div>
 
-        <a href="#"><i class="fa fa-cart-plus"></i></a>
+        <button class="snipcart-checkout">
+          <i class="fa fa-cart-plus"></i>
+        </button>
       </div>
     </header>
     <!----------------------
@@ -748,7 +757,16 @@
           />
           <h3 class="collection-item-name">Nike Airmax 720</h3>
           <h3 class="collection-item-price">£80</h3>
-          <a href="" class="collection-view-btn">view</a>
+          <button
+            class="collection-view-btn snipcart-add-item"
+            data-item-id="1"
+            data-item-price="89.99"
+            data-item-url="/"
+            data-item-name="Airmax 720"
+            data-item-image="Images/MaleTrainers/maleTrainer1.jpg"
+          >
+            view
+          </button>
         </div>
         <div class="collection-item">
           <img
@@ -1138,5 +1156,14 @@
         alt="silver hand uk logo"
       />
     </footer>
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.1.1/default/snipcart.js"
+    ></script>
+    <div
+      hidden
+      id="snipcart"
+      data-api-key="MDgyODY2MGUtOGEzMC00YzlhLTlmMWItYWU2ODZiODNjNGYwNjM3NTU2MzM4ODk1OTY3NTQ3"
+    ></div>
   </body>
 </html>

@@ -26,12 +26,11 @@ userInput.addEventListener("keyup", (event) => {
     }
 
     if (
-      (userInput === "" && keyPressed === 37) ||
+      (userSearch === "" && keyPressed === 8) ||
+      keyPressed === 37 ||
       keyPressed === 38 ||
       keyPressed === 39 ||
-      keyPressed === 40 ||
-      keyPressed === 8 ||
-      keyPressed === 16
+      keyPressed === 40
     ) {
       brandCollection[i].style.display = "none";
       nameCollection[i].style.display = "none";
