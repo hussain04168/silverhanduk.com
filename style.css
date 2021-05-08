@@ -291,21 +291,29 @@ header {
 
 /******* Cart styling *******/
 
+.cart {
+  position: relative;
+}
+
 .fa-cart-plus {
   position: relative;
   align-self: center;
 }
 
-.cart-item {
+.snipcart-items-count {
   position: absolute;
-  top: -47%;
-  right: -20%;
-  font-size: 0.95rem;
-  background-color: var(--mainColour);
-  color: var(--fontColour);
-  border-radius: 50000000000000000px;
-  padding: 0.1rem;
-  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2em;
+  font-size: 1rem;
+  left: 50%;
+  bottom: 50%;
+  transform: translateX(-50%);
+}
+
+.snipcart-items-count:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /******************************
