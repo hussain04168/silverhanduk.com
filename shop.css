@@ -230,6 +230,10 @@ header {
   margin-bottom: 2%;
 }
 
+.c-logo {
+  height: 50px;
+}
+
 /******* nav Icons styling*********/
 
 .nav-icon {

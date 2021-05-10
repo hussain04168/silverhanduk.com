@@ -223,12 +223,12 @@ header {
 /* logo inside Navigation */
 
 .nav-container + .logo {
-  height: 50px;
-  /* border-bottom: 2px solid black;
-   border-top: 2px solid green; */
   margin-bottom: 2%;
 }
 
+.c-logo {
+  height: 50px;
+}
 /******* nav Icons styling*********/
 
 .nav-icon {
@@ -344,7 +344,7 @@ header {
 Main section styling
  *******************/
 
-.paragaphs {
+.paragraphs {
   /* max-width: 60%; */
   margin: 0 auto;
   color: black;
