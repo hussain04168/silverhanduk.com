@@ -28,6 +28,17 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <!-------------- 
+         Snipcart  
+    ---------------->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.1.1/default/snipcart.css"
+    />
+    <!-------------- 
+      Site logic
+     --------------->
     <script src="about.js" defer></script>
   </head>
   <body>
@@ -649,7 +660,14 @@
           </div>
         </div>
 
-        <a href="#"><i class="fa fa-cart-plus"></i></a>
+        <!--------------
+           Cart button
+          -------------->
+
+        <a class="cart snipcart-checkout" href="#"
+          ><i class="fa fa-cart-plus"></i>
+          <span class="snipcart-items-count">0</span>
+        </a>
       </div>
     </header>
 
@@ -794,5 +812,17 @@
         alt="silver hand uk logo"
       />
     </footer>
+    <!------------------
+      Snipcart logic
+     ------------------>
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.1.1/default/snipcart.js"
+    ></script>
+    <div
+      hidden
+      id="snipcart"
+      data-api-key="MDgyODY2MGUtOGEzMC00YzlhLTlmMWItYWU2ODZiODNjNGYwNjM3NTU2MzM4ODk1OTY3NTQ3"
+    ></div>
   </body>
 </html>
