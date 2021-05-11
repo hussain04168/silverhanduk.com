@@ -42,6 +42,10 @@
        Site logic
        ------------->
     <script src="about.js" defer></script>
+      <!------------------
+      Search bar logic
+      ------------------->
+      <script src="searchBarContact.js" defer></script>
   </head>
   <body>
     <!-------------------------------------
@@ -88,33 +92,1076 @@
 
       <!-- Search bar and cart -->
 
+           <!------------------- 
+        Search bar and cart 
+      ----------------------->
+
       <div class="search-and-cart-container">
         <div class="search-container">
           <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
 
           <div class="search-bar">
-            <a href="#" class="close-search-btn"
+            <a href="" class="close-search-btn"
               ><i class="fa fa-close fa-1x"></i
             ></a>
 
             <input
               id="userInput"
-              class="userInput"
+              class="user-input"
               placeholder="Search products..."
               type="text"
             />
 
+            <!----------------------
+                  Results container 
+               ----------------------->
             <div class="result-container">
-              <!-- <div class="result">
-                 <img src="Images/MaleTrainers/maleTrainer1.jpg" alt="" class="result-img">
-  
-                 <div class="trainer-details">
-                 <h4 class="result-title">Nike Airmax 720</h4>
-                 <h4 class="trainer-size">Size: 9 uk</h4>
-                 <h4 class="result-price">£70</h4>
-                 <a href="#" class="view-btn">view</a>
-                 </div>
-                </div> -->
+              <!----------------------------
+                  Men results container
+               ---------------------------->
+              <div class="men-results">
+                <h2 class="result-section-title">Men</h2>
+
+                <div
+                  data-brand="nike"
+                  data-size="9uk"
+                  data-name="airmax720"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer1.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Airmax 720</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£80</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m1"
+                      data-item-price="80"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Airmax 720"
+                      data-item-image="Images/MaleTrainers/maleTrainer1.jpg"
+                      data-item-description="Grey and black Nike Airmax 720"
+                    >
+                      add to cart
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="8.5uk"
+                  data-name="airforce1"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer2.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1</h4>
+                    <h4 class="trainer-size">Size: 8.5 uk</h4>
+                    <h4 class="result-price">£60</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m2"
+                      data-item-price="60"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Nike Airforce 1"
+                      data-item-image="Images/MaleTrainers/maleTrainer2.jpg"
+                      data-item-description="Reflective cammo Nike Airforce 1 "
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="11uk"
+                  data-name="airforce1"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer3.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1 mid</h4>
+                    <h4 class="trainer-size">Size: 11 uk</h4>
+                    <h4 class="result-price">£70</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m3"
+                      data-item-price="70"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Nike Airforce 1 mid"
+                      data-item-image="Images/MaleTrainers/maleTrainer3.jpg"
+                      data-item-description="Black and white Nike Airforce 1 Mid"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="10uk"
+                  data-name="airforce1"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer4.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1 suede</h4>
+                    <h4 class="trainer-size">Size: 10 uk</h4>
+                    <h4 class="result-price">£65</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m4"
+                      data-item-price="65"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Nike Airforce 1 low"
+                      data-item-image="Images/MaleTrainers/maleTrainer4.jpg"
+                      data-item-description="Green suede Nike Airforce 1 "
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="adidas"
+                  data-size="8uk"
+                  data-name="tubular"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer5.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Tubular</h4>
+                    <h4 class="trainer-size">Size: 8 uk</h4>
+                    <h4 class="result-price">£50</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m5"
+                      data-item-price="50"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Adidas Tubular"
+                      data-item-image="Images/MaleTrainers/maleTrainer5.jpg"
+                      data-item-description="Grey and white Adidas Tubular"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="12uk"
+                  data-name="airforce1"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer6.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1 suede</h4>
+                    <h4 class="trainer-size">Size: 12 uk</h4>
+                    <h4 class="result-price">£65</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      c
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m6"
+                      data-item-price="65"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Nike Airforce 1 flyknit"
+                      data-item-image="Images/MaleTrainers/maleTrainer6.jpg"
+                      data-item-description="Blue and white Nike Airforce1 flyknit "
+                      >add tto cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="10uk"
+                  data-name="airforce1"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer7.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1</h4>
+                    <h4 class="trainer-size">Size: 10 uk</h4>
+                    <h4 class="result-price">£60</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m7"
+                      data-item-price="60"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Nike Airforce 1"
+                      data-item-image="Images/MaleTrainers/maleTrainer7.jpg"
+                      data-item-description="Grey and black Nike Airforce 1 "
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="10.5uk"
+                  data-name="airmax95"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer8.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Airmax 95</h4>
+                    <h4 class="trainer-size">Size: 10.5 uk</h4>
+                    <h4 class="result-price">£70</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m8"
+                      data-item-price="70"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Nike Airmax 95"
+                      data-item-image="Images/MaleTrainers/maleTrainer8.jpg"
+                      data-item-description="Grey, orange and black Airmax 95"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="10uk"
+                  data-name="tiempo"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer9.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Tiempo</h4>
+                    <h4 class="trainer-size">Size: 10 uk</h4>
+                    <h4 class="result-price">£50</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m9"
+                      data-item-price="50"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Nike Tiempo"
+                      data-item-image="Images/MaleTrainers/maleTrainer9.jpg"
+                      data-item-description="Black and white Nike Tiempo"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="jordan"
+                  data-size="9uk"
+                  data-name="retro8"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer10.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Jordan retro 8</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£90</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m10"
+                      data-item-price="90"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Jordan retro 8"
+                      data-item-image="Images/MaleTrainers/maleTrainer10.jpg"
+                      data-item-description="Black and orange Jordan retro 8"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="7uk"
+                  data-name="airforce1"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer11.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1 suede</h4>
+                    <h4 class="trainer-size">Size: 7 uk</h4>
+                    <h4 class="result-price">£60</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m11"
+                      data-item-price="60"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Nike Airforce 1"
+                      data-item-image="Images/MaleTrainers/maleTrainer11.jpg"
+                      data-item-description="Black and gum suede Nike Airforce 1 "
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="8uk"
+                  data-name="airforce1"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer12.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1</h4>
+                    <h4 class="trainer-size">Size: 8 uk</h4>
+                    <h4 class="result-price">£55</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m12"
+                      data-item-price="55"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Nike Airforce 1"
+                      data-item-image="Images/MaleTrainers/maleTrainer12.jpg"
+                      data-item-description="Black and white Nike Airforce 1 "
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="adidas"
+                  data-size="9uk"
+                  data-name="campus"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer13.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Campus</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£40</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m13"
+                      data-item-price="40"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Adidas Campo"
+                      data-item-image="Images/MaleTrainers/maleTrainer13.jpg"
+                      data-item-description="Red and white Adidas Campo"
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="adidas"
+                  data-size="7.5uk"
+                  data-name="classics"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer14.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Classics</h4>
+                    <h4 class="trainer-size">Size: 7.5 uk</h4>
+                    <h4 class="result-price">£60</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m14"
+                      data-item-price="60"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Adidas Classic"
+                      data-item-image="Images/MaleTrainers/maleTrainer14.jpg"
+                      data-item-description="Black and white Adidas Classic "
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="8uk"
+                  data-name="airmax97"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer15.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Airmax 97</h4>
+                    <h4 class="trainer-size">Size: 8 uk</h4>
+                    <h4 class="result-price">£75</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a
+                      href=""
+                      class="view-btn snipcart-add-item"
+                      data-item-id="m15"
+                      data-item-price="75"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Nike Airmax 97"
+                      data-item-image="Images/MaleTrainers/maleTrainer15.jpg"
+                      data-item-description="Reflective gold and red Airmax 97 "
+                      >add to cart</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  data-brand="jordan"
+                  data-size="9uk"
+                  data-name="flight32"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer16.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Jordan Flight 32</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£65</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href=""  class="view-btn snipcart-add-item"
+                    data-item-id="m16"
+                    data-item-price="65"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Jordan Flight 32"
+                    data-item-image="Images/MaleTrainers/maleTrainer16.jpg"
+                    data-item-description="Red and black Jordan flight 32"">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="11uk"
+                  data-name="tiempo"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer17.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Tiempo</h4>
+                    <h4 class="trainer-size">Size: 11 uk</h4>
+                    <h4 class="result-price">£65</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href=""  class="view-btn snipcart-add-item"
+                    data-item-id="m17"
+                    data-item-price="65"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Nike Tiempo"
+                    data-item-image="Images/MaleTrainers/maleTrainer17.jpg"
+                    data-item-description="White and gold Nike Tiempo">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="jordan"
+                  data-size="8uk"
+                  data-name="retro1"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer18.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Jordan retro 1</h4>
+                    <h4 class="trainer-size">Size: 8 uk</h4>
+                    <h4 class="result-price">£85</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href=""  class="view-btn snipcart-add-item"
+                    data-item-id="m18"
+                    data-item-price="85"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Jordan retro 1"
+                    data-item-image="Images/MaleTrainers/maleTrainer18.jpg"
+                    data-item-description="Red, white and black Jordan retro 1">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="9uk"
+                  data-name="airforce1"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer19.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Air force 1</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£45</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href=""  class="view-btn snipcart-add-item"
+                    data-item-id="m19"
+                    data-item-price="45"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Nike Airforce 1"
+                    data-item-image="Images/MaleTrainers/maleTrainer19.jpg"
+                    data-item-description="White Nike Airforce 1 ">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="9uk"
+                  data-name="runners"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer20.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Runners</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£40</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href=""  class="view-btn snipcart-add-item"
+                    data-item-id="m20"
+                    data-item-price="40"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Nike Runners"
+                    data-item-image="Images/MaleTrainers/maleTrainer20.jpg"
+                    data-item-description="Grey and red Nike Runners ">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="jordan"
+                  data-size="9uk"
+                  data-name="retro4"
+                  class="result"
+                >
+                  <img
+                    src="Images/MaleTrainers/maleTrainer21.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Jordan retro 4</h4>
+                    <h4 class="trainer-size">Size: 9 uk</h4>
+                    <h4 class="result-price">£95</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="m21"
+                    data-item-price="95"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Jordan retro 4"
+                    data-item-image="Images/MaleTrainers/maleTrainer21.jpg"
+                    data-item-description="White, red and black Jordan retro 4">add to cart</a>
+                  </div>
+                </div>
+              </div>
+
+              <!----------------------------
+                  Women results container 
+               ----------------------------->
+              <div class="women-results">
+                <h2 class="result-section-title">Women</h2>
+
+                <div
+                  data-brand="nike"
+                  data-size="5uk"
+                  data-name="wedge"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer1.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Wedge</h4>
+                    <h4 class="trainer-size">Size: 5 uk</h4>
+                    <h4 class="result-price">£45</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="f1"
+                    data-item-price="45"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Nike Wedges"
+                    data-item-image="Images/FemaleTrainers/femaleTrainer1.jpg"
+                    data-item-description="Grey and white Nike Wedges">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="puma"
+                  data-size="4uk"
+                  data-name="suede"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer2.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Puma Suede</h4>
+                    <h4 class="trainer-size">Size: 4 uk</h4>
+                    <h4 class="result-price">£35</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="f2"
+                    data-item-price="35"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Puma Classic suede"
+                    data-item-image="Images/FemaleTrainers/femaleTrainer2.jpg"
+                    data-item-description="Black and gum Puma Classic sued">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="3.5uk"
+                  data-name="cortez"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer3.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Cortez</h4>
+                    <h4 class="trainer-size">Size: 3.5 uk</h4>
+                    <h4 class="result-price">£30</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                     data-item-id="f3"
+                     data-item-price="30"
+                     data-item-url="silverhanduk.com/shop.html"
+                     data-item-name="Nike Cortez"
+                     data-item-image="Images/FemaleTrainers/femaleTrainer3.jpg"
+                     data-item-description="Silver and white Nike Cortez">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="4.5uk"
+                  data-name="wedge"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer4.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Wedge</h4>
+                    <h4 class="trainer-size">Size: 4.5 uk</h4>
+                    <h4 class="result-price">£45</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="f4"
+                    data-item-price="45"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Nike Wedges"
+                    data-item-image="Images/FemaleTrainers/femaleTrainer4.jpg"
+                    data-item-description="Red and white Nike Wedges">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="dunlope"
+                  data-size="4uk"
+                  data-name="platform"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer5.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Dunlope Platform</h4>
+                    <h4 class="trainer-size">Size: 4 uk</h4>
+                    <h4 class="result-price">£25</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="f5"
+                    data-item-price="25"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Dunlop Platform"
+                    data-item-image="Images/FemaleTrainers/femaleTrainer5.jpg"
+                    data-item-description="Gold and white Dunlop Platform">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="5.5uk"
+                  data-name="airmaxthea"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer6.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Airmax Thea</h4>
+                    <h4 class="trainer-size">Size: 5.5 uk</h4>
+                    <h4 class="result-price">£70</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="f6"
+                    data-item-price="70"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Nike Airmax Thea"
+                    data-item-image="Images/FemaleTrainers/femaleTrainer6.jpg"
+                    data-item-description="Grey, white and pink Airmax Thea">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="rebok"
+                  data-size="4.5uk"
+                  data-name="mid"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer7.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Rebok Mid</h4>
+                    <h4 class="trainer-size">Size: 4.5 uk</h4>
+                    <h4 class="result-price">£40</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="f7"
+                    data-item-price="40"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Rebok Hightop"
+                    data-item-image="Images/FemaleTrainers/femaleTrainer7.jpg"
+                    data-item-description="Purple and white Rebok Hightop">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="adidas"
+                  data-size="6uk"
+                  data-name="zxflux"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer8.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Zx flux</h4>
+                    <h4 class="trainer-size">Size: 6 uk</h4>
+                    <h4 class="result-price">£45</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                      data-item-id="f8"
+                      data-item-price="45"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Adidas zx flux"
+                      data-item-image="Images/FemaleTrainers/femaleTrainer8.jpg"
+                      data-item-description="Black and white Adidas zx flux">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="5uk"
+                  data-name="mid"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer9.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Mid</h4>
+                    <h4 class="trainer-size">Size: 5 uk</h4>
+                    <h4 class="result-price">£60</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                      data-item-id="f9"
+                      data-item-price="60"
+                      data-item-url="silverhanduk.com/shop.html"
+                      data-item-name="Jordan retro 1"
+                      data-item-image="Images/FemaleTrainers/femaleTrainer9.jpg"
+                      data-item-description="Black and pink Jordan retro 1">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="adidas"
+                  data-size="5.5uk"
+                  data-name="continental"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer10.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Continental</h4>
+                    <h4 class="trainer-size">Size: 5.5 uk</h4>
+                    <h4 class="result-price">£40</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                       data-item-id="f10"
+                       data-item-price="40"
+                       data-item-url="silverhanduk.com/shop.html"
+                       data-item-name="Adidas Continental"
+                       data-item-image="Images/FemaleTrainers/femaleTrainer10.jpg"
+                       data-item-description="White, blue and red Adidas Continental">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="3.5uk"
+                  data-name="wedge"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer11.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Wedge</h4>
+                    <h4 class="trainer-size">Size: 3.5 uk</h4>
+                    <h4 class="result-price">£45</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                       data-item-id="f11"
+                       data-item-price="45"
+                       data-item-url="silverhanduk.com/shop.html"
+                       data-item-name="Nike Wedges"
+                       data-item-image="Images/FemaleTrainers/femaleTrainer11.jpg"
+                       data-item-description="White and gold Nike Wedges">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="6.5uk"
+                  data-name="cortez"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer12.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Cortez</h4>
+                    <h4 class="trainer-size">Size: 6.5 uk</h4>
+                    <h4 class="result-price">£40</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="f12"
+                    data-item-price="40"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Nike Cortez"
+                    data-item-image="Images/FemaleTrainers/femaleTrainer12.jpg"
+                    data-item-description="White, red and blue Nike Cortez">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="adidas"
+                  data-size="5uk"
+                  data-name="latrainer"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer13.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas L.A Trainer</h4>
+                    <h4 class="trainer-size">Size: 5 uk</h4>
+                    <h4 class="result-price">£45</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="f13"
+                    data-item-price="45"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Adidas L.A Trainer"
+                    data-item-image="Images/FemaleTrainers/femaleTrainer13.jpg"
+                    data-item-description="Red and white Adidas L.A Trainer">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="adidas "
+                  data-size="4.5uk"
+                  data-name="zxflux"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer14.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Adidas Zx flux</h4>
+                    <h4 class="trainer-size">Size: 4.5 uk</h4>
+                    <h4 class="result-price">£50</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="f14"
+                    data-item-price="50"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Adidas Zx Flux"
+                    data-item-image="Images/FemaleTrainers/femaleTrainer14.jpg"
+                    data-item-description="Rainbow and white Adidas Zx Flux">add to cart</a>
+                  </div>
+                </div>
+
+                <div
+                  data-brand="nike"
+                  data-size="6uk"
+                  data-name="huarache"
+                  class="result"
+                >
+                  <img
+                    src="Images/FemaleTrainers/femaleTrainer15.jpg"
+                    alt=""
+                    class="result-img"
+                  />
+
+                  <div class="trainer-details">
+                    <h4 class="result-title">Nike Huarache</h4>
+                    <h4 class="trainer-size">Size: 6 uk</h4>
+                    <h4 class="result-price">£75</h4>
+                    <a href="#" class="view-btn">view</a>
+                    <a href="" class="view-btn snipcart-add-item"
+                    data-item-id="f15"
+                    data-item-price="75"
+                    data-item-url="silverhanduk.com/shop.html"
+                    data-item-name="Nike Huarache"
+                    data-item-image="Images/FemaleTrainers/femaleTrainer15.jpg"
+                    data-item-description="Red, yellow and white Nike Huarache">add to cart</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
